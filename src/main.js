@@ -24,6 +24,8 @@ app.component("Partners",Partners);
 app.use(store);
 app.use(router);
 
+//app.config.globalProperties.resolvePath=
+
 /**
  * Mount the app
  */

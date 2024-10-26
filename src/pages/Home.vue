@@ -66,21 +66,21 @@
       <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100" src="/assets/downloaded/banner1.png" style="min-height:500px;" alt="Image">
+            <img class="w-100" src="/assets/downloaded/banner1.png" style="" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
-                <h5 class="text-white text-uppercase mb-3 animated slideInDown">« POSTMARKET <sup>BY SCPT</sup> »</h5>
+                <h class="text-white text-uppercase mb-3 animated slideInDown">« POSTMARKET <sup>BY SCPT</sup> »</h>
                 <p style="font-size: 25px; letter-spacing: 10px;"  class="display-1 text-white mb-md-4 animated zoomIn">Notre Boutique en ligne</p>
                 <a style=" text-transform: uppercase;" href="https://www.postemarket.cd" target="_blank" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"><span class="fa fa-shopping-bag"></span> Visiter notre boutique</a>
               </div>
             </div>
           </div>
           <div class="carousel-item ">
-            <img class="w-100" src="/assets/downloaded/banner.png" style="height:550px;" alt="Image">
+            <img class="w-100" src="/assets/downloaded/finances.jpg" style="" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
-                <h5 class="text-white text-uppercase mb-3 animated slideInDown">« ON <sup>BY SCPT</sup> »</h5>
-                <h6 class="display-1 text-white mb-md-4 animated zoomIn">La Triple Play en RDC</h6>
+                <h5 style="display:none;" class="text-white text-uppercase mb-3 animated slideInDown">« ON <sup>BY SCPT</sup> »</h5>
+                <h6 style="display:none;" class="display-1 text-white mb-md-4 animated zoomIn">La Triple Play en RDC</h6>
                 <a style="display: none;" href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"><span class="fa fa-check"></span> Souscrire</a>
               </div>
             </div>

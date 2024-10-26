@@ -15,7 +15,7 @@
               </div>
               <h4 class="mb-3">La Poste</h4>
               <p class="m-0">Acheminement du courrier et d’opérations financières</p>
-              <a class="btn btn-lg btn-primary rounded" href="">
+              <a class="btn btn-lg btn-primary rounded" href="/laposte">
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -27,7 +27,7 @@
               </div>
               <h4 class="mb-3">ON <sup>by SCPT</sup></h4>
               <p class="m-0">Triple Play => Télévision numérique, Inernet haut débit, Téléphone fixe illimitée</p>
-              <a class="btn btn-lg btn-primary rounded" href="">
+              <a class="btn btn-lg btn-primary rounded" href="#on">
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -39,7 +39,7 @@
               </div>
               <h4 class="mb-3">Hosting</h4>
               <p class="m-0">Hébergement des données entreprise, nom des domaines et emails</p>
-              <a class="btn btn-lg btn-primary rounded" href="">
+              <a class="btn btn-lg btn-primary rounded" href="/laposte">
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -51,7 +51,7 @@
               </div>
               <h4 class="mb-3">Poste Market</h4>
               <p class="m-0">Boutique en ligne avec plus de 400 articles disponible et livré par la Poste</p>
-              <a class="btn btn-lg btn-primary rounded" href="">
+              <a class="btn btn-lg btn-primary rounded" href="/postemarket">
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
