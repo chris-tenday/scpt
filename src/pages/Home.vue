@@ -42,7 +42,7 @@
                 <a href="#" class="dropdown-item">Poste Market</a>
                 <a href="#" class="dropdown-item">ON.CD</a>
                 <a href="#" class="dropdown-item">Poste Finance</a>
-                <a href="#" class="dropdown-item">Télécommunication</a>
+                <a href="/telecom" class="dropdown-item">Télécommunication</a>
               </div>
             </div>
             <a href="#blog" class="nav-item nav-link">Articles</a>

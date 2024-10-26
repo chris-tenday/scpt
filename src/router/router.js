@@ -1,23 +1,34 @@
 import {createRouter,createWebHistory} from "vue-router";
-import Home from "@/pages/Home.vue";
-import SingleBlog from "@/pages/SingleBlog.vue";
-import LaPoste from "@/pages/LaPoste.vue";
+import {defineAsyncComponent} from "vue";
 
 var routes=[
     {
         path:"/",
         name:"home",
-        component:Home
+        component:defineAsyncComponent({
+            loader:()=>import("../pages/Home.vue")
+        })
     },
     {
         path:"/article/:id",
         name:"article",
-        component: SingleBlog
+        component: defineAsyncComponent({
+            loader:()=> import("../pages/SingleBlog.vue")
+        })
     },
     {
         path: "/laposte",
         name:"laposte",
-        component:LaPoste
+        component:defineAsyncComponent({
+            loader:()=> import("../pages/LaPoste.vue")
+        })
+    },
+    {
+        name:"telcom",
+        path:"/telecom",
+        component: defineAsyncComponent({
+            loader:() => import("../pages/Telecom.vue")
+        })
     }
 ];
 
