@@ -5,6 +5,7 @@ import Footer from "@/sections/Footer.vue";
 import store from "@/store/store.js";
 import Modal from "@/components/Modal.vue";
 import router from "@/router/router.js";
+import Partners from "@/sections/Partners.vue";
 
 /**
  * Create the app
@@ -18,6 +19,7 @@ const app=createApp(App);
 app.component("Footer",Footer);
 app.component("Modal",Modal);
 app.component("Header",Header);
+app.component("Partners",Partners);
 
 app.use(store);
 app.use(router);

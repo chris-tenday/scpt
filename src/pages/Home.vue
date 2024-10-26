@@ -34,15 +34,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
             <a href="index.html" class="nav-item nav-link active" ><i class="fa fa-home"></i> Accueil</a>
-            <a href="#services" class="nav-item nav-link">Services</a>
-            <a href="#blog" class="nav-item nav-link">Articles</a>
-            <div style="display: none;" class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
               <div class="dropdown-menu m-0">
-                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                <a href="/laposte" class="dropdown-item">La Poste</a>
+                <a href="#" class="dropdown-item">EMS</a>
+                <a href="#" class="dropdown-item">Poste Market</a>
+                <a href="#" class="dropdown-item">ON.CD</a>
+                <a href="#" class="dropdown-item">Poste Finance</a>
+                <a href="#" class="dropdown-item">Télécommunication</a>
               </div>
             </div>
+            <a href="#blog" class="nav-item nav-link">Articles</a>
             <div style="display: none;"  class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
               <div class="dropdown-menu m-0">

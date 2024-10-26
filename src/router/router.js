@@ -1,6 +1,7 @@
 import {createRouter,createWebHistory} from "vue-router";
 import Home from "@/pages/Home.vue";
 import SingleBlog from "@/pages/SingleBlog.vue";
+import LaPoste from "@/pages/LaPoste.vue";
 
 var routes=[
     {
@@ -12,6 +13,11 @@ var routes=[
         path:"/article/:id",
         name:"article",
         component: SingleBlog
+    },
+    {
+        path: "/laposte",
+        name:"laposte",
+        component:LaPoste
     }
 ];
 
