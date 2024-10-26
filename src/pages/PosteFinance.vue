@@ -1,111 +1,6 @@
 <template>
   <div>
-    <Header/>
-
-    <!-- services !-->
-    <div id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-          <h1 class="mb-0">Nos services aux entréprises</h1>
-        </div>
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Compte courant courant chèque Postal</h4>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Encaissement des factures</h4>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Paiemnts de salaire</h4>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Bureau de change</h4>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Découvert</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-          <h1 class="mb-0">Nos services aux particuliers</h1>
-        </div>
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div style="" class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Compte courant courant chèque Postal</h4>
-              <p>Ouverture compte courant chèque Postal</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Transfert d’argent</h4>
-              <p class="m-0">Western union, Money gram, Flash cash, Flash Bank</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Facture Télé</h4>
-              <p class="m-0">Paiement Canal+, Easy Tv, startime, Bluetsat</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Mobile Money</h4>
-              <p>M-PESA, ORANGE money</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-            <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-              <div class="service-icon">
-                <i class="fa fa-folder text-white"></i>
-              </div>
-              <h4 class="mb-3">Recharge unités</h4>
-              <p>Vodacom, Airtel, Orange, Africell</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Header page-title="Poste Finance"/>
 
     <div id="about" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
@@ -139,6 +34,48 @@
         </div>
       </div>
     </div>
+
+    <!-- Pricing Plan Start -->
+    <div id="on" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+          <h1 class="mb-0">Nos services</h1>
+        </div>
+        <div class="row g-0">
+          <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
+            <div class="bg-light rounded">
+              <div class="border-bottom py-4 px-5 mb-4">
+                <h4 class="text-primary mb-1" style="text-transform: uppercase;">Aux Entréprises</h4>
+              </div>
+              <div class="p-5 pt-0">
+                <div class="d-flex justify-content-between mb-3"><span>Ouverture de compte courant Chèque Postal</span><i class="fa fa-check text-primary pt-1"></i></div>
+                <div class="d-flex justify-content-between mb-3"><span>Services d’encaissement des factures</span><i class="fa fa-check text-primary pt-1"></i></div>
+                <div class="d-flex justify-content-between mb-3"><span>Paiements de salaire</span><i class="fa fa-check text-primary pt-1"></i></div>
+                <div class="d-flex justify-content-between mb-3"><span>Bureau de change</span><i class="fa fa-check text-primary pt-1"></i></div>
+                <div class="d-flex justify-content-between mb-3"><span>Service de découvert</span><i class="fa fa-check text-primary pt-1"></i></div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+            <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
+              <div class="border-bottom py-4 px-5 mb-4">
+                <h4 class="text-primary mb-1" style="text-transform: uppercase;">Aux Particuliers</h4>
+              </div>
+              <div class="p-5 pt-0">
+                <div class="d-flex justify-content-between mb-3"><span>Ouverture de compte courant Chèque Postal</span><i class="fa fa-check text-primary pt-1"></i></div>
+                <div class="d-flex justify-content-between mb-3"><span>Transfert d’argent: western union,Money gram,Flash cash</span><i class="fa fa-check text-primary pt-1"></i></div>
+                <div class="d-flex justify-content-between mb-3"><span>Paiement facture Télé ( Canal+, Easy Tv, startime, Bluetsat)</span><i class="fa fa-check text-primary pt-1"></i></div>
+                <div class="d-flex justify-content-between mb-3"><span>Mobile Money (M-PESA, ORANGE money)</span><i class="fa fa-check text-primary pt-1"></i></div>
+                <div class="d-flex justify-content-between mb-3"><span>Recharge unités ( Vodacom, Airtel, Orange, Africell)</span><i class="fa fa-check text-primary pt-1"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing Plan End -->
+
 
     <div id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
