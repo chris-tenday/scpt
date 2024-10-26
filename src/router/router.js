@@ -36,6 +36,13 @@ var routes=[
         component: defineAsyncComponent({
             loader:()=> import("../pages/PosteFinance.vue")
         })
+    },
+    {
+        name:"ems",
+        path:"/ems",
+        component: defineAsyncComponent({
+            loader:() => import("../pages/Ems.vue")
+        })
     }
 ];
 
