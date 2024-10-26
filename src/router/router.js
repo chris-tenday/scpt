@@ -29,6 +29,13 @@ var routes=[
         component: defineAsyncComponent({
             loader:() => import("../pages/Telecom.vue")
         })
+    },
+    {
+        name:"finance",
+        path:"/postefinance",
+        component: defineAsyncComponent({
+            loader:()=> import("../pages/PosteFinance.vue")
+        })
     }
 ];
 

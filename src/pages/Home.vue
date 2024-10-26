@@ -40,8 +40,8 @@
                 <a href="/laposte" class="dropdown-item">La Poste</a>
                 <a href="#" class="dropdown-item">EMS</a>
                 <a href="#" class="dropdown-item">Poste Market</a>
-                <a href="#" class="dropdown-item">ON.CD</a>
-                <a href="#" class="dropdown-item">Poste Finance</a>
+                <a href="/on" class="dropdown-item">ON.CD</a>
+                <a href="/postefinance" class="dropdown-item">Poste Finance</a>
                 <a href="/telecom" class="dropdown-item">Télécommunication</a>
               </div>
             </div>
