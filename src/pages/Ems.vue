@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+    <Header page-title="Express Mail Service"/>
 
     <!-- Features Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
