@@ -38,7 +38,7 @@
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="/assets/downloaded/about-1.webp" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/about-1.webp')" style="object-fit: cover;">
             </div>
           </div>
         </div>

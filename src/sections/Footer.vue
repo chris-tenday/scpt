@@ -37,9 +37,9 @@
                 </div>
                 <div class="link-animated d-flex flex-column justify-content-start">
                   <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Accueil</a>
-                  <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Services</a>
-                  <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Articles</a>
-                  <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                  <a style="display: none;" class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Services</a>
+                  <a style="display: none;" class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Articles</a>
+                  <a style="display: none;" class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a id="backToTop" href="#" class="btn btn-lg btn-warning btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a id="backToTop" href="/#" class="btn btn-lg btn-warning btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
   </div>
 </template>
 
@@ -69,7 +69,7 @@
 export default {
   name: "Footer",
   mounted() {
-    document.getElementById("backToTop").click();
+    //document.getElementById("backToTop").click();
   }
 }
 </script>

@@ -4,7 +4,7 @@
     <div id="on" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-          <img src="/assets/downloaded/onbox2.png" style="width:120px;" alt="">
+          <img :src="$resolvePath('/assets/downloaded/onbox2.png')" style="width:120px;" alt="">
           <h5 style="display:none;" class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
           <h1 class="mb-0">Nos offres ON <sup>by SCPT</sup></h1>
           <p>Profitez d’un accès illimité grâce à l’internet haut débit sur Fibre optique. Détendez-vous avec des saisons complètes de programmes originaux exclusifs sur vos chaînes TV préférées. Profitez d’une Téléphonie illimitée pour contacter tous vos proches.</p>
@@ -29,7 +29,7 @@
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie locale illimitée</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-tv"></span> Bouquet basique</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-2"><span><span class="fa fa-info-circle"></span> Note: <br></span></div>
-                <a href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
+                <a style="display: none;" href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie locale illimitée</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-tv"></span> Bouquet familliale </span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-2"><span><span class="fa fa-info-circle"></span> Note: <br></span></div>
-                <a href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
+                <a style="display: none;" href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie locale illimitée</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-tv"></span> Bouquet familliale </span><i class="fa fa-times text-danger pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-2"><span><span class="fa fa-info-circle"></span> Note: <br></span></div>
-                <a href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
+                <a style="display: none;" href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie illimitée</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-tv"></span> Bouquet VIP</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-2"><span><span class="fa fa-info-circle"></span> Note: <br></span></div>
-                <a href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
+                <a style="display: none;" href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie : IP PABX Virtuel</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-tv"></span> TV : la télédistribution </span><i class="fa fa-times text-danger pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-2"><span><span class="fa fa-info-circle"></span> Note: <br></span></div>
-                <a href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
+                <a style="display: none;" href="" class="btn btn-primary py-2 px-4 mt-4">Choisir l'offre <span class="fa fa-plus-circle"></span></a>
               </div>
             </div>
           </div>

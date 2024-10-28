@@ -5,9 +5,9 @@
       <div class="container py-5 mb-5">
         <div class="bg-white">
           <div class="owl-carousel vendor-carousel">
-            <img src="/assets/downloaded/ptntic.jpg" style="height:70px; width:70px;" alt="">
-            <img src="/assets/downloaded/upap-logo.png" style="height:70px; width:70px;" alt="">
-            <img src="/assets/downloaded/upu-logo.png" style="height:70px; width:70px;" alt="">
+            <img :src="$resolvePath('/assets/downloaded/ptntic.jpg')" style="height:70px; width:70px;" alt="">
+            <img :src="$resolvePath('/assets/downloaded/upap-logo.png')" style="height:70px; width:70px;" alt="">
+            <img :src="$resolvePath('/assets/downloaded/upu-logo.png')" style="height:70px; width:70px;" alt="">
           </div>
         </div>
       </div>

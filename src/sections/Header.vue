@@ -25,7 +25,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <a href="/" class="navbar-brand p-0">
           <h1 style="display: none;" class="m-0"><i class="fa fa-user-tie me-2"></i>SCPT</h1>
-          <img src="/assets/downloaded/logo.png" style="width:70px; height:70px;" alt="">
+          <img :src="$resolvePath('/assets/downloaded/logo.png')" style="width:70px; height:70px;" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="fa fa-bars"></span>
@@ -33,8 +33,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
             <a href="/" class="nav-item nav-link active" ><i class="fa fa-home"></i> Accueil</a>
-            <a href="/#services" class="nav-item nav-link">Services</a>
-            <a href="/#blog" class="nav-item nav-link">Articles</a>
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+            <div class="dropdown-menu m-0">
+              <router-link :to="{name:'laposte'}" class="dropdown-item">La Poste</router-link>
+              <router-link :to="{name:'ems'}" class="dropdown-item">EMS</router-link>
+              <router-link :to="{name:'postemarket'}" class="dropdown-item">Poste Market</router-link>
+              <router-link :to="{name:'on'}" class="dropdown-item">ON <sup>by SCPT</sup></router-link>
+              <router-link :to="{name:'postefinance'}" class="dropdown-item">Poste Finance</router-link>
+              <router-link :to="{name:'telecom'}" class="dropdown-item">Télécommunication</router-link>
+            </div>
+            <a  style="display:none;" href="/#blog" class="nav-item nav-link">Articles</a>
             <div style="display: none;" class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
               <div class="dropdown-menu m-0">
@@ -59,7 +67,7 @@
         </div>
       </nav>
 
-      <div class="container-fluid bg-primary py-5 bg-header" style="background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url('/assets/downloaded/finances.jpg') center center no-repeat; background-size: cover;  margin-bottom: 90px;">
+      <div class="container-fluid bg-primary py-5 bg-header" style="background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url('assets/downloaded/finances.jpg') center center no-repeat; background-size: cover;  margin-bottom: 90px;">
         <div class="row py-5">
           <div class="col-12 pt-lg-5 mt-lg-5 text-center">
             <h1 class="display-4 text-white animated zoomIn">{{pageTitle}}</h1>

@@ -26,7 +26,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <a href="/" class="navbar-brand p-0">
           <h1 style="display: none;" class="m-0"><i class="fa fa-user-tie me-2"></i>SCPT</h1>
-          <img src="/assets/downloaded/logo.png" style="width:70px; height:70px;" alt="">
+          <img :src="$resolvePath('/assets/downloaded/logo.png')" style="width:70px; height:70px;" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="fa fa-bars"></span>
@@ -37,15 +37,16 @@
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
               <div class="dropdown-menu m-0">
-                <a href="/laposte" class="dropdown-item">La Poste</a>
-                <a href="/ems" class="dropdown-item">EMS</a>
-                <a href="/postemarket" class="dropdown-item">Poste Market</a>
-                <a href="/on" class="dropdown-item">ON.CD</a>
-                <a href="/postefinance" class="dropdown-item">Poste Finance</a>
-                <a href="/telecom" class="dropdown-item">Télécommunication</a>
+                <router-link :to="{name:'laposte'}" class="dropdown-item">La Poste</router-link>
+                <router-link :to="{name:'ems'}" class="dropdown-item">EMS</router-link>
+                <router-link :to="{name:'postemarket'}" class="dropdown-item">Poste Market</router-link>
+                <router-link :to="{name:'on'}" class="dropdown-item">ON<sup>by SCPT</sup></router-link>
+                <router-link :to="{name:'postefinance'}" class="dropdown-item">Poste Finance</router-link>
+                <router-link :to="{name:'telecom'}" class="dropdown-item">Télécommunication</router-link>
               </div>
             </div>
-            <a href="#blog" class="nav-item nav-link">Articles</a>
+
+            <router-link style="display:none;" to="/#blog" class="nav-item nav-link">Articles</router-link>
             <div style="display: none;"  class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
               <div class="dropdown-menu m-0">
@@ -66,17 +67,17 @@
       <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100" src="/assets/downloaded/banner1.png" style="" alt="Image">
+            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner1.png')" style="" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
-                <h class="text-white text-uppercase mb-3 animated slideInDown">« POSTMARKET <sup>BY SCPT</sup> »</h>
-                <p style="font-size: 25px; letter-spacing: 10px;"  class="display-1 text-white mb-md-4 animated zoomIn">Notre Boutique en ligne</p>
+                <h style="display:none;" class="text-white text-uppercase mb-3 animated slideInDown">« POSTMARKET <sup>BY SCPT</sup> »</h>
+                <p  style="display:none; font-size: 25px; letter-spacing: 10px;"  class="display-1 text-white mb-md-4 animated zoomIn">Notre Boutique en ligne</p>
                 <a style=" text-transform: uppercase;" href="https://www.postemarket.cd" target="_blank" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"><span class="fa fa-shopping-bag"></span> Visiter notre boutique</a>
               </div>
             </div>
           </div>
           <div class="carousel-item ">
-            <img class="w-100" src="/assets/downloaded/finances.jpg" style="" alt="Image">
+            <img class="w-100" :src="$resolvePath('/assets/downloaded/finances.jpg')" style="" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
                 <h5 style="display:none;" class="text-white text-uppercase mb-3 animated slideInDown">« ON <sup>BY SCPT</sup> »</h5>
@@ -102,7 +103,7 @@
 
     <About/>
 
-    <Services/>
+    <!--<Services/> !-->
 
     <OffresON/>
 
@@ -113,125 +114,6 @@
     <Blog/>
 
     <Partners/>
-
-    <!-- Features Start -->
-    <div  style="display:none;" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-          <h5 class="fw-bold text-primary text-uppercase">Pourquoi nous choisir?</h5>
-          <h1 class="mb-0">Offres flexibles et économique</h1>
-        </div>
-        <div class="row g-5">
-          <div class="col-lg-4">
-            <div class="row g-5">
-              <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-truck text-white"></i>
-                </div>
-                <h4>La Poste</h4>
-                <p class="mb-0">Postez vos colis en toute tranquilité et profitez </p>
-              </div>
-              <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-wifi text-white"></i>
-                </div>
-                <h4>Internet haut débit illimité</h4>
-                <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
-            <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="/assets/img/feature.jpg" style="object-fit: cover;">
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row g-5">
-              <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-users-cog text-white"></i>
-                </div>
-                <h4>Professionalisme</h4>
-                <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-              </div>
-              <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-phone-alt text-white"></i>
-                </div>
-                <h4>24/7 Support</h4>
-                <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Features Start -->
-
-    <!-- Testimonial Start -->
-    <div style="display:none;" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
-          <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
-          <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
-          <div class="testimonial-item bg-light my-4">
-            <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-              <img class="img-fluid rounded" src="/assets/img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
-              <div class="ps-4">
-                <h4 class="text-primary mb-1">Client Name</h4>
-                <small class="text-uppercase">Profession</small>
-              </div>
-            </div>
-            <div class="pt-4 pb-5 px-5">
-              Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-            </div>
-          </div>
-          <div class="testimonial-item bg-light my-4">
-            <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-              <img class="img-fluid rounded" src="/assets/img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
-              <div class="ps-4">
-                <h4 class="text-primary mb-1">Client Name</h4>
-                <small class="text-uppercase">Profession</small>
-              </div>
-            </div>
-            <div class="pt-4 pb-5 px-5">
-              Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-            </div>
-          </div>
-          <div class="testimonial-item bg-light my-4">
-            <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-              <img class="img-fluid rounded" src="/assets/img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
-              <div class="ps-4">
-                <h4 class="text-primary mb-1">Client Name</h4>
-                <small class="text-uppercase">Profession</small>
-              </div>
-            </div>
-            <div class="pt-4 pb-5 px-5">
-              Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-            </div>
-          </div>
-          <div class="testimonial-item bg-light my-4">
-            <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-              <img class="img-fluid rounded" src="/assets/img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
-              <div class="ps-4">
-                <h4 class="text-primary mb-1">Client Name</h4>
-                <small class="text-uppercase">Profession</small>
-              </div>
-            </div>
-            <div class="pt-4 pb-5 px-5">
-              Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonial End -->
-
-    <Modal>
-      <BlogView/>
-    </Modal>
 
     <!-- Footer !-->
     <Footer/>

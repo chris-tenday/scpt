@@ -28,7 +28,7 @@
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="/assets/downloaded/postefinance.jpg" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/postefinance.jpg')" style="object-fit: cover;">
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
         </div>
         <div class="row g-5">
           <div class="col-md-12">
-            <img src="/assets/downloaded/finances.jpg" style="width:100%; max-height:350px;" alt="">
+            <img :src="$resolvePath('/assets/downloaded/finances.jpg')" style="width:100%; max-height:350px;" alt="">
           </div>
         </div>
       </div>

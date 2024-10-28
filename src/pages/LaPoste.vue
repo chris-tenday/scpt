@@ -30,7 +30,7 @@
           </div>
           <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="/assets/downloaded/poste.jpg" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath('/assets/downloaded/poste.jpg')" style="object-fit: cover;">
             </div>
           </div>
           <div class="col-lg-4">
@@ -47,7 +47,7 @@
                   <i class="fa fa-phone-alt text-white"></i>
                 </div>
                 <h4>24/7 Support</h4>
-                <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                <p class="mb-0">Toujours à votre service , n'importe quand et n'importe où</p>
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="/assets/downloaded/laposte-about.jpg" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/laposte-about.jpg')" style="object-fit: cover;">
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@
       <div class="row" style="display: flex; justify-content: center; ">
         <div class="col-md-8" style=" box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
           <div style="padding: 15px; display:flex; justify-content: center;  width:100%;">
-            <img src="/assets/downloaded/poste-logo.png" style=" width:100px; height:100px;" alt="">
+            <img :src="$resolvePath('/assets/downloaded/poste-logo.png')" style=" width:100px; height:100px;" alt="">
           </div>
           <div>
             <h2 style="text-align: center;">Conseil d’administration</h2>

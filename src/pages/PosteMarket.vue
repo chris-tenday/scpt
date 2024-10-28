@@ -27,7 +27,7 @@
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="/assets/downloaded/postmarket-about.png" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/postmarket-about.png')" style="object-fit: cover;">
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@
               <h5 class="mb-3">Uniquement Les meilleurs marques</h5>
             </div>
           </div>
-          <div class="col-md-9" style="background-image: url('/assets/downloaded/marketbottom.png'); background-size: cover; display:flex; justify-content: center;">
+          <div class="col-md-9" style="background-image: url('assets/downloaded/marketbottom.png'); background-size: cover; display:flex; justify-content: center;">
             <a href="https://postmarket.cd" target="_blank" class="btn btn-warning" style="color:white; height:50px; margin:auto;"><span class="fa fa-shopping-cart"></span> Visiter la boutique</a>
           </div>
 

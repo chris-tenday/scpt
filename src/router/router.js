@@ -1,13 +1,14 @@
-import {createRouter,createWebHistory} from "vue-router";
+import {createRouter,createWebHistory,createWebHashHistory,createMemoryHistory} from "vue-router";
 import {defineAsyncComponent} from "vue";
+import Home from "@/pages/Home.vue";
+import TestPage from "@/pages/TestPage.vue";
+import LaPoste from "@/pages/LaPoste.vue";
 
 var routes=[
     {
         path:"/",
         name:"home",
-        component:defineAsyncComponent({
-            loader:()=>import("../pages/Home.vue")
-        })
+        component:Home
     },
     {
         path:"/article/:id",
@@ -24,14 +25,14 @@ var routes=[
         })
     },
     {
-        name:"telcom",
+        name:"telecom",
         path:"/telecom",
         component: defineAsyncComponent({
             loader:() => import("../pages/Telecom.vue")
         })
     },
     {
-        name:"finance",
+        name:"postefinance",
         path:"/postefinance",
         component: defineAsyncComponent({
             loader:()=> import("../pages/PosteFinance.vue")
@@ -50,6 +51,16 @@ var routes=[
         component: defineAsyncComponent({
             loader:()=> import("../pages/PosteMarket.vue")
         })
+    },
+    {
+        path:"/test",
+        name:"testpage",
+        component: LaPoste
+    },
+    {
+        name:"on",
+        path:"/on",
+        component:defineAsyncComponent(()=>import("../pages/ON.vue"))
     }
 ];
 
@@ -57,7 +68,7 @@ var routes=[
 
 const router=createRouter(
     {
-        history:createWebHistory(),
+        history:createWebHashHistory('/#'),
         routes:routes
     }
 );

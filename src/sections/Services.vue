@@ -15,9 +15,9 @@
               </div>
               <h4 class="mb-3">La Poste</h4>
               <p class="m-0">Acheminement du courrier et d’opérations financières</p>
-              <a class="btn btn-lg btn-primary rounded" href="/laposte">
+              <router-link class="btn btn-lg btn-primary rounded" :to="{name:'laposte'}">
                 <i class="bi bi-arrow-right"></i>
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -27,9 +27,9 @@
               </div>
               <h4 class="mb-3">ON <sup>by SCPT</sup></h4>
               <p class="m-0">Triple Play => Télévision numérique, Inernet haut débit, Téléphone fixe illimitée</p>
-              <a class="btn btn-lg btn-primary rounded" href="#on">
+              <router-link class="btn btn-lg btn-primary rounded" to="#on">
                 <i class="bi bi-arrow-right"></i>
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.9s">
@@ -39,9 +39,9 @@
               </div>
               <h4 class="mb-3">Hosting</h4>
               <p class="m-0">Hébergement des données entreprise, nom des domaines et emails</p>
-              <a class="btn btn-lg btn-primary rounded" href="/laposte">
+              <router-link class="btn btn-lg btn-primary rounded" :to="{name:'laposte'}">
                 <i class="bi bi-arrow-right"></i>
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.9s">
@@ -51,9 +51,9 @@
               </div>
               <h4 class="mb-3">Poste Market</h4>
               <p class="m-0">Boutique en ligne avec plus de 400 articles disponible et livré par la Poste</p>
-              <a class="btn btn-lg btn-primary rounded" href="/postemarket">
+              <router-link class="btn btn-lg btn-primary rounded" :to="{name:'postemarket'}">
                 <i class="bi bi-arrow-right"></i>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@
           </div>
           <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="/assets/downloaded/ems-logo.png" style=" object-fit: contain;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath('/assets/downloaded/ems-logo.png')" style=" object-fit: contain;">
             </div>
           </div>
           <div class="col-lg-4">

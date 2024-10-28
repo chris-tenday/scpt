@@ -24,7 +24,21 @@ app.component("Partners",Partners);
 app.use(store);
 app.use(router);
 
-//app.config.globalProperties.resolvePath=
+app.config.globalProperties.$resolvePath=function(path){
+    var host=window.location.host;
+    var url= ""
+
+    if(host.includes("51"))
+    {
+        url=path;
+    }
+    else
+    {
+        url=""+path.slice(1);
+    }
+    return url;
+}
+
 
 /**
  * Mount the app
