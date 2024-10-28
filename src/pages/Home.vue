@@ -57,7 +57,7 @@
                 <a href="quote.html" class="dropdown-item">Free Quote</a>
               </div>
             </div>
-            <a href="#souscrire" class="nav-item nav-link">Contact</a>
+            <router-link :to="{name:'contact'}" class="nav-item nav-link">Contact</router-link>
           </div>
           <button style="visibility: hidden;"  type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
           <a style="visibility: hidden;" href="#" class="btn btn-primary py-2 px-4 ms-3"></a>

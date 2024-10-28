@@ -61,6 +61,11 @@ var routes=[
         name:"on",
         path:"/on",
         component:defineAsyncComponent(()=>import("../pages/ON.vue"))
+    },
+    {
+        name:"contact",
+        path:"/contact",
+        component: defineAsyncComponent(()=>import('../pages/Contact.vue'))
     }
 ];
 
