@@ -8,7 +8,7 @@
           <h1 class="mb-0">Laissez-nous un message</h1>
         </div>
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-5">
+          <div class="col-lg-6">
             <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
               <form>
                 <div class="row g-3">
