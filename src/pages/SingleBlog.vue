@@ -9,7 +9,7 @@
           <div class="col-lg-8">
             <!-- Blog Detail Start -->
             <div class="mb-5">
-              <img class="img-fluid w-100 rounded mb-5" :src="article.img_cover" alt="">
+              <img class="img-fluid w-100 rounded mb-5" :src="$resolvePath(article.img_cover)" alt="">
               <h1 class="mb-4">{{article.titre}}</h1>
               <p>{{article.content}}</p>
 
@@ -26,7 +26,7 @@
                 <h3 class="mb-0">Autres articles</h3>
               </div>
               <div v-for="article in articles" :key="article" class="d-flex rounded overflow-hidden mb-3">
-                <img class="img-fluid" :src="article.img_cover" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                <img class="img-fluid" :src="$resolvePath(article.img_cover)" style="width: 100px; height: 100px; object-fit: cover;" alt="">
                 <a href="" class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0" style="width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{article.titre}}</a>
               </div>
 
