@@ -128,6 +128,8 @@
 
     <!-- About End -->
 
+    <Souscrire/>
+
     <Partners/>
 
     <Footer/>
@@ -138,9 +140,10 @@
 import Header from "@/sections/Header.vue";
 import Footer from "@/sections/Footer.vue";
 import Partners from "@/sections/Partners.vue";
+import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "Telecom",
-  components: {Partners, Footer, Header}
+  components: {Partners, Footer, Header,Souscrire}
 }
 </script>
 

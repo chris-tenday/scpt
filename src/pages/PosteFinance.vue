@@ -92,18 +92,19 @@
       </div>
     </div>
 
+    <Souscrire/>
+
     <Partners/>
     <Footer/>
   </div>
 </template>
 
 <script>
-import Header from "@/sections/Header.vue";
 import Partners from "@/sections/Partners.vue";
-import Footer from "@/sections/Footer.vue";
+import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "PosteFinance",
-  components: {Footer, Partners, Header}
+  components: {Partners,Souscrire}
 }
 </script>
 

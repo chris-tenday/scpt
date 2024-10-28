@@ -108,6 +108,8 @@
       </div>
     </div>
 
+    <Souscrire/>
+
     <Partners/>
     <Footer/>
   </div>
@@ -118,9 +120,10 @@
 import Header from "@/sections/Header.vue";
 import Partners from "@/sections/Partners.vue";
 import Footer from "@/sections/Footer.vue";
+import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "Ems",
-  components: {Footer, Partners, Header}
+  components: {Souscrire, Footer, Partners, Header}
 }
 </script>
 

@@ -88,18 +88,19 @@
     </div>
     <!-- Service End -->
 
+    <Souscrire/>
+
     <Partners/>
     <Footer/>
   </div>
 </template>
 
 <script>
-import Header from "@/sections/Header.vue";
 import Partners from "@/sections/Partners.vue";
-import Footer from "@/sections/Footer.vue";
+import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "PosteMarket",
-  components: {Footer, Partners, Header}
+  components: {Souscrire,Partners}
 }
 </script>
 

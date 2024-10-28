@@ -35,9 +35,12 @@
                     <input type="text" class="form-control bg-light border-0" placeholder="Nom complet" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
+                    <input type="text" class="form-control bg-light border-0" placeholder="Téléphone" style="height: 55px;">
                   </div>
                   <div class="col-12">
+                    <input type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
+                  </div>
+                  <div class="col-12" style="display: none;">
                     <select class="form-select bg-light border-0" style="height: 55px;">
                       <option selected>Choisissez le Service</option>
                       <option value="1">La Poste</option>

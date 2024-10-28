@@ -242,6 +242,8 @@
       </div>
     </div>
 
+    <Souscrire/>
+
     <Partners/>
 
     <Footer/>
@@ -249,12 +251,11 @@
 </template>
 
 <script>
-import Header from "@/sections/Header.vue";
-import Footer from "@/sections/Footer.vue";
 import Partners from "@/sections/Partners.vue";
+import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "LaPoste",
-  components: {Partners, Footer, Header}
+  components: {Partners,Souscrire}
 }
 </script>
 
