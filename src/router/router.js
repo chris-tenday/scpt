@@ -6,7 +6,7 @@ import LaPoste from "@/pages/LaPoste.vue";
 
 var routes=[
     {
-        path:"/",
+        path:"",
         name:"home",
         component:Home
     },

@@ -30,11 +30,10 @@
                 <i class="bi bi-envelope-open text-white"></i>
               </div>
               <div class="ps-4">
-                <h5 class="mb-2">Bésoin d'un service?</h5>
+                <h5 class="mb-2">info@scpt.cd</h5>
 
               </div>
             </div>
-            <a href="#" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Souscrire</a>
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">

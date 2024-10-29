@@ -73,7 +73,7 @@
           <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
             <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
               <div class="service-icon">
-                <i class="fa fa-enveloppe text-white"></i>
+                <i class="bi bi-envelope text-white"></i>
               </div>
               <h4 class="mb-3">info@scpt.cd</h4>
               <p class="m-0">Envoyez-nous un e-mail pour obtenir de l’aide concernant un produit ou un service de la SCPT</p>

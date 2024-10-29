@@ -23,16 +23,16 @@
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
       <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-        <a href="/" class="navbar-brand p-0">
+        <router-link :to="{name:'home'}" class="navbar-brand p-0">
           <h1 style="display: none;" class="m-0"><i class="fa fa-user-tie me-2"></i>SCPT</h1>
           <img :src="$resolvePath('/assets/downloaded/logo.png')" style="width:70px; height:70px;" alt="">
-        </a>
+        </router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="fa fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
-            <a href="/" class="nav-item nav-link active" ><i class="fa fa-home"></i> Accueil</a>
+            <router-link :to="{name:'home'}" class="nav-item nav-link active" ><i class="fa fa-home"></i> Accueil</router-link>
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
             <div class="dropdown-menu m-0">
               <router-link :to="{name:'laposte'}" class="dropdown-item">La Poste</router-link>
