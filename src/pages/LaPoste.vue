@@ -174,7 +174,7 @@
               <p class="mb-4">
                 Ledit annuaire du code postal vous permet d’identifier les codes des adresses postales (quartiers, communes, secteurs, chefferies et bureaux des Postes) des provinces et villes.
               </p>
-              <a href="https://www.codepostal.cd/" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Codes postaux de la RDC</a>
+              <a href="https://www.codepostal.cd/" target="_blank" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Codes postaux de la RDC</a>
 
             </div>
           </div>

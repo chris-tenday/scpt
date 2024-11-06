@@ -23,7 +23,7 @@
                 <i class="bi bi-envelope-open text-white"></i>
               </div>
               <div class="ps-4">
-                <h5 class="mb-2">contact@scpt.cd</h5>
+                <h5 class="mb-2">info@scpt.cd</h5>
               </div>
             </div>
           </div>

@@ -23,7 +23,7 @@
                 </div>
                 <div class="d-flex mb-2">
                   <i class="bi bi-envelope-open text-primary me-2"></i>
-                  <p class="mb-0">contact@scpt.cd</p>
+                  <p class="mb-0">info@scpt.cd</p>
                 </div>
                 <div class="d-flex mt-4">
                   <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>

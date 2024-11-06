@@ -80,7 +80,7 @@
             </div>
           </div>
           <div class="col-md-9" style="background-image: url('assets/downloaded/marketbottom.png'); background-size: cover; display:flex; justify-content: center;">
-            <a href="https://postmarket.cd" target="_blank" class="btn btn-warning" style="color:white; height:50px; margin:auto;"><span class="fa fa-shopping-cart"></span> Visiter la boutique</a>
+            <a href="https://postemarket.cd" target="_blank" class="btn btn-warning" style="color:white; height:50px; margin:auto;"><span class="fa fa-shopping-cart"></span> Visiter la boutique</a>
           </div>
 
         </div>

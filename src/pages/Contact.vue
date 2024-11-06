@@ -86,14 +86,17 @@
       </div>
     </div>
 
+    <Footer/>
+
   </div>
 </template>
 
 <script>
 import Header from "@/sections/Header.vue";
+import Footer from "@/sections/Footer.vue";
 export default {
   name: "Contact",
-  components: {Header}
+  components: {Footer, Header}
 }
 </script>
 

@@ -6,14 +6,15 @@
         <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
           <div class="d-inline-flex align-items-center" style="height: 45px;">
             <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Boulevard du 30 juin , Kinshasa - Gombe</small>
-            <small class="text-light"><i class="fa fa-envelope-open me-2"></i>contact@scpt.cd</small>
+            <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@scpt.cd</small>
           </div>
         </div>
         <div class="col-lg-4 text-center text-lg-end">
           <div class="d-inline-flex align-items-center" style="height: 45px;">
-            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/scptrdc?s=11" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/scptRDC" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/scpt_rdc?igsh=ZmpicTVsdGNzcGVt" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.youtube.com/@scptinfo8620" target="_blank"><i class="fab fa-youtube fw-normal"></i></a>
           </div>
         </div>
       </div>
@@ -67,17 +68,17 @@
       <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner1.png')" style="" alt="Image">
+            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner-1.jpg')" style="max-height: 500px;"  alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
-                <h style="display:none;" class="text-white text-uppercase mb-3 animated slideInDown">« POSTMARKET <sup>BY SCPT</sup> »</h>
+                <h4 style="" class="text-white text-uppercase mb-3 animated slideInDown">Société Congolaise des Postes et Télécommunication</h4>
                 <p  style="display:none; font-size: 25px; letter-spacing: 10px;"  class="display-1 text-white mb-md-4 animated zoomIn">Notre Boutique en ligne</p>
-                <a style=" text-transform: uppercase;" href="https://www.postemarket.cd" target="_blank" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"><span class="fa fa-shopping-bag"></span> Visiter notre boutique</a>
+                <a style="display:none; text-transform: uppercase;" href="https://www.postemarket.cd" target="_blank" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"><span class="fa fa-shopping-bag"></span> Visiter notre boutique</a>
               </div>
             </div>
           </div>
           <div class="carousel-item ">
-            <img class="w-100" :src="$resolvePath('/assets/downloaded/finances.jpg')" style="" alt="Image">
+            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner-2.jpg')" style="max-height: 500px;" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
                 <h5 style="display:none;" class="text-white text-uppercase mb-3 animated slideInDown">« ON <sup>BY SCPT</sup> »</h5>
