@@ -141,6 +141,8 @@
     </div>
     <!-- About End -->
 
+    <Yeloo/>
+
     <Souscrire/>
 
     <Team/>
@@ -165,9 +167,10 @@ import Blog from "@/sections/Blog.vue";
 import Partners from "@/sections/Partners.vue";
 import Modal from "@/components/Modal.vue";
 import BlogView from "@/components/BlogView.vue";
+import Yeloo from "@/sections/Yeloo.vue";
 export default {
   name: "Home",
-  components: {Modal, Footer,About,Services,OffresON,Souscrire,Team,Blog,Partners,BlogView},
+  components: {Yeloo, Modal, Footer,About,Services,OffresON,Souscrire,Team,Blog,Partners,BlogView},
   mounted() {
     this.$store.dispatch("getHomeContent");
   }
