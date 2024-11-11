@@ -108,7 +108,7 @@
       </div>
     </div>
 
-    <Souscrire/>
+    <Souscrire tel="+243 816 870 800"/>
 
     <Partners/>
     <Footer/>

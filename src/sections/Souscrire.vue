@@ -20,10 +20,10 @@
             <p class="mb-4">La SCPT a un rôle très fondamental, c’est ce lui de servir d’intermédiaire entre les hommes à traves le pays et le monde, par ses prestations nombreuses et variées au service du public.</p>
             <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
               <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                <i class="bi bi-envelope-open text-white"></i>
+                <i class="bi bi-telephone text-white"></i>
               </div>
               <div class="ps-4">
-                <h5 class="mb-2">info@scpt.cd</h5>
+                <h5 class="mb-2">{{ tel }}</h5>
               </div>
             </div>
           </div>
@@ -68,7 +68,13 @@
 
 <script>
 export default {
-  name: "Souscrire"
+  name: "Souscrire",
+  props:{
+    tel: {
+      type:String,
+      default:"info@scpt.cd"
+    }
+  }
 }
 </script>
 

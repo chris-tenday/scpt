@@ -58,6 +58,7 @@
           <img :src="$resolvePath('/assets/downloaded/on-logo.png')" style="width:120px;" alt="">
           <h5 style="display:none;" class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
           <h1 class="mb-0">Ennregistrez-vous</h1>
+          <p><i class="bi bi-telephone"></i> +243 895 354 283</p>
         </div>
         <div class="row g-5" style="display:flex; justify-content: center;">
           <div class="col-lg-6">

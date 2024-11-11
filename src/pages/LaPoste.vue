@@ -242,7 +242,7 @@
       </div>
     </div>
 
-    <Souscrire/>
+    <Souscrire tel="+243 814 159 194"/>
 
     <Partners/>
 
