@@ -188,7 +188,7 @@
     </div>
     <!-- About End -->
 
-    <div class="container-fluid">
+    <div style="display: none;" class="container-fluid">
       <div class="row" style="display: flex; justify-content: center; ">
         <div class="col-md-8" style=" box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
           <div style="padding: 15px; display:flex; justify-content: center;  width:100%;">
@@ -210,7 +210,7 @@
       </div>
     </div>
 
-    <div id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div style="display:none;" id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
           <h2 class="mb-0">40ème Session ordinaire du Conseil d’administration à Kinshasa</h2>

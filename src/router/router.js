@@ -71,6 +71,11 @@ var routes=[
         name:"immobilier",
         path:"/immobilier",
         component: defineAsyncComponent(()=>import("../pages/Immobilier.vue"))
+    },
+    {
+        name:"yeloo",
+        path:"/yeloo",
+        component: defineAsyncComponent(()=>import("../pages/Yeloo.vue"))
     }
 ];
 

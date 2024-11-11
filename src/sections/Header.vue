@@ -44,6 +44,7 @@
                 <router-link :to="{name:'postefinance'}" class="dropdown-item">Poste Finance</router-link>
                 <router-link :to="{name:'telecom'}" class="dropdown-item">Télécommunication</router-link>
                 <router-link :to="{name:'immobilier'}" class="dropdown-item">Immobilier</router-link>
+                <router-link :to="{name:'yeloo'}" class="dropdown-item">Yeloo</router-link>
               </div>
             </div>
 
