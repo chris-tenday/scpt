@@ -63,25 +63,25 @@
         <div class="row g-5" style="display:flex; justify-content: center;">
           <div class="col-lg-6">
             <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-              <form>
+              <form @submit.prevent="addLead">
                 <div class="row g-3">
                   <div class="col-xl-12">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Prenom" style="height: 55px;">
+                    <input v-model="lead.firstName" type="text" class="form-control bg-light border-0" placeholder="Prenom" style="height: 55px;">
                   </div>
                   <div class="col-xl-12">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Nom " style="height: 55px;">
+                    <input v-model="lead.name" type="text" class="form-control bg-light border-0" placeholder="Nom " style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Téléphone" style="height: 55px;">
+                    <input v-model="lead.phone" type="tel" class="form-control bg-light border-0" placeholder="Téléphone" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
+                    <input v-model="lead.email" type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Adresse " style="height: 55px;">
+                    <input v-model="lead.address" type="text" class="form-control bg-light border-0" placeholder="Adresse " style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Ville" style="height: 55px;">
+                    <input v-model="lead.city" type="text" class="form-control bg-light border-0" placeholder="Ville" style="height: 55px;">
                   </div>
                   <div class="col-12">
                     <button class="btn btn-dark w-100 py-3" type="submit">Envoyer</button>
@@ -104,9 +104,44 @@ import Header from "@/sections/Header.vue";
 import Footer from "@/sections/Footer.vue";
 import Partners from "@/sections/Partners.vue";
 import OffresON from "@/sections/OffresON.vue";
+import axios from "axios";
+import Swal from "sweetalert2";
 export default {
   name: "ON",
-  components: {OffresON, Partners, Footer, Header}
+  data(){
+    return {
+      lead:{
+        firstName:"",
+        name:"",
+        phone:"",
+        email:"",
+        address:"",
+        city:""
+      }
+    };
+  },
+  components: {OffresON, Partners, Footer, Header},
+  methods:{
+    async addLead()
+    {
+      var response=await axios.post("https://api.kosala-on.com/api/leads",this.lead,{
+        headers:{
+          "Authorization":"Bearer 3|SvWijJtS3H94wJHdPjH6RWpVLCGDLSNSebN4DIEi",
+          "Content-Type":"application/json"
+        }
+      });
+      Swal.fire({
+        title:"Merci!Nous avons reçu votre demande.",
+        icon:"success",
+        confirmButtonText:"Ok"
+      }).then((result)=>{
+
+        window.location.reload();
+      });
+
+
+    }
+  }
 }
 </script>
 
