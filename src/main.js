@@ -6,6 +6,8 @@ import store from "@/store/store.js";
 import Modal from "@/components/Modal.vue";
 import router from "@/router/router.js";
 import Partners from "@/sections/Partners.vue";
+import VuePhoneNumberInput from 'vue-phone-number-input';
+import 'vue-phone-number-input/dist/vue-phone-number-input.css';
 
 /**
  * Create the app
@@ -20,6 +22,7 @@ app.component("Footer",Footer);
 app.component("Modal",Modal);
 app.component("Header",Header);
 app.component("Partners",Partners);
+app.component("phoneInput",VuePhoneNumberInput);
 
 app.use(store);
 app.use(router);

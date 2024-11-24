@@ -84,7 +84,7 @@
                     <input v-model="lead.city" type="text" class="form-control bg-light border-0" placeholder="Ville" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-dark w-100 py-3" type="submit">Envoyer</button>
+                    <button :disabled="isDisabled" class="btn btn-dark w-100 py-3" type="submit">Envoyer <span class="me-1 spinner-border spinner-border-sm" v-if="isLoading"></span></button>
                   </div>
                 </div>
               </form>
@@ -106,6 +106,7 @@ import Partners from "@/sections/Partners.vue";
 import OffresON from "@/sections/OffresON.vue";
 import axios from "axios";
 import Swal from "sweetalert2";
+
 export default {
   name: "ON",
   data(){
@@ -117,13 +118,24 @@ export default {
         email:"",
         address:"",
         city:""
-      }
+      },
+      translations: {
+        countrySelectorLabel: "Code pays",
+        countrySelectorpwdError: "Choisir un pays",
+        phoneNumberLabel: "Ex. 810000000",
+        example: "Ex. 810000000",
+      },
+      selectedCountry: 'US',
+      isDisabled:false,
+      isLoading:false
     };
   },
   components: {OffresON, Partners, Footer, Header},
   methods:{
     async addLead()
     {
+      this.isDisabled=true;
+      this.isLoading=true;
       var response=await axios.post("https://api.kosala-on.com/api/leads",this.lead,{
         headers:{
           "Authorization":"Bearer 3|SvWijJtS3H94wJHdPjH6RWpVLCGDLSNSebN4DIEi",
