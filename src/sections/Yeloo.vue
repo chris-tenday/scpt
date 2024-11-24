@@ -7,10 +7,10 @@
           <div class="section-title position-relative pb-3 mb-5">
             <h1 class="mb-0">Yeloo <sup><i class="fa fa-wifi"></i></sup></h1>
           </div>
-          <p class="mb-4">
+          <p style="display: none;" class="mb-4">
 
             Yeloo est un produit de la SCPT axé dans la fourniture de la connexion internet avec et sans fil</p>
-          <div class="row g-0 mb-3">
+          <div style="display:none;" class="row g-0 mb-3">
             <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
               <h5 class="mb-3"><i class="fa fa-wifi text-primary me-3"></i>Internet sans fil</h5>
             </div>

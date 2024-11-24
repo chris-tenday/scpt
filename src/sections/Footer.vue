@@ -26,9 +26,11 @@
                   <p class="mb-0">info@scpt.cd</p>
                 </div>
                 <div class="d-flex mt-4">
-                  <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                  <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                  <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                  <a class="btn btn-primary btn-square me-2" href="https://x.com/scptrdc?s=11" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
+                  <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/scptRDC" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
+                  <a style="display:none;" class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                  <a class="btn btn-primary btn-square me-2" href="https://www.instagram.com/scpt_rdc?igsh=ZmpicTVsdGNzcGVt" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                  <a class="btn btn-primary btn-square me-2" href="https://www.youtube.com/@scptinfo8620" target="_blank"><i class="fab fa-youtube fw-normal"></i></a>
                 </div>
               </div>
               <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">

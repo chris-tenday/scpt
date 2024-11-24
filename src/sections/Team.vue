@@ -26,7 +26,7 @@
           <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
             <div class="team-item bg-light rounded overflow-hidden">
               <div class="team-img position-relative overflow-hidden">
-                <img class="img-fluid w-100" :src="$resolvePath('/assets/downloaded/dg.jpg')" alt="">
+                <img class="img-fluid w-100" :src="$resolvePath('/assets/downloaded/dg.JPG')" alt="">
                 <div style="display:none;"  class="team-social">
                   <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
                   <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>

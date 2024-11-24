@@ -60,7 +60,7 @@
               <div class="service-icon">
                 <i class="fa fa-phone text-white"></i>
               </div>
-              <h4 class="mb-3">+243 814 757 008</h4>
+              <h4 class="mb-3">+243 89 34 85 382</h4>
               <p class="m-0">Appelez-nous pour
                 parler à un membre de
                 notre équipe.</p>

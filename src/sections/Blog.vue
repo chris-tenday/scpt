@@ -8,7 +8,7 @@
           <h1 class="mb-0">Nos derniers articles</h1>
         </div>
         <div class="row g-5">
-          <div v-for="article in articles" :key="article" class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+          <div v-for="article in articles" :key="article" class="col-lg-3 wow slideInUp" data-wow-delay="0.3s">
             <div class="blog-item bg-light rounded overflow-hidden">
               <div class="blog-img position-relative overflow-hidden">
                 <img class="img-fluid" :src="$resolvePath(article.img_cover)" style="width:100%; height:235px;" alt="">

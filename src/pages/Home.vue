@@ -70,7 +70,7 @@
       <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner-1.jpg')" style="max-height: 500px;"  alt="Image">
+            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner-1.jpg')" style="max-height: 650px;"  alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
                 <h4 style="" class="text-white text-uppercase mb-3 animated slideInDown">Société Congolaise des Postes et Télécommunication</h4>
@@ -80,7 +80,7 @@
             </div>
           </div>
           <div class="carousel-item ">
-            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner-2.jpg')" style="max-height: 500px;" alt="Image">
+            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner-2.jpg')" style="max-height: 650px;" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
                 <h5 style="display:none;" class="text-white text-uppercase mb-3 animated slideInDown">« ON <sup>BY SCPT</sup> »</h5>
