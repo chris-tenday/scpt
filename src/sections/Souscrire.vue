@@ -29,16 +29,16 @@
           </div>
           <div class="col-lg-5">
             <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-              <form>
+              <form @submit.prevent="sendContact('webmaster@scpt.cd')">
                 <div class="row g-3">
                   <div class="col-xl-12">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Nom complet" style="height: 55px;">
+                    <input v-model="name" type="text" class="form-control bg-light border-0" placeholder="Nom complet" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Téléphone" style="height: 55px;">
+                    <input v-model="telephone" type="text" class="form-control bg-light border-0" placeholder="Téléphone" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
+                    <input v-model="email" type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
                   </div>
                   <div class="col-12" style="display: none;">
                     <select class="form-select bg-light border-0" style="height: 55px;">
@@ -50,10 +50,10 @@
                     </select>
                   </div>
                   <div class="col-12">
-                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Décrivez votre bésoin.."></textarea>
+                    <textarea v-model="message" class="form-control bg-light border-0" rows="3" placeholder="Décrivez votre bésoin.."></textarea>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-dark w-100 py-3" type="submit">Envoyer</button>
+                    <button :disabled="isLoading" class="btn btn-dark w-100 py-3" type="submit">Envoyer <span class="me-1 spinner-border spinner-border-sm" v-if="isLoading"></span></button>
                   </div>
                 </div>
               </form>
@@ -67,8 +67,22 @@
 </template>
 
 <script>
+import {useContact} from "@/composables/useContact.js";
+
 export default {
   name: "Souscrire",
+  setup(){
+    const obj=useContact();
+
+    return {
+      name:obj.name,
+      email:obj.email,
+      telephone:obj.telephone,
+      message:obj.message,
+      sendContact:obj.sendContact,
+      isLoading:obj.isLoading
+    };
+  },
   props:{
     tel: {
       type:String,

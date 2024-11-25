@@ -10,22 +10,22 @@
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6">
             <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-              <form>
+              <form @submit.prevent="sendContact('ctenday@gmail.com')">
                 <div class="row g-3">
                   <div class="col-xl-12">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Nom complet" style="height: 55px;">
+                    <input v-model="name" type="text" class="form-control bg-light border-0" placeholder="Nom complet" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="text" class="form-control bg-light border-0" placeholder="Téléphone" style="height: 55px;">
+                    <input v-model="telephone" type="text" class="form-control bg-light border-0" placeholder="Téléphone" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
+                    <input v-model="email" type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Ecrivez votre message.."></textarea>
+                    <textarea v-model="message" class="form-control bg-light border-0" rows="3" placeholder="Ecrivez votre message.."></textarea>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-dark w-100 py-3" type="submit">Envoyer</button>
+                    <button :disabled="isLoading" class="btn btn-dark w-100 py-3" type="submit">Envoyer <span class="me-1 spinner-border spinner-border-sm" v-if="isLoading"></span></button>
                   </div>
                 </div>
               </form>
@@ -94,9 +94,25 @@
 <script>
 import Header from "@/sections/Header.vue";
 import Footer from "@/sections/Footer.vue";
+import {useContact} from "@/composables/useContact.js";
 export default {
   name: "Contact",
-  components: {Footer, Header}
+  setup(){
+    const obj=useContact();
+
+    return {
+      name:obj.name,
+      email:obj.email,
+      telephone:obj.telephone,
+      message:obj.message,
+      sendContact:obj.sendContact,
+      isLoading:obj.isLoading
+    };
+  },
+  components: {Footer, Header},
+  methods:{
+
+  }
 }
 </script>
 
