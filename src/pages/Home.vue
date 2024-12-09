@@ -171,8 +171,15 @@ import Yeloo from "@/sections/Yeloo.vue";
 export default {
   name: "Home",
   components: {Yeloo, Modal, Footer,About,Services,OffresON,Souscrire,Team,Blog,Partners,BlogView},
+  methods:{
+    async fetchContent()
+    {
+      await this.$store.dispatch("getHomeContent");
+      await this.$store.dispatch("getCoverImage");
+    }
+  },
   mounted() {
-    this.$store.dispatch("getHomeContent");
+    this.fetchContent()
   }
 }
 </script>
