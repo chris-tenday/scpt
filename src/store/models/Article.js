@@ -5,4 +5,5 @@ export default class Article
     date;
     img_cover;
     content;
+    link;
 }

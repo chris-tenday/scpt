@@ -11,7 +11,7 @@
             <div class="mb-5">
               <img class="img-fluid w-100 rounded mb-5" :src="$resolvePath(article.img_cover)" alt="">
               <h1 class="mb-4">{{article.titre}}</h1>
-              <p>{{article.content}}</p>
+              <p v-html="article.content"></p>
 
             </div>
             <hr>
@@ -75,6 +75,7 @@ export default {
     }
   },
   mounted() {
+
   }
 }
 </script>

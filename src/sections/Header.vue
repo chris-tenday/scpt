@@ -48,7 +48,7 @@
               </div>
             </div>
 
-            <router-link style="display:none;" to="/#blog" class="nav-item nav-link">Articles</router-link>
+            <router-link :to="{name:'blog'}" class="nav-item nav-link">Articles</router-link>
             <div style="display: none;"  class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
               <div class="dropdown-menu m-0">

@@ -21,7 +21,7 @@ export function useContact()
             to:to,
             action:"contact_form_7_submit"
         };
-        var res=await axios.post("https://scpt.cd/corpo/wp-admin/admin-ajax.php",data);
+        var res=await axios.post("https://scpt.cd/corpo/wp-admin/admin-ajax.php",new URLSearchParams(data));
 
         isLoading.value=false;
         window.location.reload();

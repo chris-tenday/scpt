@@ -20,7 +20,7 @@
                   <small><i class="far fa-calendar-alt text-primary me-2"></i>{{article.date}}</small>
                 </div>
                 <h4 class="mb-3" style=" width:100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{article.titre}} </h4>
-                <p style=" height:50px; white-space: normal; overflow: hidden; text-overflow: ellipsis;">{{article.content}}</p>
+                <p style="display: none; height:50px; white-space: normal; overflow: hidden; text-overflow: ellipsis;" v-html="article.content"></p>
                 <router-link :to="{name:'article',params:{id:article.id}}" class="text-uppercase" tag="a">Lire l'article <i class="bi bi-arrow-right"></i></router-link>
               </div>
             </div>
@@ -41,8 +41,16 @@ export default {
       return this.$store.getters.GET_ARTICLES;
     }
   },
+  methods:{
+    async fecthContent()
+    {
+      await this.$store.dispatch("getHomeContent");
+      await this.$store.dispatch("getCoverImage");
+    }
+  },
   mounted() {
-    this.$store.dispatch("getHomeContent");
+
+    this.fecthContent();
   }
 }
 </script>
