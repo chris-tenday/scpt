@@ -30,15 +30,26 @@ app.use(router);
 app.config.globalProperties.$resolvePath=function(path){
     var host=window.location.host;
     var url= ""
-
-    if(host.includes("51"))
+    if(host.includes("localhost"))
     {
         url=path;
     }
     else
     {
-        url=""+path.slice(1);
+        try {
+
+            if(path[0]=="/")
+            {
+                url=""+path.slice(1);
+            }
+            else
+            {
+                url=path;
+            }
+        }catch(e){}
+
     }
+
     return url;
 }
 

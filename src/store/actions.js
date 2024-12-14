@@ -5,9 +5,9 @@ export default{
     /**
      * Method to get content of the home page.
      */
-    async getHomeContent({commit})
+    async getHomeContent({state,commit})
     {
-        var {data}=await axios.get("https://scpt.kristentshika.net/wp-json/wp/v2/posts");
+        var {data}=await axios.get(state.baseUrl);
         console.log("api..");
 
         var articles=[];
@@ -17,10 +17,14 @@ export default{
             article.date=item.date;
             article.titre=item.title.rendered;
             article.content=item.content.rendered;
-            article.link=item._links['wp:featuredmedia'][0].href;
+            article.img_cover="/assets/downloaded/noimage.jpg";
+            try {
+                article.link=item._links['wp:featuredmedia'][0].href;
+            }
+            catch (e) {
 
+            }
 
-            article.img_cover="";
             articles.push(article);
         });
         commit("SET_ARTICLES",articles);
@@ -30,12 +34,16 @@ export default{
     {
         for(var i=0; i<state.articles.length;i++)
         {
-            var {data}=await axios.get(state.articles[i].link);
-            console.log("image:");
-            var img=data.guid.rendered;
-            state.articles[i].img_cover=img;
-            console.log(state.articles[i].img_cover);
-            commit("UPDATE_ARTICLE",[i,img])
+            try {
+                var {data}=await axios.get(state.articles[i].link);
+                var img=data.guid.rendered;
+                state.articles[i].img_cover=img;
+                console.log(state.articles[i].img_cover);
+                commit("UPDATE_ARTICLE",[i,img])
+            }
+            catch (e) {
+                console.log(state.articles[i].img_cover);
+            }
         }
 
     }
