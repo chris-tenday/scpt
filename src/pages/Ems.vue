@@ -7,7 +7,7 @@
       <div class="container py-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
           <h2 class="mb-0">Express Mail Service</h2>
-          <p>C'est le service express des envois postaux, disponible dans le réseau mondial. Les pays qui exploitent ce service sont membres d’une coopérative à adhésion volontaire réservée uniquement aux opérateurs désignés des pays membres de l’UPU.</p>
+          <p>{{ems.texte}}</p>
         </div>
         <div class="row g-5">
           <div class="col-lg-4">
@@ -30,7 +30,7 @@
           </div>
           <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath('/assets/downloaded/ems-logo.png')" style=" object-fit: contain;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath(ems.logo)" style=" object-fit: contain;">
             </div>
           </div>
           <div class="col-lg-4">
@@ -62,7 +62,7 @@
       <div class="container py-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
           <h1 class="mb-0">Express Mail Service</h1>
-          <p>EMS est un service postal dont la rapidité est maximale en tout point de la chaîne d’exploitation. Un haut niveau de priorité lui est accordé sur le réseau postal afin que les délais de bout en bout soient extrêmement fiables pour les clients. Les envois EMS ont la priorité à toutes les étapes du transport et du traitement.</p>
+          <p>{{ems.definition}}</p>
         </div>
         <div class="row g-5">
           <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -108,7 +108,7 @@
       </div>
     </div>
 
-    <Souscrire tel="+243 816 870 800"/>
+    <Souscrire :tel="ems.telephone"/>
 
     <Partners/>
     <Footer/>
@@ -123,7 +123,12 @@ import Footer from "@/sections/Footer.vue";
 import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "Ems",
-  components: {Souscrire, Footer, Partners, Header}
+  components: {Souscrire, Footer, Partners, Header},
+  computed:{
+    ems(){
+      return this.$store.state.ems;
+    }
+  }
 }
 </script>
 

@@ -13,16 +13,14 @@
             </div>
             <p class="mb-4">
 
-              « ON by SCPT » c’est la Triple Play, un service grâce auquel les abonnés peuvent bénéficier à la fois d’un accès à l’Internet haut débit, à la téléphonie fixe illimitée et à la télévision numérique, fournis d’au moyen d’un seul et unique « box ».
-
-              En plus d’une utilisation simplifiée, les offres Triple Play de « ON by SCPT » permettent aux abonnés de profiter de coûts réduits car l’ensemble de leurs services numériques seront gérés par une seule société la SCPT ; pas besoin de souscrire à plusieurs contrats auprès de fournisseurs différents.
+              {{on.pourquoi}}
             </p>
             <div class="section-title position-relative pb-3 mb-5">
               <h5 style="display: none;" class="fw-bold text-primary text-uppercase">Qui sommes-nous ?</h5>
               <h1 class="mb-0">Débit Internet</h1>
             </div>
             <p class="mb-4">
-              Avec un débit internet excédant les 100mbps ,le service est conçu pour répondre aux besoins des consommateurs en contenu en ligne, à travers un forfait unique : à la maison, au bureau, à l’université.
+              {{on.debit}}
             </p>
             <div class="row g-0 mb-3">
               <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
@@ -42,7 +40,7 @@
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/on-cover.png')" style="object-fit: contain;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath(on.image)" style="object-fit: contain;">
             </div>
           </div>
         </div>
@@ -58,7 +56,7 @@
           <img :src="$resolvePath('/assets/downloaded/on-logo.png')" style="width:120px;" alt="">
           <h5 style="display:none;" class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
           <h1 class="mb-0">Ennregistrez-vous</h1>
-          <p><i class="bi bi-telephone"></i> +243 895 354 283</p>
+          <p><i class="bi bi-telephone"></i> {{ on.telephone }}</p>
         </div>
         <div class="row g-5" style="display:flex; justify-content: center;">
           <div class="col-lg-6">
@@ -131,6 +129,11 @@ export default {
     };
   },
   components: {OffresON, Partners, Footer, Header},
+  computed:{
+    on(){
+      return this.$store.state.on;
+    }
+  },
   methods:{
     async addLead()
     {

@@ -48,7 +48,7 @@
                 <i class="fa fa-map text-white"></i>
               </div>
               <h4 class="mb-3">Adresse</h4>
-              <p class="m-0">1009, Boulevard du 30 Juin, Kinshasa – Gombe</p>
+              <p class="m-0">{{contact.address}}</p>
               <a style="display: none;" class="btn btn-lg btn-primary rounded" href="">
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -60,7 +60,7 @@
               <div class="service-icon">
                 <i class="fa fa-phone text-white"></i>
               </div>
-              <h4 class="mb-3">+243 89 34 85 382</h4>
+              <h4 class="mb-3">{{contact.telephone}}</h4>
               <p class="m-0">Appelez-nous pour
                 parler à un membre de
                 notre équipe.</p>
@@ -75,7 +75,7 @@
               <div class="service-icon">
                 <i class="bi bi-envelope text-white"></i>
               </div>
-              <h4 class="mb-3">info@scpt.cd</h4>
+              <h4 class="mb-3">{{contact.email}}</h4>
               <p class="m-0">Envoyez-nous un e-mail pour obtenir de l’aide concernant un produit ou un service de la SCPT</p>
               <a style="display: none;" class="btn btn-lg btn-primary rounded" href="">
                 <i class="bi bi-arrow-right"></i>
@@ -110,6 +110,11 @@ export default {
     };
   },
   components: {Footer, Header},
+  computed:{
+    contact(){
+        return this.$store.state.section_contact;
+    }
+  },
   methods:{
 
   }

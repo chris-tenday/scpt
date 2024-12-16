@@ -10,7 +10,7 @@
           <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
             <div class="team-item bg-light rounded overflow-hidden">
               <div class="team-img position-relative overflow-hidden">
-                <img class="img-fluid w-100" :src="$resolvePath('/assets/downloaded/adam.jpg')" alt="">
+                <img class="img-fluid w-100" :src="$resolvePath(team.photo_pca)" alt="">
                 <div style="display:none;" class="team-social">
                   <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
                   <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
@@ -18,7 +18,7 @@
                 </div>
               </div>
               <div class="text-center py-4">
-                <h4 class="text-primary">Adam BOMBOLE INTOLE</h4>
+                <h4 class="text-primary">{{ team.pca }}</h4>
                 <p class="text-uppercase m-0">Président du Conseil d'Administration</p>
               </div>
             </div>
@@ -26,7 +26,7 @@
           <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
             <div class="team-item bg-light rounded overflow-hidden">
               <div class="team-img position-relative overflow-hidden">
-                <img class="img-fluid w-100" :src="$resolvePath('/assets/downloaded/dg.JPG')" alt="">
+                <img class="img-fluid w-100" :src="$resolvePath(team.photo_dg)" alt="">
                 <div style="display:none;"  class="team-social">
                   <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
                   <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
@@ -35,7 +35,7 @@
                 </div>
               </div>
               <div class="text-center py-4">
-                <h4 class="text-primary">Sandra TSHIBONGE MBIYE</h4>
+                <h4 class="text-primary">{{ team.dg }}</h4>
                 <p class="text-uppercase m-0">Directeur Général</p>
               </div>
             </div>
@@ -43,7 +43,7 @@
           <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
             <div class="team-item bg-light rounded overflow-hidden">
               <div class="team-img position-relative overflow-hidden">
-                <img class="img-fluid w-100":src="$resolvePath('/assets/downloaded/dga.jpg')" alt="">
+                <img class="img-fluid w-100":src="$resolvePath(team.photo_dga)" alt="">
                 <div style="display:none;"  class="team-social">
                   <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
                   <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
@@ -52,7 +52,7 @@
                 </div>
               </div>
               <div class="text-center py-4">
-                <h4 class="text-primary">Jolino MAKELE</h4>
+                <h4 class="text-primary">{{team.dga}}</h4>
                 <p class="text-uppercase m-0">Directeur Général Adjoint</p>
               </div>
             </div>
@@ -66,7 +66,12 @@
 
 <script>
 export default {
-  name: "Team"
+  name: "Team",
+  computed:{
+    team(){
+      return this.$store.state.section_team;
+    }
+  }
 }
 </script>
 

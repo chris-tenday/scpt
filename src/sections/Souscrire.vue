@@ -88,6 +88,11 @@ export default {
       type:String,
       default:"info@scpt.cd"
     }
+  },
+  computed:{
+    contact(){
+      return this.$store.state.section_contact;
+    }
   }
 }
 </script>

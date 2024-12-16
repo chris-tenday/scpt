@@ -7,7 +7,7 @@
       <div class="container py-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
           <h5 class="fw-bold text-primary ">Pourquoi nous choisir?</h5>
-          <h4 class="mb-0">La POSTE RDC est l’administration chargée de l’acheminement du courrier et d’opérations financières.</h4>
+          <h4 class="mb-0">{{laposte.pourquoi}}</h4>
         </div>
         <div class="row g-5">
           <div class="col-lg-4">
@@ -30,7 +30,7 @@
           </div>
           <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath('/assets/downloaded/poste.jpg')" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath(laposte.pourquoi_image)" style="object-fit: cover;">
             </div>
           </div>
           <div class="col-lg-4">
@@ -153,7 +153,7 @@
               <h1 class="mb-0">Notre Mission</h1>
             </div>
             <p class="mb-4">
-              Être le fer de lance du développement du secteur postal en Afrique et encourager la coopération entre les parties prenantes, en vue de promouvoir les réformes du réseau postal physique, électronique et financier.</p>
+              {{laposte.mission}}}</p>
             <div class="row g-0 mb-3">
               <div class="section-title position-relative pb-3 mb-5">
                 <h1 class="mb-0">Nos Objectifs</h1>
@@ -180,7 +180,7 @@
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/laposte-about.jpg')" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath(laposte.image)" style="object-fit: cover;">
             </div>
           </div>
         </div>
@@ -242,7 +242,7 @@
       </div>
     </div>
 
-    <Souscrire tel="+243 814 159 194"/>
+    <Souscrire :tel="laposte.telephone"/>
 
     <Partners/>
 
@@ -255,7 +255,12 @@ import Partners from "@/sections/Partners.vue";
 import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "LaPoste",
-  components: {Partners,Souscrire}
+  components: {Partners,Souscrire},
+  computed:{
+    laposte(){
+      return this.$store.state.laposte
+    }
+  }
 }
 </script>
 

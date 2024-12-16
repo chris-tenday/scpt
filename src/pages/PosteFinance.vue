@@ -10,25 +10,19 @@
               <h1 class="mb-0">C'est quoi la Poste Finances?</h1>
             </div>
             <p class="mb-4">
-              Dans le cadre des services financiers de la Poste, Poste Finances offre à ses clients un moyen pratique, sûr et sécurisé de gérer leurs finances.
-
-              Vous bénéficiez d’un réseau inégalable des bureaux de Poste et d’un large éventail des produits et services aux particuliers, aux entreprises publiques et privées ainsi qu’au Gouvernement.</p>
+              {{postefinance.quoi}}</p>
             <div class="row g-0 mb-3">
               <div class="section-title position-relative pb-3 mb-5">
                 <h1 class="mb-0">Pourquoi la Poste Finances?</h1>
               </div>
               <p class="mb-4">
-                La Poste Finances vient vous faciliter la vie pour tout ce qui concerne les opérations financières💵💳
-
-                Ses services sont accessibles à tous et partout.
-
-                Vous voulez effectuer une opération financière ? (Retraits et envois Orange Money, M-pesa, Airtel Money, Moneygram, western union, etc.) rendez-vous à 📍l’hôtel de Poste situé au 1009, Boulevard du 30 Juin, Kinshasa – Gombe.
+                {{postefinance.pourquoi}}
               </p>
             </div>
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/postefinance.jpg')" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath(postefinance.image)" style="object-fit: cover;">
             </div>
           </div>
         </div>
@@ -104,7 +98,12 @@ import Partners from "@/sections/Partners.vue";
 import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "PosteFinance",
-  components: {Partners,Souscrire}
+  components: {Partners,Souscrire},
+  computed:{
+    postefinance(){
+      return this.$store.state.postefinance;
+    }
+  }
 }
 </script>
 

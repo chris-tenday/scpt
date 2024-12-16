@@ -11,23 +11,21 @@
               <h1 class="mb-0">Pourquoi Poste Market ?</h1>
             </div>
             <p class="mb-4">
-              « Postemarket » est une Plateforme numérique de la Poste Congolaise qui offre des facilités des ventes et achats en lignes, équipée des moyens logistiques pour l’acheminement et la distribution des envois, de manière fiable, rapide et sécurisée dans tous les 145 territoires de la RD-Congo, à travers ses 361 agences nationales (Bureaux d’exploitation).</p>
-            <p>En tant que première entreprise de distribution des colis et lettres, la Société Congolaise des Postes et Télécommunications (SCPT) est l’Opérateur Désigné (OD) de l’Etat Congolais auprès des Organisations régionales (UPAP : Union Panafricaine des Postes) et internationales (UPUP) pour la promotion du Service Universel.</p>
+              {{postemarket.pourquoi}}
+            </p>
             <div class="row g-0 mb-3">
               <div class="section-title position-relative pb-3 mb-5">
                 <h1 class="mb-0">
                   Poste Market vous offre:</h1>
                 <p>
-                  son expertise dans la conception, le développement et la gestion du commerce électronique ( « e-commerce » ), afin d’ajouter de la valeur à ses clients.
-                  En tant que Vendeur-« Postemarket », vous contribuez à offrir à ces clients une meilleure sélection, des meilleurs prix et une « Expérience-Client » de premier ordre ; Car, les marchés électroniques sont des canaux de vente très efficaces qui mettent en relation, « Vendeurs » et « Acheteurs ».
+                  {{postemarket.offre}}
                 </p>
-                <p>des possibilités de Vente et Achat en Ligne sur les autres plateformes « e-commerces » de grands marchés électroniques, tels qu’Amazon, eBay ou Tmall (République populaire de Chine) afin de permettre la visibilité des petites et moyennes entreprises (PME) aux niveaux national et international.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/postmarket-about.png')" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath(postemarket.image)" style="object-fit: cover;">
             </div>
           </div>
         </div>
@@ -100,7 +98,12 @@ import Partners from "@/sections/Partners.vue";
 import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "PosteMarket",
-  components: {Souscrire,Partners}
+  components: {Souscrire,Partners},
+  computed:{
+    postemarket(){
+      return this.$store.state.postemarket;
+    }
+  }
 }
 </script>
 

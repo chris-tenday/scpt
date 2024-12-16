@@ -9,8 +9,8 @@
           <h1 class="mb-0">Nos offres ON <sup>by SCPT</sup></h1>
           <p>Profitez d’un accès illimité grâce à l’internet haut débit sur Fibre optique. Détendez-vous avec des saisons complètes de programmes originaux exclusifs sur vos chaînes TV préférées. Profitez d’une Téléphonie illimitée pour contacter tous vos proches.</p>
           <ul class="list-unstyled">
-            <li><span class="fa fa-check"></span> Frais d’installation :  <span style="font-weight:bold;">15 dollars</span></li>
-            <li><span class="fa fa-check"></span> Kit Matériel : <span style="font-weight:bold;">45 dollars</span></li>
+            <li><span class="fa fa-check"></span> Frais d’installation :  <span style="font-weight:bold;">{{ on.installation }}</span></li>
+            <li><span class="fa fa-check"></span> Kit Matériel : <span style="font-weight:bold;">{{ on.kit }}</span></li>
           </ul>
         </div>
         <div class="row g-0">
@@ -22,8 +22,7 @@
               </div>
               <div class="p-5 pt-0">
                 <h1 class="display-5 mb-3">
-                  <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>40<small
-                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mois</small>
+                  <small class="align-top" style="font-size: 22px; line-height: 45px;">{{on.classique_prix}}</small>
                 </h1>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-wifi"></span> Internet haut débit illimité 50Mbit/s</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie locale illimitée</span><i class="fa fa-check text-primary pt-1"></i></div>
@@ -41,8 +40,7 @@
               </div>
               <div class="p-5 pt-0">
                 <h1 class="display-5 mb-3">
-                  <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>60<small
-                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mois</small>
+                  <small class="align-top" style="font-size: 22px; line-height: 45px;">{{on.evolution_prix}}</small>
                 </h1>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-wifi"></span> Internet haut débit illimité 100Mbit/s</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie locale illimitée</span><i class="fa fa-check text-primary pt-1"></i></div>
@@ -60,8 +58,7 @@
               </div>
               <div class="p-5 pt-0">
                 <h1 class="display-5 mb-3">
-                  <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>80<small
-                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mois</small>
+                  <small class="align-top" style="font-size: 22px; line-height: 45px;">{{on.maxi_prix}}</small>
                 </h1>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-wifi"></span> Internet haut débit illimité 100Mbit/s</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie locale illimitée</span><i class="fa fa-check text-primary pt-1"></i></div>
@@ -81,8 +78,7 @@
               </div>
               <div class="p-5 pt-0">
                 <h1 class="display-5 mb-3">
-                  <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>140<small
-                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mois</small>
+                  <small class="align-top" style="font-size: 22px; line-height: 45px;">{{on.business_prix}}</small>
                 </h1>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-wifi"></span> Internet haut débit illimité 200Mbit/s</span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie illimitée</span><i class="fa fa-check text-primary pt-1"></i></div>
@@ -100,8 +96,7 @@
               </div>
               <div class="p-5 pt-0">
                 <h1 class="display-5 mb-3">
-                  <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>175<small
-                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mois</small>
+                  <small class="align-top" style="font-size: 22px; line-height: 45px;">{{on.entreprise_prix}}</small>
                 </h1>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-wifi"></span> Internet dédié </span><i class="fa fa-check text-primary pt-1"></i></div>
                 <div class="d-flex justify-content-between mb-3"><span><span class="fa fa-phone"></span> Téléphonie : IP PABX Virtuel</span><i class="fa fa-check text-primary pt-1"></i></div>
@@ -121,7 +116,12 @@
 
 <script>
 export default {
-  name: "OffresON"
+  name: "OffresON",
+  computed:{
+    on(){
+      return this.$store.state.on;
+    }
+  }
 }
 </script>
 

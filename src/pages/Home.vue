@@ -70,7 +70,7 @@
       <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner-1.jpg')" style="max-height: 650px;"  alt="Image">
+            <img class="w-100" :src="$resolvePath(banner.image_1)" style="max-height: 650px;"  alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
                 <h4 style="" class="text-white text-uppercase mb-3 animated slideInDown">Société Congolaise des Postes et Télécommunication</h4>
@@ -80,7 +80,7 @@
             </div>
           </div>
           <div class="carousel-item ">
-            <img class="w-100" :src="$resolvePath('/assets/downloaded/banner-2.jpg')" style="max-height: 650px;" alt="Image">
+            <img class="w-100" :src="$resolvePath(banner.image_2)" style="max-height: 650px;" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
                 <h5 style="display:none;" class="text-white text-uppercase mb-3 animated slideInDown">« ON <sup>BY SCPT</sup> »</h5>
@@ -110,38 +110,7 @@
 
     <OffresON/>
 
-    <!-- About Start -->
-    <div id="about" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-7">
-            <div class="section-title position-relative pb-3 mb-5">
-              <h1 class="mb-0">Découvrez notre service d'hébergement hosting <sup>.CD</sup></h1>
-            </div>
-            <p class="mb-4">
-
-              Un opérateur historique des hébergement des sites internet et données des entreprise , nom de domaine .CD, emails professionnels.</p>
-            <div class="row g-0 mb-3">
-              <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                <h5 class="mb-3"><i class="fa fa-server text-primary me-3"></i>Offres revendeurs</h5>
-                <h5 class="mb-3"><i class="fa fa-server text-primary me-3"></i>Hosting B2B</h5>
-              </div>
-              <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                <h5 class="mb-3"><i class="fa fa-cloud text-primary me-3"></i>Web Cloud</h5>
-                <h5 class="mb-3"><i class="fa fa-shopping-bag text-primary me-3"></i>Hébergements dédiés</h5>
-              </div>
-            </div>
-            <a href="https://hosting.cd/site/web/" target="_blank" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Visiter hosting <sup>.CD</sup></a>
-          </div>
-          <div class="col-lg-5" style="min-height: 500px;">
-            <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/Serveur1.png')" style="object-fit: cover;">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About End -->
+    <Hosting/>
 
     <Souscrire/>
 
@@ -168,14 +137,20 @@ import Partners from "@/sections/Partners.vue";
 import Modal from "@/components/Modal.vue";
 import BlogView from "@/components/BlogView.vue";
 import Yeloo from "@/sections/Yeloo.vue";
+import Hosting from "@/sections/Hosting.vue";
 export default {
   name: "Home",
-  components: {Yeloo, Modal, Footer,About,Services,OffresON,Souscrire,Team,Blog,Partners,BlogView},
+  components: {Hosting, Yeloo, Modal, Footer,About,Services,OffresON,Souscrire,Team,Blog,Partners,BlogView},
   methods:{
     async fetchContent()
     {
       await this.$store.dispatch("getHomeContent");
       await this.$store.dispatch("getCoverImage");
+    }
+  },
+  computed:{
+    banner(){
+      return this.$store.state.section_banner;
     }
   },
   mounted() {

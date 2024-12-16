@@ -11,23 +11,20 @@
               <h1 class="mb-0">Télécommunications</h1>
             </div>
             <p class="mb-4">
-              La SCPT est l’opérateur historique des télécommunications, fournisseur de fournisseurs, l’exploitant public désigné en République Démocratique du Congo.
-
-              En international, Nous sommes Landing Party du Consortium WACS dont nous gérons la station d’atterrage établie depuis juillet 2013 à Muanda, nous disposons d’un lien sous le fleuve Congo entre notre territoire et la république du Congo ainsi que d’une liaison terrestre entre l’Afrique du Sud et Lubumbashi en Sud-Est de la RDC passant par la Zambie.</p>
+              {{telecom.texte}}
+            </p>
             <div class="row g-0 mb-3">
               <div class="section-title position-relative pb-3 mb-5">
                 <h1 class="mb-0">Sur le plan national</h1>
               </div>
               <p class="mb-4">
-                la SCPT exploite une infrastructure à Fibre Optique qui relie l’Ouest et l’Est de la RDC.
-
-                Cette infrastructure en fibre optique, repose sur de Backbone d’équipements de transmissions ainsi que ceux de datacom. Les 36 sites en Shelter qui composent les points de présence (PoP) de ce réseau, sont alimentés principalement par les panneaux solaires et les groupes électrogènes.
+                {{telecom.plan_national}}
               </p>
             </div>
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/parabole.jpeg')" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath(telecom.image_1)" style="object-fit: cover;">
             </div>
           </div>
         </div>
@@ -42,20 +39,20 @@
               <h1 class="mb-0">Alimentation & Connectivité</h1>
             </div>
             <p class="mb-4">
-              Dans les grandes villes, les sites sont alimentés par l’énergie commerciale de la SNEL ainsi que les groupes électrogènes. A Kinshasa, Le réseau de SCPT est connecté physiquement à tous les principaux opérateurs de téléphonie Mobile dont Vodacom, Orange, Airtel et Africell, etc
+              {{telecom.alimentation}}
             </p>
             <div class="row g-0 mb-3">
               <div class="section-title position-relative pb-3 mb-5">
                 <h1 class="mb-0">Kinshasa</h1>
               </div>
               <p class="mb-4">
-                A l’instar de Kinshasa, la SCPT dispose des rings métropolitains dans certaines grandes villes notamment à Lubumbashi, Mbuji-Mayi, Kananga, Matadi…
+                {{telecom.kinshasa}}
               </p>
             </div>
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/telecom3.jpg')" style=" object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath(telecom.image_2)" style=" object-fit: cover;">
             </div>
           </div>
         </div>
@@ -143,7 +140,12 @@ import Partners from "@/sections/Partners.vue";
 import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "Telecom",
-  components: {Partners, Footer, Header,Souscrire}
+  components: {Partners, Footer, Header,Souscrire},
+  computed:{
+    telecom(){
+      return this.$store.state.telecom;
+    }
+  }
 }
 </script>
 

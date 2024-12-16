@@ -7,13 +7,11 @@
           <div class="col-lg-7">
             <div class="section-title position-relative pb-3 mb-5">
               <h5 class="fw-bold text-primary text-uppercase">Qui sommes-nous ?</h5>
-              <h1 class="mb-0">La Société Congolaise des Postes et Télécommunications (SCPT)</h1>
+              <h1 class="mb-0">La Société Congolaise des Postes et Télécommunications (SCPT) </h1>
             </div>
             <p class="mb-4">
+              {{sectionMission.texte}}
 
-              Un opérateur historique des télécommunications, fournisseur de fournisseurs, l’exploitant public désigné en République Démocratique du Congo.
-
-              La SCPT a été créée par l’Ordonnance-loi n°68-475 du 23 décembre 1968 comme Office Congolaise des Postes et télécommunications en sigle « OCPT » exerçant le monopole postal, télégraphique, téléphonique, de radiocommunications, de transmission des données et des signaux, et des communications par satellites.
             </p>
             <div class="row g-0 mb-3">
               <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
@@ -30,14 +28,14 @@
                 <i class="bi bi-envelope-open text-white"></i>
               </div>
               <div class="ps-4">
-                <h5 class="mb-2">info@scpt.cd</h5>
+                <h5 class="mb-2">{{sectionContact.email}}</h5>
 
               </div>
             </div>
           </div>
           <div class="col-lg-5" style="min-height: 500px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath('/assets/downloaded/about-1.webp')" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath(sectionMission.image)" style="object-fit: cover;">
             </div>
           </div>
         </div>
@@ -49,7 +47,17 @@
 
 <script>
 export default {
-  name: "About"
+  name: "About",
+  computed:{
+    sectionMission()
+    {
+      return this.$store.state.section_mission;
+    },
+    sectionContact()
+    {
+      return this.$store.state.section_contact;
+    }
+  }
 }
 </script>
 
