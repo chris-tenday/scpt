@@ -116,7 +116,7 @@
 
     <Team/>
 
-    <Blog/>
+    <Blog limit="4"/>
 
     <Partners/>
 

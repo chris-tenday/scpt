@@ -1,7 +1,7 @@
 export default {
     articles:[],
-    //baseUrl:"https://scpt.cd/corpo/wp-json/wp/v2/posts"
-    baseUrl:"https://scpt.kristentshika.net/wp-json/wp/v2",
+    baseUrl:"https://scpt.cd/web/wp-json/wp/v2",
+    //baseUrl:"https://scpt.kristentshika.net/wp-json/wp/v2",
     section_mission:{
         texte:"Un opérateur historique des télécommunications, fournisseur de fournisseurs, l’exploitant public désigné en République Démocratique du Congo.\n" +
             "\n" +
@@ -23,7 +23,7 @@ export default {
         pca:"Adam BOMBOLE INTOLE",
         photo_pca:"/assets/downloaded/adam.jpg",
         dg:"Sandra TSHIBONGE MBIYE",
-        photo_dg:"/assets/downloaded/dg.JPG",
+        photo_dg:"/assets/downloaded/dg-2.JPG",
         dga:"Jolino MAKELE",
         photo_dga:"/assets/downloaded/dga.jpg"
     },

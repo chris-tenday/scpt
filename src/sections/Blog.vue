@@ -35,10 +35,26 @@
 <script>
 export default {
   name: "Blog",
+  props:{
+    limit:null
+  },
   computed:{
     articles()
     {
-      return this.$store.getters.GET_ARTICLES;
+      var articles=this.$store.getters.GET_ARTICLES;
+
+      if(this.limit!=undefined)
+      {
+        var data=[];
+        for(var i=0; i<this.limit; i++)
+        {
+          data.push(articles[i]);
+        }
+
+        return data;
+      }
+
+      return articles;
     }
   },
   methods:{
