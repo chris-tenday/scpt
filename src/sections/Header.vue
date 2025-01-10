@@ -41,6 +41,7 @@
                 <router-link :to="{name:'ems'}" class="dropdown-item">EMS</router-link>
                 <router-link :to="{name:'postemarket'}" class="dropdown-item">Poste Market</router-link>
                 <router-link :to="{name:'on'}" class="dropdown-item">ON<sup>by SCPT</sup></router-link>
+                <router-link :to="{name:'hosting'}" class="dropdown-item">Hosting<sup>.CD</sup></router-link>
                 <router-link :to="{name:'postefinance'}" class="dropdown-item">Poste Finance</router-link>
                 <router-link :to="{name:'telecom'}" class="dropdown-item">Télécommunication</router-link>
                 <router-link :to="{name:'immobilier'}" class="dropdown-item">Immobilier</router-link>

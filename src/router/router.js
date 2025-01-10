@@ -81,6 +81,11 @@ var routes=[
         name:"blog",
         path: "/blog",
         component: defineAsyncComponent(()=>import("../pages/BlogPage.vue"))
+    },
+    {
+        name:"hosting",
+        path:"/hosting",
+        component: defineAsyncComponent(()=>import("../pages/Hosting.vue"))
     }
 ];
 

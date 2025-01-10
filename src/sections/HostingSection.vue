@@ -20,7 +20,7 @@
               <h5 class="mb-3"><i class="fa fa-shopping-bag text-primary me-3"></i>Hébergements dédiés</h5>
             </div>
           </div>
-          <a href="https://hosting.cd/site/web/" target="_blank" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Visiter hosting <sup>.CD</sup></a>
+          <a href="http://hosting.cd" target="_blank" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Visiter hosting <sup>.CD</sup></a>
         </div>
         <div class="col-lg-5" style="min-height: 500px;">
           <div class="position-relative h-100">
@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: "Hosting",
+  name: "HostingSection",
   computed:{
     hosting(){
       return this.$store.state.section_hosting;
