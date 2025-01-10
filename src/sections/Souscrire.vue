@@ -35,7 +35,7 @@
                     <input v-model="name" type="text" class="form-control bg-light border-0" placeholder="Nom complet" style="height: 55px;">
                   </div>
                   <div class="col-12">
-                    <input v-model="telephone" type="text" class="form-control bg-light border-0" placeholder="Téléphone" style="height: 55px;">
+                    <VuePhoneInput v-model="telephone" mode="international" ></VuePhoneInput>
                   </div>
                   <div class="col-12">
                     <input v-model="email" type="email" class="form-control bg-light border-0" placeholder="Email" style="height: 55px;">
@@ -93,6 +93,9 @@ export default {
     contact(){
       return this.$store.state.section_contact;
     }
+  },
+  methods:{
+
   }
 }
 </script>

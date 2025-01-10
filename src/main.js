@@ -8,6 +8,9 @@ import router from "@/router/router.js";
 import Partners from "@/sections/Partners.vue";
 import VuePhoneNumberInput from 'vue-phone-number-input';
 import 'vue-phone-number-input/dist/vue-phone-number-input.css';
+import PhoneInput from "@/utilities/PhoneInput.vue";
+import {VueTelInput} from 'vue-tel-input';
+import 'vue-tel-input/vue-tel-input.css';
 
 /**
  * Create the app
@@ -22,7 +25,9 @@ app.component("Footer",Footer);
 app.component("Modal",Modal);
 app.component("Header",Header);
 app.component("Partners",Partners);
-app.component("phoneInput",VuePhoneNumberInput);
+//app.component("phoneInput",VuePhoneNumberInput);
+app.component("PhoneInput",PhoneInput);
+app.component("VuePhoneInput",VueTelInput);
 
 app.use(store);
 app.use(router);
