@@ -25,10 +25,10 @@
               <div class="section-title section-title-sm position-relative pb-3 mb-4">
                 <h3 class="mb-0">Autres articles</h3>
               </div>
-              <div v-for="article in articles" :key="article" class="d-flex rounded overflow-hidden mb-3">
+              <div v-for="article in recommendations" :key="article" class="d-flex rounded overflow-hidden mb-3">
                 <img class="img-fluid" :src="$resolvePath(article.img_cover)" style="width: 100px; height: 100px; object-fit: cover;" alt="">
 
-                <router-link :to="{name:'article',params:{id:article.id}}" class="text-uppercase" tag="a">{{article.titre}} <i class="bi bi-arrow-right"></i></router-link>
+                <router-link :to="{name:'article',params:{id:article.id}}" class="text-uppercase" tag="a" style=" height:80px; width: 70%; overflow: hidden; text-overflow: ellipsis;">{{article.titre}}</router-link>
               </div>
 
             </div>
@@ -73,6 +73,24 @@ export default {
     articles()
     {
       return this.$store.getters.GET_ARTICLES;
+    },
+    recommendations()
+    {
+      var articles=this.$store.getters.GET_ARTICLES;
+      var l=articles.length;
+      return [
+        articles[this.shuffle(l)],
+        articles[this.shuffle(l)],
+        articles[this.shuffle(l)],
+      ]
+    },
+  },
+  methods:{
+    shuffle(max)
+    {
+      var i=Math.floor(Math.random() * (max -1))
+
+      return i;
     }
   },
   mounted() {
