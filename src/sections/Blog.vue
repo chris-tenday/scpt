@@ -36,14 +36,18 @@
 export default {
   name: "Blog",
   props:{
-    limit:null
+    limit:{
+      type:Number,
+      default:undefined
+    }
   },
   computed:{
     articles()
     {
+
       var articles=this.$store.getters.GET_ARTICLES;
 
-      if(this.limit!=undefined)
+      if(this.limit!=undefined && this.limit<articles.length)
       {
         var data=[];
         for(var i=0; i<this.limit; i++)

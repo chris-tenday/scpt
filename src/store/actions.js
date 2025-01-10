@@ -89,110 +89,157 @@ export default{
     async getLaPosteContent({state,commit})
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=la-poste");
-        var content=data[0].acf;
+        try {
+            var content=data[0].acf;
 
-        commit("SET_LAPOSTE",{
-            pourquoi:content['pourquoi-texte'],
-            pourquoi_image: content['pourquoi-image'],
-            mission:content['mission-texte'],
-            image:content['mission-image'],
-            telephone:content.telephone
-        });
+            commit("SET_LAPOSTE",{
+                pourquoi:content['pourquoi-texte'],
+                pourquoi_image: content['pourquoi-image'],
+                mission:content['mission-texte'],
+                image:content['mission-image'],
+                telephone:content.telephone
+            });
+        }catch (e) {
+
+        }
+
     },
 
     async getEmsContent({state,commit})
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=ems");
-        var content=data[0].acf;
+        try {
+            var content=data[0].acf;
 
-        commit("SET_EMS",{
-            texte:content.texte,
-            logo:content.logo,
-            definition:content.definition,
-            telephone:content.telephone
-        });
+            commit("SET_EMS",{
+                texte:content.texte,
+                logo:content.logo,
+                definition:content.definition,
+                telephone:content.telephone
+            });
+        }catch (e) {
+
+        }
+
     },
 
     async getPosteMarketContent({state,commit})
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=postemarket");
-        var content=data[0].acf;
+        try {
+            var content=data[0].acf;
 
-        commit("SET_POSTEMARKET",{
-            pourquoi:content.pourquoi,
-            offre:content.offre,
-            image:content.image
-        });
+            commit("SET_POSTEMARKET",{
+                pourquoi:content.pourquoi,
+                offre:content.offre,
+                image:content.image
+            });
+        }catch (e) {
+
+        }
+
     },
 
     async getOnContent({state,commit})
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=on");
-        var content=data[0].acf;
+        try 
+        {
+            var content=data[0].acf;
 
-        commit("SET_ON",{
-            pourquoi:content.pourquoi,
-            debit:content.debit,
-            image:content.image,
-            telephone:content.telephone,
-            installation:content.installation,
-            kit:content.kit,
-            classique_prix:content.classique_prix,
-            evolution_prix:content.evolution_prix,
-            maxi_prix:content.maxi_prix,
-            business_prix:content.business_prix,
-            entreprise_prix:content.entreprise_prix,
-        });
+            commit("SET_ON",{
+                pourquoi:content.pourquoi,
+                debit:content.debit,
+                image:content.image,
+                telephone:content.telephone,
+                installation:content.installation,
+                kit:content.kit,
+                classique_prix:content.classique_prix,
+                evolution_prix:content.evolution_prix,
+                maxi_prix:content.maxi_prix,
+                business_prix:content.business_prix,
+                entreprise_prix:content.entreprise_prix,
+            });    
+        }
+        catch (e) {
+            
+        }
+        
     },
 
     async getPostefinanceContent({state,commit})
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=postefinance");
-        var content=data[0].acf;
+        try
+        {
+            var content=data[0].acf;
 
-        commit("SET_POSTEFINANCE",{
-            quoi:content.quoi,
-            pourquoi:content.pourquoi,
-            image:content.image
-        });
+            commit("SET_POSTEFINANCE",{
+                quoi:content.quoi,
+                pourquoi:content.pourquoi,
+                image:content.image
+            });
+        }
+        catch (e) {
+
+        }
+
     },
 
     async getTelecomContent({state,commit})
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=telecommunication");
-        var content=data[0].acf;
+        try {
+            var content=data[0].acf;
 
-        commit("SET_TELECOM",{
-            texte:content.texte,
-            plan_national:content.plan_national,
-            alimentation:content.alimentation,
-            kinshasa:content.kinshasa,
-            image_1:content.image_1,
-            image_2:content.image_2,
-        });
+            commit("SET_TELECOM",{
+                texte:content.texte,
+                plan_national:content.plan_national,
+                alimentation:content.alimentation,
+                kinshasa:content.kinshasa,
+                image_1:content.image_1,
+                image_2:content.image_2,
+            });
+        }
+        catch (e) {
+
+        }
+
     },
 
     async getImmobilierContent({state,commit})
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=immobilier");
-        var content=data[0].acf;
+        try {
+            var content=data[0].acf;
 
-        commit("SET_IMMOBILIER",{
-            texte:content.texte,
-            image:content.image,
-            telephone:content.telephone
-        });
+            commit("SET_IMMOBILIER",{
+                texte:content.texte,
+                image:content.image,
+                telephone:content.telephone
+            });
+        }
+        catch (e) {
+
+        }
+
     },
 
     async getYelooContent({state,commit})
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=yeloo");
-        var content=data[0].acf;
+        try {
+            var content=data[0].acf;
 
-        commit("SET_YELOO",{
-            image:content.image,
-            telephone:content.telephone
-        });
+            commit("SET_YELOO",{
+                image:content.image,
+                telephone:content.telephone
+            });
+        }
+        catch (e) {
+
+        }
+
     }
 
 }
