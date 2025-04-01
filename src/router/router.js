@@ -1,7 +1,6 @@
 import {createRouter,createWebHistory,createWebHashHistory,createMemoryHistory} from "vue-router";
 import {defineAsyncComponent} from "vue";
 import Home from "@/pages/Home.vue";
-import TestPage from "@/pages/TestPage.vue";
 import LaPoste from "@/pages/LaPoste.vue";
 
 var routes=[
@@ -86,6 +85,12 @@ var routes=[
         name:"hosting",
         path:"/hosting",
         component: defineAsyncComponent(()=>import("../pages/Hosting.vue"))
+    },
+    {
+        name: "codepostal",
+        path: "/codepostal",
+        component: defineAsyncComponent(()=>import("../pages/CodePostal.vue"))
+
     }
 ];
 

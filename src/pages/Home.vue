@@ -39,6 +39,7 @@
               <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
               <div class="dropdown-menu m-0">
                 <router-link :to="{name:'laposte'}" class="dropdown-item">La Poste</router-link>
+                <router-link :to="{name:'codepostal'}" class="dropdown-item">Code Postal</router-link>
                 <router-link :to="{name:'ems'}" class="dropdown-item">EMS</router-link>
                 <router-link :to="{name:'postemarket'}" class="dropdown-item">Poste Market</router-link>
                 <router-link :to="{name:'on'}" class="dropdown-item">ON<sup>by SCPT</sup></router-link>
