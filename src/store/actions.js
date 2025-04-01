@@ -52,7 +52,8 @@ export default{
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=home");
         var content=data[0].acf;
-
+        console.clear();
+        console.log(data[0]);
         commit("SET_BANNER",{
            image_1: content['banner-image-1'],
            image_2:content['banner-image-2']
