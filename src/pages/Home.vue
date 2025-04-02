@@ -153,7 +153,7 @@ export default {
   computed:{
     banner(){
       return this.$store.state.section_banner;
-    }
+    },
   },
   mounted() {
     this.fetchContent()

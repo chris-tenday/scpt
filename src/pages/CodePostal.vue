@@ -14,10 +14,10 @@
             <!-- Tabs Navigation -->
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span class="fa fa-map"></span> Cliquez ici pour rechercher le code postal d'un lieu</a>
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" @click="searchData = []"><span class="fa fa-map"></span> Cliquez ici pour rechercher le code postal d'un lieu</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span class="fa fa-map-marker"></span> Cliquez ici pour rechercher le lieu d'un code postal</a>
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" @click="searchData = []"><span class="fa fa-map-marker"></span> Cliquez ici pour rechercher le lieu d'un code postal</a>
               </li>
             </ul>
 
@@ -30,20 +30,19 @@
                       <div class="row">
                         <div class="col-md-4 mb-1">
                           <select name="" id="" class="form-control" style="height:50px;">
-                            <option value="">* Selectionner province</option>
-                            <option value="">Kinshasa</option>
-                            <option value="">Kongo-central</option>
+                            <option value="" @click="province = null">* Selectionner province</option>
+                            <option value="" v-for="province in Object.keys(codesPostal)" @click="pickProvince(province)">Kinshasa</option>
+
                           </select>
                         </div>
                         <div class="col-md-5 mb-1">
-                          <select name="" id="" class="form-control" style="height:50px;">
-                            <option value="">* Selectionner commune/territoire</option>
-                            <option value="">Ngaliema</option>
-                            <option value="">Kintambo</option>
+                          <select name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
+                            <option value="" @click="searchingCommune = null">* Selectionner commune/territoire</option>
+                            <option value="" v-for="data in searchingProvince" @click="pickCommune(data.commune)">{{data.commune}}</option>
                           </select>
                         </div>
                         <div class="col-auto">
-                          <button type="submit" class="btn btn-primary" style="height:50px;"><span class="fa fa-search"></span> Recherche</button>
+                          <button type="submit" class="btn btn-primary" style="height:50px;" @click.prevent="filterData" :disabled="(searchingCommune == null)? true : false"><span class="fa fa-search"></span> Recherche</button>
                         </div>
                       </div>
                     </form>
@@ -57,10 +56,10 @@
                     <form>
                       <div class="row">
                         <div class="col-md-9 mb-1">
-                          <input type="text" class="form-control" placeholder="Entrez le code postal" style="height:50px;">
+                          <input type="text" v-model="searchingCodePostal" class="form-control" placeholder="Entrez le code postal" style="height:50px;">
                         </div>
                         <div class="col-auto">
-                          <button type="submit" class="btn btn-primary" style="height:50px;"><span class="fa fa-search"></span> Recherche</button>
+                          <button type="submit" @click.prevent="searchPlace" class="btn btn-primary" style="height:50px;" :disabled="searchingCodePostal.length < 5"><span class="fa fa-search"></span> Recherche</button>
                         </div>
                       </div>
                     </form>
@@ -73,7 +72,7 @@
 
         </div>
         <div class="row">
-          <div v-for="i in 8" class="col-md-3 mb-5" >
+          <div v-if="!loading && searchData.length > 0" v-for="i in 8" class="col-md-3 mb-5" >
             <div class="p-1" style="border-radius: 5px; border: 1px solid lightgray; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);">
               <div>
                 <p style="background-color:#06a3da; padding: 5px; color: white; font-weight: bold;">Quartier/Secteur/Chefferie</p>
@@ -91,7 +90,11 @@
 
 
           </div>
+          <div v-else class="col-md-12 d-flex justify-content-center" style="">
+            <img v-if="!loading" :src="$resolvePath('/assets/downloaded/drc-map.png')" class="" style="width:350px; height:350px;" alt="">
+            <img v-else :src="$resolvePath('/assets/downloaded/search-loader.gif')" class="" style="width:150px; height:150px;" alt="">
 
+          </div>
         </div>
       </div>
     </div>
@@ -101,10 +104,79 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
-
-import Header from "@/sections/Header.vue";
-import Footer from "@/sections/Footer.vue";
+<script>
 import Souscrire from "@/sections/Souscrire.vue";
+
+export default {
+  components:{Souscrire},
+  data(){
+    return {
+      searchingProvince:null,
+      searchingCommune:null,
+      searchingCodePostal:"",
+      searchData:[],
+      loading:false
+    };
+  },
+  computed:{
+    codesPostal(){
+
+      var data = this.$store.state.codesPostal;
+      var cleanData = [];
+      for (const province in data)
+      {
+
+        var provinceData = data[province];
+        var communes = [];
+        for(let i =0; i < provinceData.length; i++)
+        {
+          if(!Object.keys(communes).includes(provinceData[i].commune))
+          {
+            communes[provinceData[i].commune] = [];
+            communes[provinceData[i].commune].push(provinceData[i]);
+          }
+          else
+          {
+            //communes[provinceData[i].commune].push(provinceData[i]);
+            console.log("pushed");
+            console.log(Object.keys(communes[provinceData[i].commune]));
+          }
+
+
+        }
+        //console.log(communes);
+      }
+      //console.log(cleanData);
+      return data;
+    }
+  },
+  methods:{
+    pickProvince(province){
+      this.searchingProvince = this.codesPostal[province];
+    },
+    filterData()
+    {
+      this.loading = true;
+      setTimeout(() =>
+      {
+        this.loading = false;
+        this.searchData = [1]
+        console.log(this.searchData.length);
+      } ,5000);
+    },
+    pickCommune(commune){
+      this.searchingCommune = commune;
+    },
+    searchPlace()
+    {
+      this.loading = true;
+      setTimeout(() =>
+      {
+        this.loading = false;
+        this.searchData = [1]
+        console.log(this.searchData.length);
+      } ,5000);
+    }
+  }
+}
 </script>

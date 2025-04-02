@@ -8,7 +8,7 @@ export default{
     async getHomeContent({state,commit})
     {
         var {data}=await axios.get(state.baseUrl+"/posts");
-        console.log("api..");
+
 
         var articles=[];
         data.forEach(async (item)=>{
@@ -38,11 +38,11 @@ export default{
                 var {data}=await axios.get(state.articles[i].link);
                 var img=data.guid.rendered;
                 state.articles[i].img_cover=img;
-                console.log(state.articles[i].img_cover);
+                //console.log(state.articles[i].img_cover);
                 commit("UPDATE_ARTICLE",[i,img])
             }
             catch (e) {
-                console.log(state.articles[i].img_cover);
+                //console.log(state.articles[i].img_cover);
             }
         }
 
@@ -52,8 +52,6 @@ export default{
     {
         var {data}=await axios.get(state.baseUrl+"/pages?slug=home");
         var content=data[0].acf;
-        console.clear();
-        console.log(data[0]);
         commit("SET_BANNER",{
            image_1: content['banner-image-1'],
            image_2:content['banner-image-2']

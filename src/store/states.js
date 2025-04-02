@@ -1,3 +1,4 @@
+import codes from "@/store/codes.js";
 export default {
     articles:[],
     baseUrl:"https://scpt.cd/web/wp-json/wp/v2",
@@ -82,5 +83,7 @@ export default {
     yeloo:{
         image:"",
         telephone:""
-    }
+    },
+    codesPostal : codes
+
 }
