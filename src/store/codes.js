@@ -1902,6 +1902,373 @@ let codes = {
             ]
         },
 
+    ],
+    bas_uele:[
+        {
+            ville:"Buta",
+            codes:[
+                {
+                    "commune": "BABADE",
+                    "quartier": "BALE",
+                    "code": 5210100
+                },
+                {
+                    "commune": "BABADE",
+                    "quartier": "LONGA",
+                    "code": 5210102
+                },
+                {
+                    "commune": "BABADE",
+                    "quartier": "MOPEMBA",
+                    "code": 5210103
+                },
+                {
+                    "commune": "BABADE",
+                    "quartier": "NDOLI",
+                    "code": 5210104
+                },
+                {
+                    "commune": "DOBEA",
+                    "quartier": "BOMEA",
+                    "code": 5210200
+                },
+                {
+                    "commune": "DOBEA",
+                    "quartier": "MAKASI",
+                    "code": 5210202
+                },
+                {
+                    "commune": "DOBEA",
+                    "quartier": "MONGWANDI",
+                    "code": 5210203
+                },
+                {
+                    "commune": "DOBEA",
+                    "quartier": "NDOLI",
+                    "code": 5210104
+                },
+                {
+                    "commune": "FINANT",
+                    "quartier": "ALOGO",
+                    "code": 5210300
+                },
+                {
+                    "commune": "FINANT",
+                    "quartier": "AZANDE",
+                    "code": 5210302
+                },
+                {
+                    "commune": "FINANT",
+                    "quartier": "RUBI",
+                    "code": 5210303
+                },
+                {
+                    "commune": "TEP ATONDELE",
+                    "quartier": "BAGBE",
+                    "code": 5210400
+                },
+                {
+                    "commune": "TEP ATONDELE",
+                    "quartier": "BESOSE",
+                    "code": 5210402
+                },
+                {
+                    "commune": "TEP ATONDELE",
+                    "quartier": "BOKAPO",
+                    "code": 5210403
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "AKETI /C",
+                    "code": 5201011
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "LIKATI /C",
+                    "code": 5201020
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "AVURU-DUMA",
+                    "code": 5201030
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "AVURI-GATANGA",
+                    "code": 5201040
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "BONDONGOLA",
+                    "code": 5201050
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "KOLONGWANDI",
+                    "code": 5201060
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "MABINZA",
+                    "code": 5201070
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "MUBATI BOYELE",
+                    "code": 5201080
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "NGBONGI",
+                    "code": 5201090
+                },
+                {
+                    "commune": "AKETI",
+                    "quartier": "YOKO",
+                    "code": 5201100
+                },
+                {
+                    "commune": "ANGO",
+                    "quartier": "ANGO /C",
+                    "code": 5202011
+                },
+                {
+                    "commune": "ANGO",
+                    "quartier": "EZO",
+                    "code": 5202020
+                },
+                {
+                    "commune": "ANGO",
+                    "quartier": "MOPOYI",
+                    "code": 5202030
+                },
+                {
+                    "commune": "ANGO",
+                    "quartier": "NGINDO",
+                    "code": 5202040
+                },
+                {
+                    "commune": "ANGO",
+                    "quartier": "SASA",
+                    "code": 5202050
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "BAMBESA /C",
+                    "code": 5203011
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "NDINGILA /C",
+                    "code": 5203020
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "BAKETE",
+                    "code": 5203030
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "BOKAPO",
+                    "code": 5203040
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "BOKIBA",
+                    "code": 5203050
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "BOLUNGWA",
+                    "code": 5203060
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "MONDONGWALE",
+                    "code": 5203070
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "MAKERE I",
+                    "code": 5203080
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "MAKERE II",
+                    "code": 5203090
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "MAKERE-BAKETE",
+                    "code": 5203100
+                },
+                {
+                    "commune": "BAMBESA",
+                    "quartier": "MANGE",
+                    "code": 5203110
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "BONDO /C",
+                    "code": 5204011
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "BIAMANGE",
+                    "code": 5204020
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "BOSSO",
+                    "code": 5204030
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "DENI",
+                    "code": 5204040
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "DUARU",
+                    "code": 5204050
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "GAMA",
+                    "code": 5204060
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "GAYA",
+                    "code": 5204070
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "GOA",
+                    "code": 5204080
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "KASSA",
+                    "code": 5204090
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "MOBENGE-MONDILA",
+                    "code": 5204100
+                },
+                {
+                    "commune": "BONDO",
+                    "quartier": "SOA",
+                    "code": 5204110
+                },
+                {
+                    "commune": "BUTA",
+                    "quartier": "BUTA",
+                    "code": 5205011
+                },
+                {
+                    "commune": "BUTA",
+                    "quartier": "BARISI-MONGINGITA-BAKANGO",
+                    "code": 5205020
+                },
+                {
+                    "commune": "BUTA",
+                    "quartier": "BAYEU-BOGBAMA",
+                    "code": 5205030
+                },
+                {
+                    "commune": "BUTA",
+                    "quartier": "BAYEU-BOGONGEA",
+                    "code": 5205040
+                },
+                {
+                    "commune": "BUTA",
+                    "quartier": "MOBATI",
+                    "code": 5205050
+                },
+                {
+                    "commune": "BUTA",
+                    "quartier": "MONGANZULU",
+                    "code": 5205060
+                },
+                {
+                    "commune": "BUTA",
+                    "quartier": "NGURU",
+                    "code": 5205070
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "POKO",
+                    "code": 5206011
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "ABARAMBO",
+                    "code": 5206020
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "BABENA",
+                    "code": 5206030
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "BAKANGALE-AVURU",
+                    "code": 5206040
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "GAMU",
+                    "code": 5206050
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "KEMBISA",
+                    "code": 5206060
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "KIPATE",
+                    "code": 5206070
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "KUMENDENI",
+                    "code": 5206080
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "MABANGA",
+                    "code": 5206090
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "MADI",
+                    "code": 5206100
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "MALELE",
+                    "code": 5206110
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "NGBARADI",
+                    "code": 5206120
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "SORONGA",
+                    "code": 5206130
+                },
+                {
+                    "commune": "POKO",
+                    "quartier": "ZUNE",
+                    "code": 5206140
+                }
+            ]
+        }
     ]
 }
 
