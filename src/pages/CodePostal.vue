@@ -73,7 +73,7 @@
 
         </div>
         <div class="row">
-          <p v-if="searched" style="font-weight: bold;"> {{ searchData.length }} Résultats trouvé(s)</p>
+          <p v-if="searched" style="font-weight: bold;"> {{ searchData.length }} Résultat(s) trouvé(s)</p>
           <div v-if="!loading && searchData.length > 0" v-for="codePostal in searchData" class="col-md-3 mb-5" >
             <div class="p-1" style="border-radius: 5px; border: 1px solid lightgray; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);">
               <div>
