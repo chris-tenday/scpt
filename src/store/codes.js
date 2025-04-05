@@ -1,6 +1,5 @@
-let codes;
-let communes = [];
-export default  {
+
+let codes = {
     kinshasa: [
         {
             "commune": "BANDALUNGWA",
@@ -1900,3 +1899,19 @@ export default  {
     ]
 }
 
+for(let province in codes)
+{
+    let data = codes[province];
+
+    // Grouping by commune
+    const groupedByCommune = data.reduce((acc, item) => {
+        if (!acc[item.commune]) {
+            acc[item.commune] = [];  // Initialize the array if commune is not already a key
+        }
+        acc[item.commune].push(item);  // Push the item to the commune's group
+        return acc;
+    }, {});
+    codes[province] = groupedByCommune;
+}
+
+export default codes;

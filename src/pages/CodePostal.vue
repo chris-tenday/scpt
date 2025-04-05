@@ -39,7 +39,7 @@
                         <div class="col-md-5 mb-1">
                           <select v-model="searchingCommune" name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
                             <option>* Selectionner commune/territoire</option>
-                            <option  v-for="data in searchingProvince" >{{data.commune}}</option>
+                            <option  v-for="commune in communes" >{{commune}}</option>
                           </select>
                         </div>
                         <div class="col-auto">
@@ -73,7 +73,8 @@
 
         </div>
         <div class="row">
-          <div v-if="!loading && searchData.length > 0" v-for="codePostal in codesPostal.kinshasa" class="col-md-3 mb-5" >
+          <p v-if="searched" style="font-weight: bold;"> {{ searchData.length }} Résultats trouvé(s)</p>
+          <div v-if="!loading && searchData.length > 0" v-for="codePostal in searchData" class="col-md-3 mb-5" >
             <div class="p-1" style="border-radius: 5px; border: 1px solid lightgray; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);">
               <div>
                 <p style="background-color:#06a3da; padding: 5px; color: white; font-weight: bold;">Quartier/Secteur/Chefferie</p>
@@ -88,8 +89,6 @@
                 <p style="padding: 5px; font-weight: bold;"> {{ codePostal.code }}</p>
               </div>
             </div>
-
-
           </div>
           <div v-else class="col-md-12 d-flex justify-content-center" style="">
             <img v-if="!loading" :src="$resolvePath('/assets/downloaded/drc-map.png')" class="" style="width:350px; height:350px;" alt="">
@@ -107,6 +106,7 @@
 
 <script>
 import Souscrire from "@/sections/Souscrire.vue";
+import {unref,toRaw} from "vue";
 
 export default {
   components:{Souscrire},
@@ -115,9 +115,11 @@ export default {
       searchingProvince:null,
       province:"* Selectionner province",
       searchingCommune:"* Selectionner commune/territoire",
+      communes:[],
       searchingCodePostal:"",
       searchData:[],
       loading:false,
+      searched:false
 
     };
   },
@@ -130,15 +132,18 @@ export default {
   methods:{
     pickProvince(province){
       this.searchingProvince = this.codesPostal[province];
+      this.communes = Object.keys(this.searchingProvince);
     },
     filterData()
     {
+      this.searched = false;
       this.loading = true;
       setTimeout(() =>
       {
+        this.searched = true;
         this.loading = false;
-        this.searchData = [1]
-        console.log(this.searchData.length);
+        this.searchData = this.searchingProvince[this.searchingCommune];
+
       } ,5000);
     },
     pickCommune(commune){
@@ -146,14 +151,35 @@ export default {
     },
     searchPlace()
     {
+      this.searched = false;
+      this.searchData = [];
       this.loading = true;
+
+      for(let province in this.codesPostal)
+      {
+        /** search province one by one */
+        let data = this.codesPostal[province];
+        let rawData = toRaw(data)
+        for(let commune in rawData)
+        {
+          let result = rawData[commune].find(item => String(item.code) === String(this.searchingCodePostal));
+          if (result)
+          {
+            this.searchData.push(result);
+
+            break;
+          }
+        }
+
+
+      }
+
       setTimeout(() =>
       {
+        this.searched = true;
         this.loading = false;
-        this.searchData = [1]
-        console.log(this.searchData.length);
-      } ,5000);
+      } ,2000);
     }
-  }
+  },
 }
 </script>
