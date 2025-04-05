@@ -29,20 +29,21 @@
                     <form>
                       <div class="row">
                         <div class="col-md-4 mb-1">
-                          <select name="" id="" class="form-control" style="height:50px;">
-                            <option value="" @click="province = null">* Selectionner province</option>
-                            <option value="" v-for="province in Object.keys(codesPostal)" @click="pickProvince(province)">Kinshasa</option>
+                          <select v-model="province" @change="pickProvince(province)" name="" id="" class="form-control" style="height:50px;">
+                            <option>* Selectionner province</option>
+                            <option v-for="province in Object.keys(codesPostal)" >
+                              {{ province }}</option>
 
                           </select>
                         </div>
                         <div class="col-md-5 mb-1">
-                          <select name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
-                            <option value="" @click="searchingCommune = null">* Selectionner commune/territoire</option>
-                            <option value="" v-for="data in searchingProvince" @click="pickCommune(data.commune)">{{data.commune}}</option>
+                          <select v-model="searchingCommune" name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
+                            <option>* Selectionner commune/territoire</option>
+                            <option  v-for="data in searchingProvince" >{{data.commune}}</option>
                           </select>
                         </div>
                         <div class="col-auto">
-                          <button type="submit" class="btn btn-primary" style="height:50px;" @click.prevent="filterData" :disabled="(searchingCommune == null)? true : false"><span class="fa fa-search"></span> Recherche</button>
+                          <button type="submit" class="btn btn-primary" style="height:50px;" @click.prevent="filterData" :disabled="(searchingCommune.includes('* Selectionner'))? true : false"><span class="fa fa-search"></span> Recherche</button>
                         </div>
                       </div>
                     </form>
@@ -72,19 +73,19 @@
 
         </div>
         <div class="row">
-          <div v-if="!loading && searchData.length > 0" v-for="i in 8" class="col-md-3 mb-5" >
+          <div v-if="!loading && searchData.length > 0" v-for="codePostal in codesPostal.kinshasa" class="col-md-3 mb-5" >
             <div class="p-1" style="border-radius: 5px; border: 1px solid lightgray; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);">
               <div>
                 <p style="background-color:#06a3da; padding: 5px; color: white; font-weight: bold;">Quartier/Secteur/Chefferie</p>
-                <p style="padding: 5px;">ANCIENS-COMBATANTS</p>
+                <p style="padding: 5px;">{{ codePostal.quartier }}</p>
               </div>
               <div>
                 <p style="background-color:#06a3da; padding: 5px; color: white; font-weight: bold;">Commune/Territoire</p>
-                <p style="padding: 5px;"> Ngaliema</p>
+                <p style="padding: 5px;"> {{ codePostal.commune }}</p>
               </div>
               <div>
                 <p style="background-color:#06a3da; padding: 5px; color: white; font-weight: bold;">Code Postal</p>
-                <p style="padding: 5px; font-weight: bold;"> 1002010</p>
+                <p style="padding: 5px; font-weight: bold;"> {{ codePostal.code }}</p>
               </div>
             </div>
 
@@ -112,41 +113,17 @@ export default {
   data(){
     return {
       searchingProvince:null,
-      searchingCommune:null,
+      province:"* Selectionner province",
+      searchingCommune:"* Selectionner commune/territoire",
       searchingCodePostal:"",
       searchData:[],
-      loading:false
+      loading:false,
+
     };
   },
   computed:{
     codesPostal(){
-
       var data = this.$store.state.codesPostal;
-      var cleanData = [];
-      for (const province in data)
-      {
-
-        var provinceData = data[province];
-        var communes = [];
-        for(let i =0; i < provinceData.length; i++)
-        {
-          if(!Object.keys(communes).includes(provinceData[i].commune))
-          {
-            communes[provinceData[i].commune] = [];
-            communes[provinceData[i].commune].push(provinceData[i]);
-          }
-          else
-          {
-            //communes[provinceData[i].commune].push(provinceData[i]);
-            console.log("pushed");
-            console.log(Object.keys(communes[provinceData[i].commune]));
-          }
-
-
-        }
-        //console.log(communes);
-      }
-      //console.log(cleanData);
       return data;
     }
   },

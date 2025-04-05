@@ -1,4 +1,6 @@
-export default {
+let codes;
+let communes = [];
+export default  {
     kinshasa: [
         {
             "commune": "BANDALUNGWA",
@@ -1897,3 +1899,4 @@ export default {
         }
     ]
 }
+
