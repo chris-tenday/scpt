@@ -25,25 +25,34 @@
             <div class="tab-content mt-3" id="myTabContent">
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="row d-flex justify-content-center" >
-                  <div class="col-md-9" >
+                  <div class="col-md-10" >
                     <form>
                       <div class="row">
-                        <div class="col-md-4 mb-1">
+                        <div class="col-md-3 mb-1">
+                          <label>* Province</label>
                           <select v-model="province" @change="pickProvince(province)" name="" id="" class="form-control" style="height:50px;">
-                            <option>* Selectionner province</option>
                             <option v-for="province in Object.keys(codesPostal)" >
                               {{ province }}</option>
 
                           </select>
                         </div>
-                        <div class="col-md-5 mb-1">
-                          <select v-model="searchingCommune" name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
-                            <option>* Selectionner commune/territoire</option>
-                            <option  v-for="commune in communes" >{{commune}}</option>
+                        <div class="col-md-3 mb-1">
+                          <label>* Ville</label>
+                          <select v-model="ville" @change="pickVille('')" name="" id="  " class="form-control" style="height:50px;">
+                            <option :value="{ville:'* Selectionner ville',codes:[]}" selected>* Selectionner ville</option>
+                            <option v-for="data in searchingProvince" :value="data">
+                              {{ data.ville }}</option>
+
                           </select>
                         </div>
-                        <div class="col-auto">
-                          <button type="submit" class="btn btn-primary" style="height:50px;" @click.prevent="filterData" :disabled="(searchingCommune.includes('* Selectionner'))? true : false"><span class="fa fa-search"></span> Recherche</button>
+                        <div class="col-md-3 mb-1">
+                          <label>* Commune/Territoire</label>
+                          <select v-model="searchingCommune" name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
+                            <option v-for="data in Object.keys(ville.codes)" :value="data">{{data}}</option>
+                          </select>
+                        </div>
+                        <div class="col-auto pt-4">
+                          <button type="submit" class="btn btn-primary" style="height:50px;" @click.prevent="filterData"><span class="fa fa-search"></span> Recherche</button>
                         </div>
                       </div>
                     </form>
@@ -73,7 +82,7 @@
 
         </div>
         <div class="row">
-          <p v-if="searched" style="font-weight: bold;"> {{ searchData.length }} Résultats trouvé(s)</p>
+          <p v-if="searched" style="font-weight: bold;"> {{ searchData.length }} résultat(s) trouvé(s)</p>
           <div v-if="!loading && searchData.length > 0" v-for="codePostal in searchData" class="col-md-3 mb-5" >
             <div class="p-1" style="border-radius: 5px; border: 1px solid lightgray; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);">
               <div>
@@ -114,7 +123,9 @@ export default {
     return {
       searchingProvince:null,
       province:"* Selectionner province",
+      ville: {ville:"* Selectionner ville",codes:[]},
       searchingCommune:"* Selectionner commune/territoire",
+      villes:[],
       communes:[],
       searchingCodePostal:"",
       searchData:[],
@@ -132,7 +143,13 @@ export default {
   methods:{
     pickProvince(province){
       this.searchingProvince = this.codesPostal[province];
-      this.communes = Object.keys(this.searchingProvince);
+      this.ville = this.searchingProvince[0];
+      this.searchingCommune = Object.keys(toRaw(this.ville.codes))[0];
+    },
+    pickVille()
+    {
+      console.log("Pick ville..");
+      console.log(toRaw(Object.keys(this.ville.codes)));
     },
     filterData()
     {
@@ -142,8 +159,7 @@ export default {
       {
         this.searched = true;
         this.loading = false;
-        this.searchData = this.searchingProvince[this.searchingCommune];
-
+        this.searchData = this.ville.codes[this.searchingCommune];
       } ,5000);
     },
     pickCommune(commune){
@@ -160,20 +176,30 @@ export default {
         /** search province one by one */
         let data = this.codesPostal[province];
         let rawData = toRaw(data)
-        for(let commune in rawData)
-        {
-          let result = rawData[commune].find(item => String(item.code) === String(this.searchingCodePostal));
-          if (result)
-          {
-            this.searchData.push(result);
 
-            break;
+        /** search ville one by one */
+        for(let i =0; i < rawData.length; i++)
+        {
+          let ville = rawData[i];
+
+          for(let commune in ville.codes)
+          {
+            /** search commune by commune */
+                //let result = rawData[commune].find(item => String(item.code) === String(this.searchingCodePostal));
+            let result = ville.codes[commune].find(item => String(item.code) === String(this.searchingCodePostal));
+
+            if (result)
+            {
+              this.searchData = [];
+              this.searchData.push(result);
+              break;
+            }
           }
+
         }
 
 
       }
-
       setTimeout(() =>
       {
         this.searched = true;
@@ -181,5 +207,9 @@ export default {
       } ,2000);
     }
   },
+  mounted() {
+    this.province = Object.keys(this.codesPostal)[0];
+    this.pickProvince(this.province);
+  }
 }
 </script>
