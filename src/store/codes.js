@@ -2575,7 +2575,7 @@ let codes = {
                     "code": 4107040
                 }
             ]
-        }
+        },
     ],
     haut_katanga:[
         {
