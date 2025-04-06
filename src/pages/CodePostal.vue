@@ -31,15 +31,14 @@
                         <div class="col-md-3 mb-1">
                           <label>* Province</label>
                           <select v-model="province" @change="pickProvince(province)" name="" id="" class="form-control" style="height:50px;">
-                            <option v-for="province in Object.keys(codesPostal)" >
-                              {{ province }}</option>
+                            <option v-for="province in Object.keys(codesPostal)" :value="province">
+                              {{ display(province) }}</option>
 
                           </select>
                         </div>
                         <div class="col-md-3 mb-1">
                           <label>* Ville</label>
                           <select v-model="ville" @change="pickVille('')" name="" id="  " class="form-control" style="height:50px;">
-                            <option :value="{ville:'* Selectionner ville',codes:[]}" selected>* Selectionner ville</option>
                             <option v-for="data in searchingProvince" :value="data">
                               {{ data.ville }}</option>
 
@@ -48,7 +47,7 @@
                         <div class="col-md-3 mb-1">
                           <label>* Commune/Territoire</label>
                           <select v-model="searchingCommune" name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
-                            <option v-for="data in Object.keys(ville.codes)" :value="data">{{data}}</option>
+                            <option v-for="data in Object.keys(ville.codes)" :value="data">{{display(data)}}</option>
                           </select>
                         </div>
                         <div class="col-auto pt-4">
@@ -87,11 +86,11 @@
             <div class="p-1" style="border-radius: 5px; border: 1px solid lightgray; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);">
               <div>
                 <p style="background-color:#06a3da; padding: 5px; color: white; font-weight: bold;">Quartier/Secteur/Chefferie</p>
-                <p style="padding: 5px;">{{ codePostal.quartier }}</p>
+                <p style="padding: 5px;">{{ display(codePostal.quartier) }}</p>
               </div>
               <div>
                 <p style="background-color:#06a3da; padding: 5px; color: white; font-weight: bold;">Commune/Territoire</p>
-                <p style="padding: 5px;"> {{ codePostal.commune }}</p>
+                <p style="padding: 5px;"> {{ display(codePostal.commune) }}</p>
               </div>
               <div>
                 <p style="background-color:#06a3da; padding: 5px; color: white; font-weight: bold;">Code Postal</p>
@@ -141,6 +140,14 @@ export default {
     }
   },
   methods:{
+    display(val)
+    {
+      val = val.replace("____","/");
+      val = val.replace("___","-");
+      val = val.replace("__","'");
+      val = val.replace("_"," ");
+      return val;
+    },
     pickProvince(province){
       this.searchingProvince = this.codesPostal[province];
       this.ville = this.searchingProvince[0];

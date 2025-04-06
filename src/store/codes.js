@@ -2269,6 +2269,2802 @@ let codes = {
                 }
             ]
         }
+    ],
+    equateur:[
+        {
+            ville:"Mbandaka",
+            codes:[
+                {
+                    "commune": "MBANDAKA",
+                    "quartier": "AIR CONGO",
+                    "code": 4110100
+                },
+                {
+                    "commune": "MBANDAKA",
+                    "quartier": "BAKUSU",
+                    "code": 4110102
+                },
+                {
+                    "commune": "MBANDAKA",
+                    "quartier": "BAKALA",
+                    "code": 4110103
+                },
+                {
+                    "commune": "MBANDAKA",
+                    "quartier": "DJOMBO",
+                    "code": 4110104
+                },
+                {
+                    "commune": "MBANDAKA",
+                    "quartier": "IBANGI",
+                    "code": 4110105
+                },
+                {
+                    "commune": "MBANDAKA",
+                    "quartier": "IKONGOWASA",
+                    "code": 4110106
+                },
+                {
+                    "commune": "MBANDAKA",
+                    "quartier": "IPEKO",
+                    "code": 4110107
+                },
+                {
+                    "commune": "MBANDAKA",
+                    "quartier": "MABENGA",
+                    "code": 4110108
+                },
+                {
+                    "commune": "MBANDAKA",
+                    "quartier": "MBANDAKA � INK",
+                    "code": 4110109
+                },
+                {
+                    "commune": "WANGATA",
+                    "quartier": "BOLENGE",
+                    "code": 4110200
+                },
+                {
+                    "commune": "WANGATA",
+                    "quartier": "BOMBWANZA",
+                    "code": 4110202
+                },
+                {
+                    "commune": "WANGATA",
+                    "quartier": "BONGONDE",
+                    "code": 4110203
+                },
+                {
+                    "commune": "WANGATA",
+                    "quartier": "BONGONDJA",
+                    "code": 4110204
+                },
+                {
+                    "commune": "WANGATA",
+                    "quartier": "BOSOMBA",
+                    "code": 4110205
+                },
+                {
+                    "commune": "WANGATA",
+                    "quartier": "BOYERA",
+                    "code": 4110206
+                },
+                {
+                    "commune": "WANGATA",
+                    "quartier": "INGANDA",
+                    "code": 4110207
+                },
+                {
+                    "commune": "WANGATA",
+                    "quartier": "MAMA BOLEKA",
+                    "code": 4110208
+                },
+                {
+                    "commune": "WANGATA",
+                    "quartier": "WENDJI SEKLI",
+                    "code": 4110209
+                },
+                {
+                    "commune": "BASANKUSU",
+                    "quartier": "BASANKUSU (C)",
+                    "code": 4101011
+                },
+                {
+                    "commune": "BASANKUSU",
+                    "quartier": "BASANKUSU (S)",
+                    "code": 4101020
+                },
+                {
+                    "commune": "BASANKUSU",
+                    "quartier": "GOMBALO",
+                    "code": 4101030
+                },
+                {
+                    "commune": "BASANKUSU",
+                    "quartier": "WAKA-BOKEKA",
+                    "code": 4101040
+                },
+                {
+                    "commune": "BIKORO",
+                    "quartier": "BIKORO",
+                    "code": 4102011
+                },
+                {
+                    "commune": "BIKORO",
+                    "quartier": "EKONDA",
+                    "code": 4102020
+                },
+                {
+                    "commune": "BIKORO",
+                    "quartier": "ELANGA",
+                    "code": 4102030
+                },
+                {
+                    "commune": "BIKORO",
+                    "quartier": "LAC-NTOMBA",
+                    "code": 4102040
+                },
+                {
+                    "commune": "BOLOMBA",
+                    "quartier": "BOLOMBA (c)",
+                    "code": 4103011
+                },
+                {
+                    "commune": "BOLOMBA",
+                    "quartier": "BOLOMBA (s)",
+                    "code": 4103020
+                },
+                {
+                    "commune": "BOLOMBA",
+                    "quartier": "BUSIRA",
+                    "code": 4103030
+                },
+                {
+                    "commune": "BOLOMBA",
+                    "quartier": "DIANGA",
+                    "code": 4103040
+                },
+                {
+                    "commune": "BOLOMBA",
+                    "quartier": "LOSANGANYA",
+                    "code": 4103050
+                },
+                {
+                    "commune": "BOLOMBA",
+                    "quartier": "MAMPOKO",
+                    "code": 4103060
+                },
+                {
+                    "commune": "BOMONGO",
+                    "quartier": "BOMONGO",
+                    "code": 4104011
+                },
+                {
+                    "commune": "BOMONGO",
+                    "quartier": "DJAMBA",
+                    "code": 4104020
+                },
+                {
+                    "commune": "BOMONGO",
+                    "quartier": "NGIRI",
+                    "code": 4104030
+                },
+                {
+                    "commune": "INGENDE",
+                    "quartier": "INGENDE",
+                    "code": 4105011
+                },
+                {
+                    "commune": "INGENDE",
+                    "quartier": "BOKATOLA",
+                    "code": 4105020
+                },
+                {
+                    "commune": "INGENDE",
+                    "quartier": "DUALI",
+                    "code": 4105030
+                },
+                {
+                    "commune": "INGENDE",
+                    "quartier": "EUNGU",
+                    "code": 4105040
+                },
+                {
+                    "commune": "LUKOLELA",
+                    "quartier": "LUKOLELA",
+                    "code": 4106011
+                },
+                {
+                    "commune": "LUKOLELA",
+                    "quartier": "BOBANGI",
+                    "code": 4106020
+                },
+                {
+                    "commune": "LUKOLELA",
+                    "quartier": "LUSAKANI",
+                    "code": 4106030
+                },
+                {
+                    "commune": "LUKOLELA",
+                    "quartier": "MPAMA",
+                    "code": 4106040
+                },
+                {
+                    "commune": "MAKANZA",
+                    "quartier": "MAKANZA",
+                    "code": 4107010
+                },
+                {
+                    "commune": "MAKANZA",
+                    "quartier": "BANGALA",
+                    "code": 4107020
+                },
+                {
+                    "commune": "MAKANZA",
+                    "quartier": "MOEKO",
+                    "code": 4107030
+                },
+                {
+                    "commune": "MAKANZA",
+                    "quartier": "NDOBO",
+                    "code": 4107040
+                }
+            ]
+        }
+    ],
+    haut_katanga:[
+        {
+            ville:"Lubumbashi",
+            codes:[
+                {
+                    "commune": "ANNEXE",
+                    "quartier": "KALEBUKA",
+                    "code": 7110100
+                },
+                {
+                    "commune": "ANNEXE",
+                    "quartier": "KAPAPA",
+                    "code": 7110102
+                },
+                {
+                    "commune": "ANNEXE",
+                    "quartier": "KASUNGAMI",
+                    "code": 7110103
+                },
+                {
+                    "commune": "ANNEXE",
+                    "quartier": "KIMBEMBE",
+                    "code": 7110104
+                },
+                {
+                    "commune": "ANNEXE",
+                    "quartier": "KISANGA",
+                    "code": 7110105
+                },
+                {
+                    "commune": "ANNEXE",
+                    "quartier": "LUWOWOSHI",
+                    "code": 7110106
+                },
+                {
+                    "commune": "ANNEXE",
+                    "quartier": "MUNUA",
+                    "code": 7110107
+                },
+                {
+                    "commune": "ANNEXE",
+                    "quartier": "NAVIUNDU",
+                    "code": 7110108
+                },
+                {
+                    "commune": "KAMALONDO",
+                    "quartier": "KITUMAINI",
+                    "code": 7110201
+                },
+                {
+                    "commune": "KAMALONDO",
+                    "quartier": "NDJANDJA",
+                    "code": 7110202
+                },
+                {
+                    "commune": "KAPEMBA",
+                    "quartier": "BEL AIR I",
+                    "code": 7110300
+                },
+                {
+                    "commune": "KAPEMBA",
+                    "quartier": "BEL AIR II",
+                    "code": 7110302
+                },
+                {
+                    "commune": "KAPEMBA",
+                    "quartier": "BONGONGA",
+                    "code": 7110303
+                },
+                {
+                    "commune": "KAPEMBA",
+                    "quartier": "INDUSTRIEL",
+                    "code": 7110304
+                },
+                {
+                    "commune": "KAPEMBA",
+                    "quartier": "KAFUBU",
+                    "code": 7110305
+                },
+                {
+                    "commune": "KAPEMBA",
+                    "quartier": "KAMPEMBA",
+                    "code": 7110306
+                },
+                {
+                    "commune": "KAPEMBA",
+                    "quartier": "KIGOMA",
+                    "code": 7110307
+                },
+                {
+                    "commune": "KATUBA",
+                    "quartier": "BUKAMA",
+                    "code": 7110400
+                },
+                {
+                    "commune": "KATUBA",
+                    "quartier": "KAPONDA-NORD",
+                    "code": 7110402
+                },
+                {
+                    "commune": "KATUBA",
+                    "quartier": "KAPONDA-SUD",
+                    "code": 7110403
+                },
+                {
+                    "commune": "KATUBA",
+                    "quartier": "KISALE",
+                    "code": 7110404
+                },
+                {
+                    "commune": "KATUBA",
+                    "quartier": "LUFIRA",
+                    "code": 7110405
+                },
+                {
+                    "commune": "KATUBA",
+                    "quartier": "MUSUMBA",
+                    "code": 7110406
+                },
+                {
+                    "commune": "KATUBA",
+                    "quartier": "MWANAKATANGA",
+                    "code": 7110407
+                },
+                {
+                    "commune": "KATUBA",
+                    "quartier": "NSELE",
+                    "code": 7110408
+                },
+                {
+                    "commune": "KATUBA",
+                    "quartier": "UPEMBA",
+                    "code": 7110409
+                },
+                {
+                    "commune": "LUBUMBASHI",
+                    "quartier": "MAKUTANO",
+                    "code": 7110501
+                },
+                {
+                    "commune": "LUBUMBASHI",
+                    "quartier": "GAMBELA",
+                    "code": 7110502
+                },
+                {
+                    "commune": "LUBUMBASHI",
+                    "quartier": "KALUBWE",
+                    "code": 7110503
+                },
+                {
+                    "commune": "LUBUMBASHI",
+                    "quartier": "KIWELE",
+                    "code": 7110504
+                },
+                {
+                    "commune": "LUBUMBASHI",
+                    "quartier": "LIDO-GOLF",
+                    "code": 7110505
+                },
+                {
+                    "commune": "LUBUMBASHI",
+                    "quartier": "LUMUMBA",
+                    "code": 7110506
+                },
+                {
+                    "commune": "LUBUMBASHI",
+                    "quartier": "MAMPALA",
+                    "code": 7110507
+                },
+                {
+                    "commune": "KENYA",
+                    "quartier": "LUALABA",
+                    "code": 7110600
+                },
+                {
+                    "commune": "KENYA",
+                    "quartier": "LUAPULUA",
+                    "code": 7110602
+                },
+                {
+                    "commune": "KENYA",
+                    "quartier": "LUVUA",
+                    "code": 7110603
+                },
+                {
+                    "commune": "RUASHI",
+                    "quartier": "BENDERA",
+                    "code": 7110700
+                },
+                {
+                    "commune": "RUASHI",
+                    "quartier": "CONGO",
+                    "code": 7110702
+                },
+                {
+                    "commune": "RUASHI",
+                    "quartier": "KULUKULUKU",
+                    "code": 7110703
+                },
+                {
+                    "commune": "RUASHI",
+                    "quartier": "KAWAMA",
+                    "code": 7110704
+                },
+                {
+                    "commune": "RUASHI",
+                    "quartier": "LUAANO",
+                    "code": 7110705
+                }
+            ]
+        },
+        {
+            ville:"Likasi",
+            codes:[
+                {
+                    "commune": "PANDA",
+                    "quartier": "KAMILOPA",
+                    "code": 7111100
+                },
+                {
+                    "commune": "PANDA",
+                    "quartier": "KANKOTWE",
+                    "code": 7111102
+                },
+                {
+                    "commune": "PANDA",
+                    "quartier": "KIWELE",
+                    "code": 7111103
+                },
+                {
+                    "commune": "PANDA",
+                    "quartier": "MPANDOMOYI",
+                    "code": 7111104
+                },
+                {
+                    "commune": "PANDA",
+                    "quartier": "MUCHANGA",
+                    "code": 7111105
+                },
+                {
+                    "commune": "SHITURU",
+                    "quartier": "BULUO",
+                    "code": 7111200
+                },
+                {
+                    "commune": "SHITURU",
+                    "quartier": "KILIMA",
+                    "code": 7111202
+                },
+                {
+                    "commune": "SHITURU",
+                    "quartier": "KIPUNLANDE",
+                    "code": 7111203
+                },
+                {
+                    "commune": "SHITURU",
+                    "quartier": "NGUYA",
+                    "code": 7111204
+                },
+                {
+                    "commune": "LIKASI",
+                    "quartier": "MISSION",
+                    "code": 7111300
+                },
+                {
+                    "commune": "LIKASI",
+                    "quartier": "KIKULA",
+                    "code": 7111302
+                },
+                {
+                    "commune": "LIKASI",
+                    "quartier": "INDUSTRIEL",
+                    "code": 7111303
+                },
+                {
+                    "commune": "LIKASI",
+                    "quartier": "CENTRE-VILLE",
+                    "code": 7111304
+                },
+                {
+                    "commune": "LIKASI",
+                    "quartier": "TOYOTA",
+                    "code": 7111305
+                },
+                {
+                    "commune": "LIKASI",
+                    "quartier": "ZOUT",
+                    "code": 7111306
+                },
+                {
+                    "commune": "LIKASI",
+                    "quartier": "SNCC",
+                    "code": 7111301
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "KALIPOPO",
+                    "code": 7111400
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "KANONA",
+                    "code": 7111402
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "KAMPEMBA",
+                    "code": 7111403
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "KAPONANA",
+                    "code": 7111404
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "KISUNKA",
+                    "code": 7111405
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "KYUBO",
+                    "code": 7111406
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "MBADI",
+                    "code": 7111407
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "MISUMBA",
+                    "code": 7111408
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "KOLOMONI",
+                    "code": 7111409
+                },
+                {
+                    "commune": "KIVULA",
+                    "quartier": "OKITO",
+                    "code": 7111410
+                },
+                {
+                    "commune": "KAMBOVE",
+                    "quartier": "KAMBOVE",
+                    "code": 7101011
+                },
+                {
+                    "commune": "KAMBOVE",
+                    "quartier": "BASANGA",
+                    "code": 7101020
+                },
+                {
+                    "commune": "KAMBOVE",
+                    "quartier": "LUFIRA",
+                    "code": 7101030
+                },
+                {
+                    "commune": "KAMBOVE",
+                    "quartier": "SOURCE DU CONGO",
+                    "code": 7101040
+                },
+                {
+                    "commune": "KASENGA",
+                    "quartier": "KASENGA",
+                    "code": 7102011
+                },
+                {
+                    "commune": "KASENGA",
+                    "quartier": "KAFIRA",
+                    "code": 7102020
+                },
+                {
+                    "commune": "KASENGA",
+                    "quartier": "KISAMAMBA",
+                    "code": 7102030
+                },
+                {
+                    "commune": "KASENGA",
+                    "quartier": "LUAPULA",
+                    "code": 7102040
+                },
+                {
+                    "commune": "KASENGA",
+                    "quartier": "BAKUNIA",
+                    "code": 7102050
+                },
+                {
+                    "commune": "KIPUSHI",
+                    "quartier": "KIPUSHI",
+                    "code": 7103011
+                },
+                {
+                    "commune": "KIPUSHI",
+                    "quartier": "BUKANDA",
+                    "code": 7103020
+                },
+                {
+                    "commune": "KIPUSHI",
+                    "quartier": "KAPONDA",
+                    "code": 7103030
+                },
+                {
+                    "commune": "KIPUSHI",
+                    "quartier": "KINAMA",
+                    "code": 7103040
+                },
+                {
+                    "commune": "MITWABA",
+                    "quartier": "MITWABA",
+                    "code": 7104011
+                },
+                {
+                    "commune": "MITWABA",
+                    "quartier": "BALOMOTWA",
+                    "code": 7104020
+                },
+                {
+                    "commune": "MITWABA",
+                    "quartier": "BANWESHI",
+                    "code": 7104030
+                },
+                {
+                    "commune": "MITWABA",
+                    "quartier": "KIONA�NGOY",
+                    "code": 7104040
+                },
+                {
+                    "commune": "PWETO",
+                    "quartier": "PWETO",
+                    "code": 7105011
+                },
+                {
+                    "commune": "PWETO",
+                    "quartier": "KIONA-NZINI",
+                    "code": 7105020
+                },
+                {
+                    "commune": "PWETO",
+                    "quartier": "MOERO",
+                    "code": 7105030
+                },
+                {
+                    "commune": "PWETO",
+                    "quartier": "MPWETO",
+                    "code": 7105040
+                },
+                {
+                    "commune": "PWETO",
+                    "quartier": "MWENGE",
+                    "code": 7105050
+                },
+                {
+                    "commune": "SAKANYA",
+                    "quartier": "SAKANYA",
+                    "code": 7106011
+                },
+                {
+                    "commune": "SAKANYA",
+                    "quartier": "BALALA",
+                    "code": 7106020
+                },
+                {
+                    "commune": "SAKANYA",
+                    "quartier": "BALAMBA",
+                    "code": 7106030
+                },
+                {
+                    "commune": "SAKANYA",
+                    "quartier": "BAUSHI",
+                    "code": 7106040
+                },
+                {
+                    "commune": "SAKANYA",
+                    "quartier": "MOKAMBO",
+                    "code": 7106050
+                },
+                {
+                    "commune": "SAKANYA",
+                    "quartier": "MUSOSHI-KASUMBALESA",
+                    "code": 7106060
+                }
+            ]
+        }
+    ],
+    haut_lomami:[
+        {
+            ville:"Kamina",
+            codes:[
+                {
+                    "commune": "DIMAYI",
+                    "quartier": 14,
+                    "code": 7310100
+                },
+                {
+                    "commune": "DIMAYI",
+                    "quartier": 64,
+                    "code": 7310102
+                },
+                {
+                    "commune": "DIMAYI",
+                    "quartier": 82,
+                    "code": 7310103
+                },
+                {
+                    "commune": "DIMAYI",
+                    "quartier": "INGA",
+                    "code": 7310104
+                },
+                {
+                    "commune": "DIMAYI",
+                    "quartier": "CONGO",
+                    "code": 7310105
+                },
+                {
+                    "commune": "DIMAYI",
+                    "quartier": "ALLIA NCE",
+                    "code": 7310106
+                },
+                {
+                    "commune": "DIMAYI",
+                    "quartier": "LATIN",
+                    "code": 7310107
+                },
+                {
+                    "commune": "DIMAYI",
+                    "quartier": "BLOC II KALOBA",
+                    "code": 7310108
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "BEL AIR",
+                    "code": 7310200
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "RVA",
+                    "code": 7310202
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "KANZA",
+                    "code": 7310203
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "CINQANTENAIRE",
+                    "code": 7310204
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "MAJIBA A MUKUMBI",
+                    "code": 7310205
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "CENTRE URBAIN",
+                    "code": 7310206
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "LUBIMBI",
+                    "code": 7310207
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "KASONGO NYEMBO",
+                    "code": 7310208
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "BRASSERIE",
+                    "code": 7310209
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "MABANGA",
+                    "code": 7310210
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "INDUSTRIEL",
+                    "code": 7310211
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "CARREFOUR",
+                    "code": 7310212
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "LUKULWE",
+                    "code": 7310213
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": 52,
+                    "code": 7310300
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": 53,
+                    "code": 7310302
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "KATUBA I",
+                    "code": 7310303
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "KATUBA II",
+                    "code": 7310304
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "KAMALONDO",
+                    "code": 7310305
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "KITELE",
+                    "code": 7310306
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "METROPOLE",
+                    "code": 7310307
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "PASTORAL",
+                    "code": 7310308
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "SOBONGO",
+                    "code": 7310309
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "KABENGELE",
+                    "code": 7310310
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "LOMAMI",
+                    "code": 7310312
+                },
+                {
+                    "commune": "SOBONGO",
+                    "quartier": "KINDA",
+                    "code": 7310313
+                },
+                {
+                    "commune": "BUKAMA",
+                    "quartier": "BUKAMA",
+                    "code": 7301011
+                },
+                {
+                    "commune": "BUKAMA",
+                    "quartier": "BUTUMBA",
+                    "code": 7301020
+                },
+                {
+                    "commune": "BUKAMA",
+                    "quartier": "KABONDO DIANDA",
+                    "code": 7301030
+                },
+                {
+                    "commune": "BUKAMA",
+                    "quartier": "KAPAMAY",
+                    "code": 7301040
+                },
+                {
+                    "commune": "BUKAMA",
+                    "quartier": "KIBANDA",
+                    "code": 7301050
+                },
+                {
+                    "commune": "BUKAMA",
+                    "quartier": "KINKONDJA",
+                    "code": 7301060
+                },
+                {
+                    "commune": "BUKAMA",
+                    "quartier": "LUALABA",
+                    "code": 7301070
+                },
+                {
+                    "commune": "BUKAMA",
+                    "quartier": "UMPUNGU",
+                    "code": 7301080
+                },
+                {
+                    "commune": "BUKAMA",
+                    "quartier": "LUENA",
+                    "code": 7301090
+                },
+                {
+                    "commune": "KABONGO",
+                    "quartier": "KABONGO (COMMUNE)",
+                    "code": 7302011
+                },
+                {
+                    "commune": "KABONGO",
+                    "quartier": "KABONGO (CHEFFERIE)",
+                    "code": 7302020
+                },
+                {
+                    "commune": "KABONGO",
+                    "quartier": "KAYAMBA",
+                    "code": 7302030
+                },
+                {
+                    "commune": "KABONGO",
+                    "quartier": "NORD-BALUBA",
+                    "code": 7302040
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "KAMINA",
+                    "code": 7303011
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "KASOSNGO NYEMBO",
+                    "code": 7303020
+                },
+                {
+                    "commune": "KAMINA",
+                    "quartier": "KINDA",
+                    "code": 7303030
+                },
+                {
+                    "commune": "MALEMBA_NKULU",
+                    "quartier": "MALEMBA_NKULU",
+                    "code": 7304011
+                },
+                {
+                    "commune": "MALEMBA_NKULU",
+                    "quartier": "BADIA",
+                    "code": 7304020
+                },
+                {
+                    "commune": "MALEMBA_NKULU",
+                    "quartier": "KAYUMBA",
+                    "code": 7304030
+                },
+                {
+                    "commune": "MALEMBA_NKULU",
+                    "quartier": "MULONGO",
+                    "code": 7304040
+                },
+                {
+                    "commune": "MALEMBA_NKULU",
+                    "quartier": "MUSEKA",
+                    "code": 7304050
+                },
+                {
+                    "commune": "MALEMBA_NKULU",
+                    "quartier": "MWANZA",
+                    "code": 7304060
+                },
+                {
+                    "commune": "MALEMBA_NKULU",
+                    "quartier": "NKULU",
+                    "code": 7304070
+                }
+            ]
+        }
+    ],
+    haut___uele:[
+        {
+            ville:"Isiro",
+            codes:[
+                {
+                    "commune": "KUPA",
+                    "quartier": "N__SELE",
+                    "code": 5310100
+                },
+                {
+                    "commune": "KUPA",
+                    "quartier": "NGOSAMU",
+                    "code": 5310102
+                },
+                {
+                    "commune": "KUPA",
+                    "quartier": "TELY",
+                    "code": 5310103
+                },
+                {
+                    "commune": "MAMBAYA",
+                    "quartier": "KONGOLI",
+                    "code": 5310200
+                },
+                {
+                    "commune": "MAMBAYA",
+                    "quartier": "MADJO",
+                    "code": 5310202
+                },
+                {
+                    "commune": "MAMBAYA",
+                    "quartier": "MAMBAYA",
+                    "code": 5310203
+                },
+                {
+                    "commune": "MENDAMBO",
+                    "quartier": "APOKOMA",
+                    "code": 5310300
+                },
+                {
+                    "commune": "MENDAMBO",
+                    "quartier": "BAZANGA",
+                    "code": 5310302
+                },
+                {
+                    "commune": "MENDAMBO",
+                    "quartier": "DINGIDA",
+                    "code": 5310303
+                },
+                {
+                    "commune": "MENDAMBO",
+                    "quartier": "EDINDALI",
+                    "code": 5310304
+                },
+                {
+                    "commune": "MENDAMBO",
+                    "quartier": "ZEBUANDRA",
+                    "code": 5310305
+                },
+                {
+                    "commune": "RUNGU",
+                    "quartier": "RUNGU",
+                    "code": 5301011
+                },
+                {
+                    "commune": "RUNGU",
+                    "quartier": "AZANGA",
+                    "code": 5301020
+                },
+                {
+                    "commune": "RUNGU",
+                    "quartier": "MAYOGO-MABOZO",
+                    "code": 5301030
+                },
+                {
+                    "commune": "RUNGU",
+                    "quartier": "MAYOGO-MAGBAY",
+                    "code": 5301040
+                },
+                {
+                    "commune": "RUNGU",
+                    "quartier": "MBOLI",
+                    "code": 5301050
+                },
+                {
+                    "commune": "RUNGU",
+                    "quartier": "MEDJE-MANGO",
+                    "code": 5301060
+                },
+                {
+                    "commune": "RUNGU",
+                    "quartier": "MONGO-MASI",
+                    "code": 5301070
+                },
+                {
+                    "commune": "RUNGU",
+                    "quartier": "NDEY",
+                    "code": 5301080
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "FARADJE",
+                    "code": 5302011
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "DONGO",
+                    "code": 5302020
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "KAKWA-LAMADA",
+                    "code": 5302030
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "LOGO-BAGELA",
+                    "code": 5302040
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "LOGO-DOKA",
+                    "code": 5302050
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "LOGO-LOLIA",
+                    "code": 5302060
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "LOGO-OBELEBA",
+                    "code": 5302070
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "LOGO-OGAMBI",
+                    "code": 5302080
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "MONDO",
+                    "code": 5302090
+                },
+                {
+                    "commune": "FARADJE",
+                    "quartier": "ABA",
+                    "code": 5302100
+                },
+                {
+                    "commune": "DUNGU",
+                    "quartier": "DUNGU",
+                    "code": 5303011
+                },
+                {
+                    "commune": "DUNGU",
+                    "quartier": "MALINGIDU",
+                    "code": 5303020
+                },
+                {
+                    "commune": "DUNGU",
+                    "quartier": "NDOLOMO (DORUMA)",
+                    "code": 5303030
+                },
+                {
+                    "commune": "DUNGU",
+                    "quartier": "WANDO",
+                    "code": 5303040
+                },
+                {
+                    "commune": "NIANGARA",
+                    "quartier": "NIANGARA",
+                    "code": 5304011
+                },
+                {
+                    "commune": "NIANGARA",
+                    "quartier": "BOIME",
+                    "code": 5304020
+                },
+                {
+                    "commune": "NIANGARA",
+                    "quartier": "KEREBORO",
+                    "code": 5304030
+                },
+                {
+                    "commune": "NIANGARA",
+                    "quartier": "KOPA",
+                    "code": 5304040
+                },
+                {
+                    "commune": "NIANGARA",
+                    "quartier": "MANGBETU-MABISANGA",
+                    "code": 5304050
+                },
+                {
+                    "commune": "NIANGARA",
+                    "quartier": "MANZIGA",
+                    "code": 5304060
+                },
+                {
+                    "commune": "NIANGARA",
+                    "quartier": "OKONDO",
+                    "code": 5304070
+                },
+                {
+                    "commune": "NIANGARA",
+                    "quartier": "MANGBELE",
+                    "code": 5304080
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "WAMBA",
+                    "code": 5305011
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "BAFWAGADA",
+                    "code": 5305020
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "BAFWAKOY",
+                    "code": 5305030
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "BALIKA-TORIKO",
+                    "code": 5305040
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "MABUDU-MALIKA-BABEYRU (MMB)",
+                    "code": 5305050
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "MAHAA",
+                    "code": 5305060
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "MAKODA",
+                    "code": 5305070
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "MALIKA-ATERU",
+                    "code": 5305080
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "MANGBELE",
+                    "code": 5305090
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "TIMONIKO",
+                    "code": 5305100
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "WANDIMBISA-MABUDU",
+                    "code": 5305110
+                },
+                {
+                    "commune": "WAMBA",
+                    "quartier": "MALAMBA",
+                    "code": 5305120
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "WATSA",
+                    "code": 5306011
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "ANDIKOPA",
+                    "code": 5306020
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "ANDOBI",
+                    "code": 5306030
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "ATERU",
+                    "code": 5306040
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "GOMBARI",
+                    "code": 5306050
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "KEBO",
+                    "code": 5306060
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "KIBALI",
+                    "code": 5306070
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "MANGBUTU",
+                    "code": 5306080
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "MARI-MINZA",
+                    "code": 5306090
+                },
+                {
+                    "commune": "WATSA",
+                    "quartier": "WALESE",
+                    "code": 5306100
+                }
+            ]
+        }
+    ],
+    ituri:[
+        {
+            ville:"Bunia",
+            codes:[
+                {
+                    "commune": "MBUNYA",
+                    "quartier": "BANKOKO",
+                    "code": 5410100
+                },
+                {
+                    "commune": "MBUNYA",
+                    "quartier": "BAKONGOLO",
+                    "code": 5410102
+                },
+                {
+                    "commune": "MBUNYA",
+                    "quartier": "DELE BABUCHUKA",
+                    "code": 5410103
+                },
+                {
+                    "commune": "MBUNYA",
+                    "quartier": "HOHO",
+                    "code": 5410104
+                },
+                {
+                    "commune": "MBUNYA",
+                    "quartier": "LUMUMBA",
+                    "code": 5410101
+                },
+                {
+                    "commune": "MBUNYA",
+                    "quartier": "NGEZI",
+                    "code": 5410106
+                },
+                {
+                    "commune": "MBUNYA",
+                    "quartier": "OPASI",
+                    "code": 5410107
+                },
+                {
+                    "commune": "MBUNYA",
+                    "quartier": "YAMBI YAYA",
+                    "code": 5410108
+                },
+                {
+                    "commune": "NYAKASANZA",
+                    "quartier": "KINDIA",
+                    "code": 5410200
+                },
+                {
+                    "commune": "NYAKASANZA",
+                    "quartier": "NYAKASANZA_1",
+                    "code": 5410202
+                },
+                {
+                    "commune": "NYAKASANZA",
+                    "quartier": "NYAKASANZA_2",
+                    "code": 5410203
+                },
+                {
+                    "commune": "NYAKASANZA",
+                    "quartier": "RWAMBUZI_BENI",
+                    "code": 5410204
+                },
+                {
+                    "commune": "NYAKASANZA",
+                    "quartier": "RWAMBUZI_FICHAMA",
+                    "code": 5410205
+                },
+                {
+                    "commune": "NYAKASANZA",
+                    "quartier": "RWANKOLE",
+                    "code": 5410206
+                },
+                {
+                    "commune": "NYAKASANZA",
+                    "quartier": "SAIO",
+                    "code": 5410207
+                },
+                {
+                    "commune": "NYAKASANZA",
+                    "quartier": "SALONGO",
+                    "code": 5410208
+                },
+                {
+                    "commune": "NYAKASANZA",
+                    "quartier": "SUKISA",
+                    "code": 5410209
+                },
+                {
+                    "commune": "SHARI",
+                    "quartier": "BIGO",
+                    "code": 5410300
+                },
+                {
+                    "commune": "SHARI",
+                    "quartier": "MUDZI___PELA",
+                    "code": 5410302
+                },
+                {
+                    "commune": "SHARI",
+                    "quartier": "KASEGWA",
+                    "code": 5410303
+                },
+                {
+                    "commune": "SHARI",
+                    "quartier": "NDIBAKODU",
+                    "code": 5410304
+                },
+                {
+                    "commune": "SHARI",
+                    "quartier": "LEMBABO",
+                    "code": 5410505
+                },
+                {
+                    "commune": "SHARI",
+                    "quartier": "SIMBILIABO",
+                    "code": 5410306
+                },
+                {
+                    "commune": "SHARI",
+                    "quartier": "BEMBEYI",
+                    "code": 5410307
+                },
+                {
+                    "commune": "ARU",
+                    "quartier": "ARU",
+                    "code": 5401011
+                },
+                {
+                    "commune": "ARU",
+                    "quartier": "ALURU",
+                    "code": 5401020
+                },
+                {
+                    "commune": "ARU",
+                    "quartier": "KAKWA",
+                    "code": 5401030
+                },
+                {
+                    "commune": "ARU",
+                    "quartier": "KALIKO___OMI",
+                    "code": 5401040
+                },
+                {
+                    "commune": "ARU",
+                    "quartier": "LU",
+                    "code": 5401050
+                },
+                {
+                    "commune": "ARU",
+                    "quartier": "NDO___KEBO",
+                    "code": 5401060
+                },
+                {
+                    "commune": "ARU",
+                    "quartier": "NIO___KAMULE",
+                    "code": 5401070
+                },
+                {
+                    "commune": "ARU",
+                    "quartier": "OTSO",
+                    "code": 5401080
+                },
+                {
+                    "commune": "ARU",
+                    "quartier": "ZAKI",
+                    "code": 5401090
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "MONGBWALU____C",
+                    "code": 5402011
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "DJUGU",
+                    "code": 5402020
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "BAHEMA___BADJERE",
+                    "code": 5402030
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "BAHEMA___BANYWAGI",
+                    "code": 5402040
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "BAHEMA___NORD",
+                    "code": 5402050
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "BABNYALI___KILO",
+                    "code": 5402060
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "MABENDI",
+                    "code": 5402070
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "MAMBISA",
+                    "code": 5402080
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "NDO-OKEBO",
+                    "code": 5402090
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "WALENDU-DJATSI",
+                    "code": 5402100
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "WALENDU-PITSI",
+                    "code": 5402110
+                },
+                {
+                    "commune": "DJUGU",
+                    "quartier": "WALENDU-TATSI",
+                    "code": 5402120
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "IRUMU____C",
+                    "code": 5403011
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "ANDISOMA",
+                    "code": 5403020
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "BABELEBE",
+                    "code": 5403030
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "BABOA___BOKOE",
+                    "code": 5403040
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "BAHEMA_BOGA",
+                    "code": 5403050
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "BAHEMA_D__IRUMU",
+                    "code": 5403060
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "BAHEMA_MITEGO",
+                    "code": 5403070
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "BAHEMA_SUD",
+                    "code": 5403080
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "BANYARI_TCHABI",
+                    "code": 5403090
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "BASILI",
+                    "code": 5403100
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "MOBALA",
+                    "code": 5403110
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "WELENDU___BINDI",
+                    "code": 5403120
+                },
+                {
+                    "commune": "IRUMU",
+                    "quartier": "WALESE_VONKUTU",
+                    "code": 5403130
+                },
+                {
+                    "commune": "MAHAGI",
+                    "quartier": "MAHAGI____/C",
+                    "code": 5404011
+                },
+                {
+                    "commune": "MAHAGI",
+                    "quartier": "ALUR___DJUGANDA",
+                    "code": 5404020
+                },
+                {
+                    "commune": "MAHAGI",
+                    "quartier": "ANGHAL_I___II",
+                    "code": 5404030
+                },
+                {
+                    "commune": "MAHAGI",
+                    "quartier": "DJUKOTH",
+                    "code": 5404040
+                },
+                {
+                    "commune": "MAHAGI",
+                    "quartier": "MUKAMBU_MOBALA",
+                    "code": 5404050
+                },
+                {
+                    "commune": "MAHAGI",
+                    "quartier": "WAR_PALARA",
+                    "code": 5404060
+                },
+                {
+                    "commune": "MAHAGI",
+                    "quartier": "WALENDU___WATSI",
+                    "code": 5404070
+                },
+                {
+                    "commune": "MAHAGI",
+                    "quartier": "WANGONGO",
+                    "code": 5404080
+                },
+                {
+                    "commune": "MAHAGI",
+                    "quartier": "PANDIRO",
+                    "code": 5404090
+                },
+                {
+                    "commune": "MAMBASA",
+                    "quartier": "MAMBASA____C",
+                    "code": 5405011
+                },
+                {
+                    "commune": "MAMBASA",
+                    "quartier": "BABILA_BABOMBI",
+                    "code": 5405020
+                },
+                {
+                    "commune": "MAMBASA",
+                    "quartier": "BABILA_BAKWANZA",
+                    "code": 5405030
+                },
+                {
+                    "commune": "MAMBASA",
+                    "quartier": "BANDAKA",
+                    "code": 5405040
+                },
+                {
+                    "commune": "MAMBASA",
+                    "quartier": "BOMBO___BANGUMBA",
+                    "code": 5405050
+                },
+                {
+                    "commune": "MAMBASA",
+                    "quartier": "MAMBASA",
+                    "code": 5405060
+                },
+                {
+                    "commune": "MAMBASA",
+                    "quartier": "WALESA___DESE",
+                    "code": 5405070
+                },
+                {
+                    "commune": "MAMBASA",
+                    "quartier": "WALESA___KARO",
+                    "code": 5405080
+                },
+                {
+                    "commune": "MAMBASA",
+                    "quartier": "PANDORO",
+                    "code": 5404090
+                }
+            ]
+        }
+    ],
+    kasai:[
+        {
+            ville:"Tshikapa",
+            codes:[
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "JOSEPH_KABILA",
+                    "code": 9210100
+                },
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "KABUATU",
+                    "code": 9210102
+                },
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "KAMAKONDE",
+                    "code": 9210103
+                },
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "KASOKA",
+                    "code": 9210104
+                },
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "HOPITAL",
+                    "code": 9210105
+                },
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "LUIME",
+                    "code": 9210106
+                },
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "MBULA_MPUTU",
+                    "code": 9210107
+                },
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "SAMBA",
+                    "code": 9210108
+                },
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "SYLVAIN_MUZOMBO",
+                    "code": 9210109
+                },
+                {
+                    "commune": "DIBUMBA_1",
+                    "quartier": "RAISON_DAVID BIYENGE",
+                    "code": 9210110
+                },
+                {
+                    "commune": "DIBUMBA_2",
+                    "quartier": "DIBUMBA",
+                    "code": 9210200
+                },
+                {
+                    "commune": "DIBUMBA_2",
+                    "quartier": "KAJAMA",
+                    "code": 9210202
+                },
+                {
+                    "commune": "DIBUMBA_2",
+                    "quartier": "MILOMBE",
+                    "code": 9210203
+                },
+                {
+                    "commune": "DIBUMBA_2",
+                    "quartier": "MWALUANJI",
+                    "code": 9210204
+                },
+                {
+                    "commune": "DIBUMBA_2",
+                    "quartier": "TSHIKAPA",
+                    "code": 9210205
+                },
+                {
+                    "commune": "DIBUMBA_2",
+                    "quartier": "TSHITANGU",
+                    "code": 9210206
+                },
+                {
+                    "commune": "DIBUMBA_2",
+                    "quartier": "TSHISELE",
+                    "code": 9210207
+                },
+                {
+                    "commune": "KANZALA",
+                    "quartier": "MATEMPU",
+                    "code": 9210300
+                },
+                {
+                    "commune": "KANZALA",
+                    "quartier": "RVA",
+                    "code": 9210302
+                },
+                {
+                    "commune": "KANZALA",
+                    "quartier": "KABINDA",
+                    "code": 9210303
+                },
+                {
+                    "commune": "KANZALA",
+                    "quartier": "NSANGAMAYI",
+                    "code": 9210304
+                },
+                {
+                    "commune": "KANZALA",
+                    "quartier": "CENTRE",
+                    "code": 9210135
+                },
+                {
+                    "commune": "KANZALA",
+                    "quartier": "KOMPUNDU",
+                    "code": 9210136
+                },
+                {
+                    "commune": "KANZALA",
+                    "quartier": "TSHISELE",
+                    "code": 9210207
+                },
+                {
+                    "commune": "MABONDO",
+                    "quartier": "BUDIKADIDI",
+                    "code": 9210400
+                },
+                {
+                    "commune": "MABONDO",
+                    "quartier": "BUKITU",
+                    "code": 9210402
+                },
+                {
+                    "commune": "MABONDO",
+                    "quartier": "KASA� _1",
+                    "code": 9210403
+                },
+                {
+                    "commune": "MABONDO",
+                    "quartier": "KASA�_2",
+                    "code": 9210404
+                },
+                {
+                    "commune": "MABONDO",
+                    "quartier": "LUNGUDI",
+                    "code": 9210405
+                },
+                {
+                    "commune": "MABONDO",
+                    "quartier": "MABONDO",
+                    "code": 9210406
+                },
+                {
+                    "commune": "MABONDO",
+                    "quartier": "NKUMINA",
+                    "code": 9210407
+                },
+                {
+                    "commune": "MABONDO",
+                    "quartier": "SAINT_MARTYRS",
+                    "code": 9210408
+                },
+                {
+                    "commune": "MABONDO",
+                    "quartier": "TSHIELA_BUADI",
+                    "code": 9210409
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "ABATTOIR",
+                    "code": 9210500
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "BASANGA",
+                    "code": 9210502
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "KABUY",
+                    "code": 9210503
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "KAMILAMBO",
+                    "code": 9210504
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "LOASA",
+                    "code": 9210505
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "LUBOYA 1",
+                    "code": 9210506
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "LUBOYA II",
+                    "code": 9210507
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "MPOKOLO",
+                    "code": 9210508
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "MUNGENDA",
+                    "code": 9210509
+                },
+                {
+                    "commune": "MBUMBA",
+                    "quartier": "ONL",
+                    "code": 9210510
+                },
+                {
+                    "commune": "ILEBO",
+                    "quartier": "ILEBO",
+                    "code": 9201011
+                },
+                {
+                    "commune": "ILEBO",
+                    "quartier": "BASONGO_ENTRE LUBI_KUNDUYE",
+                    "code": 9201020
+                },
+                {
+                    "commune": "ILEBO",
+                    "quartier": "MALU_MALU",
+                    "code": 9201030
+                },
+                {
+                    "commune": "ILEBO",
+                    "quartier": "ELL_MAPANGU",
+                    "code": 9201040
+                },
+                {
+                    "commune": "ILEBO",
+                    "quartier": "SUD___BANGA",
+                    "code": 9201050
+                },
+                {
+                    "commune": "TSHIKAPA",
+                    "quartier": "KAMONIA",
+                    "code": 9202010
+                },
+                {
+                    "commune": "TSHIKAPA",
+                    "quartier": "BAKWA___NYAMBI",
+                    "code": 9202020
+                },
+                {
+                    "commune": "TSHIKAPA",
+                    "quartier": "BAPENDE",
+                    "code": 9202030
+                },
+                {
+                    "commune": "TSHIKAPA",
+                    "quartier": "KASADI___SADI",
+                    "code": 9202040
+                },
+                {
+                    "commune": "TSHIKAPA",
+                    "quartier": "KASAI___KABAMBAIE",
+                    "code": 9202050
+                },
+                {
+                    "commune": "TSHIKAPA",
+                    "quartier": "KASAI___LUNYEKA",
+                    "code": 9202060
+                },
+                {
+                    "commune": "TSHIKAPA",
+                    "quartier": "LOVUA___LONGATSHI",
+                    "code": 9202070
+                },
+                {
+                    "commune": "TSHIKAPA",
+                    "quartier": "LOVUA___LUSHIKU",
+                    "code": 9202080
+                },
+                {
+                    "commune": "TSHIKAPA",
+                    "quartier": "TSHIKAPA",
+                    "code": 9202090
+                },
+                {
+                    "commune": "LUEBO",
+                    "quartier": "LUEBO",
+                    "code": 9203011
+                },
+                {
+                    "commune": "LUEBO",
+                    "quartier": "LUEBO___KABAMBAIE",
+                    "code": 9203020
+                },
+                {
+                    "commune": "LUEBO",
+                    "quartier": "LUEBO___LULENGELE",
+                    "code": 9203030
+                },
+                {
+                    "commune": "LUEBO",
+                    "quartier": "LUEBO___WEDI",
+                    "code": 9203040
+                },
+                {
+                    "commune": "LUEBO",
+                    "quartier": "NDJOKO___PUNDA",
+                    "code": 9203050
+                },
+                {
+                    "commune": "MWEKA",
+                    "quartier": "MWEKA",
+                    "code": 9204011
+                },
+                {
+                    "commune": "MWEKA",
+                    "quartier": "KAKENGE",
+                    "code": 9204020
+                },
+                {
+                    "commune": "MWEKA",
+                    "quartier": "BAKUBA",
+                    "code": 9204030
+                },
+                {
+                    "commune": "DEKESE",
+                    "quartier": "DEKESE",
+                    "code": 9205011
+                },
+                {
+                    "commune": "DEKESE",
+                    "quartier": "ELIMA",
+                    "code": 9205020
+                },
+                {
+                    "commune": "DEKESE",
+                    "quartier": "DEKESE_EKOLOMBE___ISOLU",
+                    "code": 9205030
+                }
+            ]
+        }
+    ],
+    kasai_central:[
+        {
+            ville:"Kananga",
+            codes:[
+                {
+                    "commune": "KANANGA",
+                    "quartier": "TSHIBASHI",
+                    "code": 9110101
+                },
+                {
+                    "commune": "KANANGA",
+                    "quartier": "KAMAYI",
+                    "code": 9110102
+                },
+                {
+                    "commune": "KANANGA",
+                    "quartier": "MALANDJI",
+                    "code": 9110103
+                },
+                {
+                    "commune": "KANANGA",
+                    "quartier": "MPEMBA",
+                    "code": 9110104
+                },
+                {
+                    "commune": "KANANGA",
+                    "quartier": "PLATEAUX",
+                    "code": 9110105
+                },
+                {
+                    "commune": "KANANGA",
+                    "quartier": "TSHISAMBA",
+                    "code": 9110106
+                },
+                {
+                    "commune": "KATOKA",
+                    "quartier": "MPOKOLO",
+                    "code": 9110200
+                },
+                {
+                    "commune": "KATOKA",
+                    "quartier": "TUKOMBE",
+                    "code": 9110202
+                },
+                {
+                    "commune": "KATOKA",
+                    "quartier": "KATOKA 2",
+                    "code": 9110203
+                },
+                {
+                    "commune": "KATOKA",
+                    "quartier": "KAPANDA",
+                    "code": 9110204
+                },
+                {
+                    "commune": "KATOKA",
+                    "quartier": "KELEKELE",
+                    "code": 9110205
+                },
+                {
+                    "commune": "KATOKA",
+                    "quartier": "TSHISAMBA",
+                    "code": 9110106
+                },
+                {
+                    "commune": "LUKONGA",
+                    "quartier": "DIKONGAYI",
+                    "code": 9110300
+                },
+                {
+                    "commune": "LUKONGA",
+                    "quartier": "ITOBAYI",
+                    "code": 9110302
+                },
+                {
+                    "commune": "LUKONGA",
+                    "quartier": "LUMUMBA",
+                    "code": 9110303
+                },
+                {
+                    "commune": "LUKONGA",
+                    "quartier": "MABONDO",
+                    "code": 9110304
+                },
+                {
+                    "commune": "LUKONGA",
+                    "quartier": "MULUMBA",
+                    "code": 9110305
+                },
+                {
+                    "commune": "LUKONGA",
+                    "quartier": "TSHIBASHI",
+                    "code": 9110306
+                },
+                {
+                    "commune": "NDESHA",
+                    "quartier": "KATENDE",
+                    "code": 9110401
+                },
+                {
+                    "commune": "NDESHA",
+                    "quartier": "KAMILABI",
+                    "code": 9110402
+                },
+                {
+                    "commune": "NDESHA",
+                    "quartier": "KAMUPONGO",
+                    "code": 9110403
+                },
+                {
+                    "commune": "NDESHA",
+                    "quartier": "LUBUWA",
+                    "code": 9110404
+                },
+                {
+                    "commune": "NDESHA",
+                    "quartier": "NDESHA",
+                    "code": 9110405
+                },
+                {
+                    "commune": "NDESHA",
+                    "quartier": "THSIBANDEBAMBA",
+                    "code": 9110406
+                },
+                {
+                    "commune": "NGAZA",
+                    "quartier": "LUBIA-MPATA",
+                    "code": 9110500
+                },
+                {
+                    "commune": "NGAZA",
+                    "quartier": "NGANZA___NORD",
+                    "code": 9110502
+                },
+                {
+                    "commune": "NGAZA",
+                    "quartier": "NGANZA___SUD",
+                    "code": 9110503
+                },
+                {
+                    "commune": "NGAZA",
+                    "quartier": "N__SELE",
+                    "code": 9110504
+                },
+                {
+                    "commune": "NGAZA",
+                    "quartier": "SALONGO_MUIMBA",
+                    "code": 9110505
+                },
+                {
+                    "commune": "NGAZA",
+                    "quartier": "SUKISA",
+                    "code": 9110506
+                },
+                {
+                    "commune": "DEMBA",
+                    "quartier": "DEMBA",
+                    "code": 9101011
+                },
+                {
+                    "commune": "DEMBA",
+                    "quartier": "BENA_LEKA",
+                    "code": 9101020
+                },
+                {
+                    "commune": "DEMBA",
+                    "quartier": "BENA_MAMBA",
+                    "code": 9101030
+                },
+                {
+                    "commune": "DEMBA",
+                    "quartier": "DIOFWA",
+                    "code": 9101040
+                },
+                {
+                    "commune": "DEMBA",
+                    "quartier": "LOMBELO",
+                    "code": 9101050
+                },
+                {
+                    "commune": "DEMBA",
+                    "quartier": "LUSONGE",
+                    "code": 9101060
+                },
+                {
+                    "commune": "DEMBA",
+                    "quartier": "MWANZA___NGOMA",
+                    "code": 9101070
+                },
+                {
+                    "commune": "DEMBA",
+                    "quartier": "TSHIBOTE",
+                    "code": 9101080
+                },
+                {
+                    "commune": "DEMBA",
+                    "quartier": "TSHIBUNGU",
+                    "code": 9101090
+                },
+                {
+                    "commune": "DIBAYA",
+                    "quartier": "DIBAYA",
+                    "code": 9102010
+                },
+                {
+                    "commune": "DIBAYA",
+                    "quartier": "TSHIMBULU",
+                    "code": 9102020
+                },
+                {
+                    "commune": "DIBAYA",
+                    "quartier": "DIBATAIE",
+                    "code": 9102030
+                },
+                {
+                    "commune": "DIBAYA",
+                    "quartier": "KAMWANDU",
+                    "code": 9102040
+                },
+                {
+                    "commune": "DIBAYA",
+                    "quartier": "KASANGIDI",
+                    "code": 9102050
+                },
+                {
+                    "commune": "DIBAYA",
+                    "quartier": "KAMWANDU",
+                    "code": 9102060
+                },
+                {
+                    "commune": "DIBAYA",
+                    "quartier": "KASANGIDI",
+                    "code": 9102070
+                },
+                {
+                    "commune": "DIBAYA",
+                    "quartier": "TSHISHILU",
+                    "code": 9102080
+                },
+                {
+                    "commune": "DIMBELENGE",
+                    "quartier": "DIMBELENGE",
+                    "code": 9103011
+                },
+                {
+                    "commune": "DIMBELENGE",
+                    "quartier": "KUNDUYI",
+                    "code": 9103020
+                },
+                {
+                    "commune": "DIMBELENGE",
+                    "quartier": "LUBUDI",
+                    "code": 9103030
+                },
+                {
+                    "commune": "DIMBELENGE",
+                    "quartier": "MASHALA",
+                    "code": 9103040
+                },
+                {
+                    "commune": "DIMBELENGE",
+                    "quartier": "LUBI",
+                    "code": 9103050
+                },
+                {
+                    "commune": "DIMBELENGE",
+                    "quartier": "LUKIBU",
+                    "code": 9103060
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "KAZUMBA",
+                    "code": 9104011
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "BULUNGU",
+                    "code": 9104020
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "KAFUBA",
+                    "code": 9104030
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "KAVULA",
+                    "code": 9104040
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "MATAMBA",
+                    "code": 9104050
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "MBOYI",
+                    "code": 9104060
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "MIAO",
+                    "code": 9104070
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "MASWASWA",
+                    "code": 9104080
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "MUTEFU",
+                    "code": 9104090
+                },
+                {
+                    "commune": "KANZUMBA",
+                    "quartier": "TSHITADI",
+                    "code": 9104100
+                },
+                {
+                    "commune": "LUIZA",
+                    "quartier": "LUIZA",
+                    "code": 9105011
+                },
+                {
+                    "commune": "LUIZA",
+                    "quartier": "BAMBAIE",
+                    "code": 9105020
+                },
+                {
+                    "commune": "LUIZA",
+                    "quartier": "KABILAKESE",
+                    "code": 9105030
+                },
+                {
+                    "commune": "LUIZA",
+                    "quartier": "KALUNGA",
+                    "code": 9105040
+                },
+                {
+                    "commune": "LUIZA",
+                    "quartier": "LOATSHI",
+                    "code": 9105050
+                },
+                {
+                    "commune": "LUIZA",
+                    "quartier": "LUSANZA",
+                    "code": 9105060
+                },
+                {
+                    "commune": "LUIZA",
+                    "quartier": "LUETA",
+                    "code": 9105070
+                },
+                {
+                    "commune": "LUIZA",
+                    "quartier": "MBUSHIMAIE",
+                    "code": 9105080
+                }
+            ]
+        }
+    ],
+    kasai_oriental:[
+        {
+            ville:"Mbujimayi",
+            codes:[
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "BONZOLA",
+                    "code": 8210100
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "DIPUMBA",
+                    "code": 8210102
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "KABONGO",
+                    "code": 8210103
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "KASA-VUBU",
+                    "code": 8210104
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "LUKELENGE",
+                    "code": 8210105
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "MIKELE",
+                    "code": 8210106
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "MINKOKA",
+                    "code": 8210107
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "MISESA",
+                    "code": 8210108
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "MONZO",
+                    "code": 8210109
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "SNEL",
+                    "code": 8210110
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "TSHIYA",
+                    "code": 8210112
+                },
+                {
+                    "commune": "DIBINDI",
+                    "quartier": "UNIVERSITE",
+                    "code": 8210113
+                },
+                {
+                    "commune": "DIULU",
+                    "quartier": "BUBANDJI",
+                    "code": 8210200
+                },
+                {
+                    "commune": "DIULU",
+                    "quartier": "DIPA",
+                    "code": 8210202
+                },
+                {
+                    "commune": "DIULU",
+                    "quartier": "HOZANA",
+                    "code": 8210203
+                },
+                {
+                    "commune": "DIULU",
+                    "quartier": "LUBUWA",
+                    "code": 8210204
+                },
+                {
+                    "commune": "DIULU",
+                    "quartier": "LUMUMBA",
+                    "code": 8210205
+                },
+                {
+                    "commune": "DIULU",
+                    "quartier": "LUSENGA",
+                    "code": 8210206
+                },
+                {
+                    "commune": "DIULU",
+                    "quartier": "MASANKA",
+                    "code": 8210207
+                },
+                {
+                    "commune": "DIULU",
+                    "quartier": "NKULUSE",
+                    "code": 8210208
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "BIMPE",
+                    "code": 8210300
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "KASAI",
+                    "code": 8210302
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "KASHALA_BONZOLA",
+                    "code": 8210303
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "LUBILANJI _I",
+                    "code": 8210304
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "LUBILANJI_II",
+                    "code": 8210305
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "MAKASI",
+                    "code": 8210306
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "MUDIBA",
+                    "code": 8210307
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "TSHIKISHA",
+                    "code": 8210308
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "TUBONDO_I",
+                    "code": 8210309
+                },
+                {
+                    "commune": "KANTSHI",
+                    "quartier": "TUBONDO_II",
+                    "code": 8210310
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "BENA_TSHIBUABUA",
+                    "code": 8210400
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "BUENA_MUNTU",
+                    "code": 8210402
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "KAJIBA",
+                    "code": 8210403
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "KAWELE",
+                    "code": 8210404
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "LUNGA",
+                    "code": 8210405
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "LUPEMBA",
+                    "code": 8210406
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "LUSAMBU",
+                    "code": 8210407
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "MULUMBA_MUSULU",
+                    "code": 8210408
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "NGOMA_NGOLE",
+                    "code": 8210409
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "OUA",
+                    "code": 8210410
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "POSTE",
+                    "code": 8210411
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "TENDU",
+                    "code": 8210413
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "TSHIKAYA",
+                    "code": 8210414
+                },
+                {
+                    "commune": "MUYA",
+                    "quartier": "TSHIMINYI",
+                    "code": 8210415
+                },
+                {
+                    "commune": "BIPEMBA",
+                    "quartier": "KABUATSHA",
+                    "code": 8210500
+                },
+                {
+                    "commune": "BIPEMBA",
+                    "quartier": "KALUNDU",
+                    "code": 8210502
+                },
+                {
+                    "commune": "BIPEMBA",
+                    "quartier": "LUBUEBUE",
+                    "code": 8210503
+                },
+                {
+                    "commune": "BIPEMBA",
+                    "quartier": "MOKOLA",
+                    "code": 8210504
+                },
+                {
+                    "commune": "BIPEMBA",
+                    "quartier": "MISSION",
+                    "code": 8210505
+                },
+                {
+                    "commune": "BIPEMBA",
+                    "quartier": "MUKEKELAYI",
+                    "code": 8210506
+                },
+                {
+                    "commune": "BIPEMBA",
+                    "quartier": "SITE_TSHIMBOMBO",
+                    "code": 8210507
+                },
+                {
+                    "commune": "KABEYA___KAMWANGA",
+                    "quartier": "KABEYA_KAMWANGA",
+                    "code": 8201011
+                },
+                {
+                    "commune": "KABEYA___KAMWANGA",
+                    "quartier": "KALELA",
+                    "code": 8201010
+                },
+                {
+                    "commune": "KABEYA___KAMWANGA",
+                    "quartier": "LAC_MUKAMBA",
+                    "code": 8201030
+                },
+                {
+                    "commune": "KABEYA___KAMWANGA",
+                    "quartier": "MPEMBA",
+                    "code": 8201040
+                },
+                {
+                    "commune": "KABEYA___KAMWANGA",
+                    "quartier": "NDOMBA",
+                    "code": 8201050
+                },
+                {
+                    "commune": "KATANDA",
+                    "quartier": "KATANDA",
+                    "code": 8202011
+                },
+                {
+                    "commune": "KATANDA",
+                    "quartier": "BALUBA_LUBILANJI",
+                    "code": 8202020
+                },
+                {
+                    "commune": "KATANDA",
+                    "quartier": "BENA_TSHITOLO",
+                    "code": 8202030
+                },
+                {
+                    "commune": "KATANDA",
+                    "quartier": "MUTUAYI",
+                    "code": 8202040
+                },
+                {
+                    "commune": "KATANDA",
+                    "quartier": "NSANGU",
+                    "code": 8202050
+                },
+                {
+                    "commune": "LUPATAPATA",
+                    "quartier": "LUPATAPATA",
+                    "code": 8203010
+                },
+                {
+                    "commune": "LUPATAPATA",
+                    "quartier": "KABALA",
+                    "code": 8203020
+                },
+                {
+                    "commune": "LUPATAPATA",
+                    "quartier": "MUDIBA",
+                    "code": 8203030
+                },
+                {
+                    "commune": "LUPATAPATA",
+                    "quartier": "MUKUMBI",
+                    "code": 8203040
+                },
+                {
+                    "commune": "LUPATAPATA",
+                    "quartier": "MULENDA",
+                    "code": 8203050
+                },
+                {
+                    "commune": "MIABI",
+                    "quartier": "MIABI",
+                    "code": 8204011
+                },
+                {
+                    "commune": "MIABI",
+                    "quartier": "KAKANGAYI",
+                    "code": 8204020
+                },
+                {
+                    "commune": "MIABI",
+                    "quartier": "MOVO___NKATSHIA",
+                    "code": 8204030
+                },
+                {
+                    "commune": "MIABI",
+                    "quartier": "TSHIJIBA",
+                    "code": 8204040
+                },
+                {
+                    "commune": "MIABI",
+                    "quartier": "TSHILUNDU",
+                    "code": 8204050
+                }
+            ]
+        }
     ]
 }
 
