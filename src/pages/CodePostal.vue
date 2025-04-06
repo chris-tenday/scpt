@@ -37,15 +37,15 @@
                           </select>
                         </div>
                         <div class="col-md-3 mb-1">
-                          <label>* Ville</label>
+                          <label>* Ville/Territoire</label>
                           <select v-model="ville" @change="pickVille('')" name="" id="  " class="form-control" style="height:50px;">
                             <option v-for="data in searchingProvince" :value="data">
-                              {{ data.ville }}</option>
+                              {{ display(data.ville) }}</option>
 
                           </select>
                         </div>
                         <div class="col-md-3 mb-1">
-                          <label>* Commune/Territoire</label>
+                          <label>* Commune/Sec/Cheff</label>
                           <select v-model="searchingCommune" name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
                             <option v-for="data in Object.keys(ville.codes)" :value="data">{{display(data)}}</option>
                           </select>
@@ -149,6 +149,8 @@ export default {
   methods:{
     display(val)
     {
+      val = val.replace("______",")");
+      val = val.replace("_____","(");
       val = val.replace("____","/");
       val = val.replace("___","-");
       val = val.replace("__","'");

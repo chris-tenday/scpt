@@ -1976,57 +1976,67 @@ let codes = {
                     "commune": "TEP ATONDELE",
                     "quartier": "BOKAPO",
                     "code": 5210403
-                },
+                }
+            ]
+        },
+        {
+            ville:"Aketi_____territoire______",
+            codes:[
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "AKETI /C",
                     "code": 5201011
                 },
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "LIKATI /C",
                     "code": 5201020
                 },
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "AVURU-DUMA",
                     "code": 5201030
                 },
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "AVURI-GATANGA",
                     "code": 5201040
                 },
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "BONDONGOLA",
                     "code": 5201050
                 },
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "KOLONGWANDI",
                     "code": 5201060
                 },
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "MABINZA",
                     "code": 5201070
                 },
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "MUBATI BOYELE",
                     "code": 5201080
                 },
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "NGBONGI",
                     "code": 5201090
                 },
                 {
-                    "commune": "AKETI",
+                    "commune": "AKETI_____territoire______",
                     "quartier": "YOKO",
                     "code": 5201100
-                },
+                }
+            ]
+        },
+        {
+            ville:"Ango_____territoire______",
+            codes:[
                 {
                     "commune": "ANGO",
                     "quartier": "ANGO /C",
@@ -2051,7 +2061,12 @@ let codes = {
                     "commune": "ANGO",
                     "quartier": "SASA",
                     "code": 5202050
-                },
+                }
+            ]
+        },
+        {
+            ville:"Bambesa_____territoire______",
+            codes:[
                 {
                     "commune": "BAMBESA",
                     "quartier": "BAMBESA /C",
@@ -2106,7 +2121,12 @@ let codes = {
                     "commune": "BAMBESA",
                     "quartier": "MANGE",
                     "code": 5203110
-                },
+                }
+            ]
+        },
+        {
+            ville:"Bondo_____territoire______",
+            codes:[
                 {
                     "commune": "BONDO",
                     "quartier": "BONDO /C",
@@ -2161,7 +2181,12 @@ let codes = {
                     "commune": "BONDO",
                     "quartier": "SOA",
                     "code": 5204110
-                },
+                }
+            ]
+        },
+        {
+            ville:"Buta_____territoire______",
+            codes: [
                 {
                     "commune": "BUTA",
                     "quartier": "BUTA",
@@ -2196,7 +2221,12 @@ let codes = {
                     "commune": "BUTA",
                     "quartier": "NGURU",
                     "code": 5205070
-                },
+                }
+            ]
+        },
+        {
+            ville:"Poko_____territoire______",
+            codes: [
                 {
                     "commune": "POKO",
                     "quartier": "POKO",
@@ -2316,7 +2346,7 @@ let codes = {
                 },
                 {
                     "commune": "MBANDAKA",
-                    "quartier": "MBANDAKA � INK",
+                    "quartier": "MBANDAKA – INK",
                     "code": 4110109
                 },
                 {
@@ -2363,7 +2393,12 @@ let codes = {
                     "commune": "WANGATA",
                     "quartier": "WENDJI SEKLI",
                     "code": 4110209
-                },
+                }
+            ]
+        },
+        {
+            ville:"Basankusu_____territoire______",
+            codes: [
                 {
                     "commune": "BASANKUSU",
                     "quartier": "BASANKUSU (C)",
@@ -2383,7 +2418,12 @@ let codes = {
                     "commune": "BASANKUSU",
                     "quartier": "WAKA-BOKEKA",
                     "code": 4101040
-                },
+                }
+            ]
+        },
+        {
+            ville:"Bikoro_____territoire______",
+            codes: [
                 {
                     "commune": "BIKORO",
                     "quartier": "BIKORO",
@@ -2403,7 +2443,12 @@ let codes = {
                     "commune": "BIKORO",
                     "quartier": "LAC-NTOMBA",
                     "code": 4102040
-                },
+                }
+            ]
+        },
+        {
+            ville:"Bolomba_____territoire______",
+            codes: [
                 {
                     "commune": "BOLOMBA",
                     "quartier": "BOLOMBA (c)",
@@ -2433,7 +2478,12 @@ let codes = {
                     "commune": "BOLOMBA",
                     "quartier": "MAMPOKO",
                     "code": 4103060
-                },
+                }
+            ]
+        },
+        {
+            ville:"Bomongo_____territoire______",
+            codes: [
                 {
                     "commune": "BOMONGO",
                     "quartier": "BOMONGO",
@@ -2448,7 +2498,12 @@ let codes = {
                     "commune": "BOMONGO",
                     "quartier": "NGIRI",
                     "code": 4104030
-                },
+                }
+            ]
+        },
+        {
+            ville:"Ingende_____territoire______",
+            codes: [
                 {
                     "commune": "INGENDE",
                     "quartier": "INGENDE",
@@ -2468,7 +2523,12 @@ let codes = {
                     "commune": "INGENDE",
                     "quartier": "EUNGU",
                     "code": 4105040
-                },
+                }
+            ]
+        },
+        {
+            ville:"Lukolela_____territoire______",
+            codes: [
                 {
                     "commune": "LUKOLELA",
                     "quartier": "LUKOLELA",
@@ -2488,7 +2548,12 @@ let codes = {
                     "commune": "LUKOLELA",
                     "quartier": "MPAMA",
                     "code": 4106040
-                },
+                }
+            ]
+        },
+        {
+            ville:"Makanza_____territoire______",
+            codes: [
                 {
                     "commune": "MAKANZA",
                     "quartier": "MAKANZA",
