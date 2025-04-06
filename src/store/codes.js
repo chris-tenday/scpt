@@ -166,7 +166,7 @@ let codes = {
                 },
                 {
                     "commune": "GOMBE",
-                    "quartier": "2�me REGION NAVALE",
+                    "quartier": "2eme REGION NAVALE",
                     "code": 1003010
                 },
                 {

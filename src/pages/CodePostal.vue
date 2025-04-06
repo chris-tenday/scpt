@@ -50,6 +50,12 @@
                             <option v-for="data in Object.keys(ville.codes)" :value="data">{{display(data)}}</option>
                           </select>
                         </div>
+                        <div class="col-md-3 mb-1">
+                          <label>* Quartier</label>
+                          <select v-model="searchingQuartier" name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
+                            <option v-for="data in ville.codes[this.searchingCommune]" :value="data">{{data.quartier}}</option>
+                          </select>
+                        </div>
                         <div class="col-auto pt-4">
                           <button type="submit" class="btn btn-primary" style="height:50px;" @click.prevent="filterData"><span class="fa fa-search"></span> Recherche</button>
                         </div>
@@ -124,6 +130,7 @@ export default {
       province:"* Selectionner province",
       ville: {ville:"* Selectionner ville",codes:[]},
       searchingCommune:"* Selectionner commune/territoire",
+      searchingQuartier:"",
       villes:[],
       communes:[],
       searchingCodePostal:"",
@@ -152,6 +159,7 @@ export default {
       this.searchingProvince = this.codesPostal[province];
       this.ville = this.searchingProvince[0];
       this.searchingCommune = Object.keys(toRaw(this.ville.codes))[0];
+      console.log(this.searchingProvince);
     },
     pickVille()
     {
@@ -160,13 +168,16 @@ export default {
     },
     filterData()
     {
+      console.log(this.searchingQuartier);
       this.searched = false;
       this.loading = true;
+      this.searchData = [];
       setTimeout(() =>
       {
         this.searched = true;
         this.loading = false;
-        this.searchData = this.ville.codes[this.searchingCommune];
+        //this.searchData = this.ville.codes[this.searchingCommune];
+        this.searchData.push(this.searchingQuartier);
       } ,5000);
     },
     pickCommune(commune){
