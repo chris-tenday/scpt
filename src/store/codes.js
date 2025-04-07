@@ -8845,12 +8845,192 @@ let codes = {
                     "code": 6112404
                 }
             ]
+        },
+        {
+            ville:"Lubero_____territoire______",
+            codes: [
+                {
+                    "commune": "LUBERO",
+                    "quartier": "LUBERO",
+                    "code": 6101011
+                },
+                {
+                    "commune": "LUBERO",
+                    "quartier": "BAMATE",
+                    "code": 6101020
+                },
+                {
+                    "commune": "LUBERO",
+                    "quartier": "BAPERE",
+                    "code": 6101030
+                },
+                {
+                    "commune": "LUBERO",
+                    "quartier": "BASWAGHA",
+                    "code": 6101040
+                },
+                {
+                    "commune": "LUBERO",
+                    "quartier": "BATANGI",
+                    "code": 6101050
+                },
+                {
+                    "commune": "LUBERO",
+                    "quartier": "KAYINA",
+                    "code": 6101060
+                },
+                {
+                    "commune": "LUBERO",
+                    "quartier": "KIRUMBA",
+                    "code": 6101070
+                },
+                {
+                    "commune": "LUBERO",
+                    "quartier": "OSSO___BANGUNGU",
+                    "code": 6101080
+                }
+            ]
+        },
+        {
+            ville:"Masisi_____territoire______",
+            codes: [
+                {
+                    "commune": "MASISI",
+                    "quartier": "MASISI",
+                    "code": 6102011
+                },
+                {
+                    "commune": "MASISI",
+                    "quartier": "BAHUNDE",
+                    "code": 6102020
+                },
+                {
+                    "commune": "MASISI",
+                    "quartier": "BANYUNGU_OSSO",
+                    "code": 6102030
+                },
+                {
+                    "commune": "MASISI",
+                    "quartier": "BASHALI",
+                    "code": 6102040
+                },
+                {
+                    "commune": "MASISI",
+                    "quartier": "KATOYI",
+                    "code": 6102050
+                }
+            ]
+        },
+        {
+            ville:"Nyiragongo",
+            codes: [
+                {
+                    "commune": "NYIRAGONGO",
+                    "quartier": "BUKUMU",
+                    "code": 6103010
+                },
+                {
+                    "commune": "NYIRAGONGO",
+                    "quartier": "BUKUMU",
+                    "code": 6103020
+                }
+            ]
+        },
+        {
+            ville:"Beni_____territoire______",
+            codes: [
+                {
+                    "commune": "BENI",
+                    "quartier": "BENI___MBAU",
+                    "code": 6104011
+                },
+                {
+                    "commune": "BENI",
+                    "quartier": "BULONGO",
+                    "code": 6104020
+                },
+                {
+                    "commune": "BENI",
+                    "quartier": "BASHU",
+                    "code": 6104030
+                },
+                {
+                    "commune": "BENI",
+                    "quartier": "KYONDO",
+                    "code": 6104040
+                },
+                {
+                    "commune": "BENI",
+                    "quartier": "LUME",
+                    "code": 6104050
+                },
+                {
+                    "commune": "BENI",
+                    "quartier": "MANGINA",
+                    "code": 6104060
+                },
+                {
+                    "commune": "BENI",
+                    "quartier": "OICHA",
+                    "code": 6104070
+                },
+                {
+                    "commune": "BENI",
+                    "quartier": "RUWENZORI",
+                    "code": 6104080
+                },
+                {
+                    "commune": "BENI",
+                    "quartier": "WATALINGA",
+                    "code": 6104090
+                }
+            ]
+        },
+        {
+            ville:"Rutshuru_____territoire______",
+            codes: [
+                {
+                    "commune": "RUTSHURU",
+                    "quartier": "RUTSHURU",
+                    "code": 6105011
+                },
+                {
+                    "commune": "RUTSHURU",
+                    "quartier": "BWISHA",
+                    "code": 6105020
+                },
+                {
+                    "commune": "RUTSHURU",
+                    "quartier": "BWITO",
+                    "code": 6105030
+                }
+            ]
+        },
+        {
+            ville:"Walikale_____territoire______",
+            codes: [
+                {
+                    "commune": "WALIKALE",
+                    "quartier": "WALIKALE",
+                    "code": 6106011
+                },
+                {
+                    "commune": "WALIKALE",
+                    "quartier": "BAKANO",
+                    "code": 6106020
+                },
+                {
+                    "commune": "WALIKALE",
+                    "quartier": "WANIANGA",
+                    "code": 6106030
+                }
+            ]
         }
     ],
     nord_ubangi:[
         {
             ville:"Gbadolite",
-            codes:[
+            codes: [
                 {
                     "commune": "GBADOLITE",
                     "quartier": "KAYA",
@@ -8930,7 +9110,12 @@ let codes = {
                     "commune": "NGANZA",
                     "quartier": "TUDU",
                     "code": 4310304
-                },
+                }
+            ]
+        },
+        {
+            ville:"Bosobolo_____territoire______",
+            codes: [
                 {
                     "commune": "BOSOBOLO",
                     "quartier": "BOSOBOLO",
@@ -8950,7 +9135,12 @@ let codes = {
                     "commune": "BOSOBOLO",
                     "quartier": "BOSOBOLO",
                     "code": 4301040
-                },
+                }
+            ]
+        },
+        {
+            ville:"Businga_____territoire______",
+            codes: [
                 {
                     "commune": "BUSINGA",
                     "quartier": "BUSINGA",
@@ -8970,7 +9160,12 @@ let codes = {
                     "commune": "BUSINGA",
                     "quartier": "KARAWA",
                     "code": 4302040
-                },
+                }
+            ]
+        },
+        {
+            ville:"Mobayi___Mbongo_____territoire______",
+            codes: [
                 {
                     "commune": "MOBAYI-___MBONGO",
                     "quartier": "MOBAYI___MBONGO____C",
@@ -8985,7 +9180,12 @@ let codes = {
                     "commune": "MOBAYI-___MBONGO",
                     "quartier": "OTTO_MBANZA",
                     "code": 4303030
-                },
+                }
+            ]
+        },
+        {
+            ville:"Yokama_____territoire______",
+            codes: [
                 {
                     "commune": "YOKAMA",
                     "quartier": "YAKOMA",
@@ -9350,9 +9550,14 @@ let codes = {
                 },
                 {
                     "commune": "EWANGO",
-                    "quartier": "W�EDEKONDA",
+                    "quartier": "W’EDEKONDA",
                     "code": 8311220
-                },
+                }
+            ]
+        },
+        {
+            ville:"Katako___kombe_____territoire______",
+            codes: [
                 {
                     "commune": "KATAKO___KOMBE",
                     "quartier": "KATAKO___KOMBE",
@@ -9402,7 +9607,12 @@ let codes = {
                     "commune": "KATAKO___KOMBE",
                     "quartier": "BASAMBALA",
                     "code": 8301200
-                },
+                }
+            ]
+        },
+        {
+            ville:"Kole_____territoire______",
+            codes: [
                 {
                     "commune": "KOLE",
                     "quartier": "KOLE",
@@ -9437,7 +9647,12 @@ let codes = {
                     "commune": "KOLE",
                     "quartier": "OHINDO",
                     "code": 8302070
-                },
+                }
+            ]
+        },
+        {
+            ville:"Lodja_____territoire______",
+            codes: [
                 {
                     "commune": "LODJA",
                     "quartier": "LODJA",
@@ -9487,7 +9702,12 @@ let codes = {
                     "commune": "LODJA",
                     "quartier": "WATAMBULU",
                     "code": 8303100
-                },
+                }
+            ]
+        },
+        {
+            ville:"Lomela_____territoire______",
+            codes: [
                 {
                     "commune": "LOMELA",
                     "quartier": "LOMELA",
@@ -9522,7 +9742,12 @@ let codes = {
                     "commune": "LOMELA",
                     "quartier": "OKUTU",
                     "code": 8304070
-                },
+                }
+            ]
+        },
+        {
+            ville:"Lubefu_____territoire______",
+            codes: [
                 {
                     "commune": "LUBEFU",
                     "quartier": "LUBEFU",
@@ -9547,7 +9772,12 @@ let codes = {
                     "commune": "LUBEFU",
                     "quartier": "NGANDU_WUMA",
                     "code": 8305050
-                },
+                }
+            ]
+        },
+        {
+            ville:"Lusambo_____territoire______",
+            codes: [
                 {
                     "commune": "LUSAMBO",
                     "quartier": "LUSAMBO",
@@ -9699,7 +9929,12 @@ let codes = {
                     "commune": "IBANDA",
                     "quartier": "PANZI",
                     "code": 6210303
-                },
+                }
+            ]
+        },
+        {
+            ville:"Kabare_____territoire______",
+            codes: [
                 {
                     "commune": "KABARE",
                     "quartier": "KABARE",
@@ -9709,7 +9944,12 @@ let codes = {
                     "commune": "KABARE",
                     "quartier": "NINDJA",
                     "code": 6201020
-                },
+                }
+            ]
+        },
+        {
+            ville:"Fizi_____territoire______",
+            codes: [
                 {
                     "commune": "FIZI",
                     "quartier": "FIZI",
@@ -9734,7 +9974,12 @@ let codes = {
                     "commune": "FIZI",
                     "quartier": "TANGANYIKA",
                     "code": 6202050
-                },
+                }
+            ]
+        },
+        {
+            ville:"Idjwi_____territoire______",
+            codes: [
                 {
                     "commune": "IDJWI",
                     "quartier": "NTAMBUKA",
@@ -9744,7 +9989,12 @@ let codes = {
                     "commune": "IDJWI",
                     "quartier": "RUBENGA",
                     "code": 6203020
-                },
+                }
+            ]
+        },
+        {
+            ville:"Kalehe_____territoire______",
+            codes: [
                 {
                     "commune": "KALEHE",
                     "quartier": "BUHAVU",
@@ -9754,7 +10004,12 @@ let codes = {
                     "commune": "KALEHE",
                     "quartier": "BOLUHO",
                     "code": 6204020
-                },
+                }
+            ]
+        },
+        {
+            ville:"Mwenga_____territoire______",
+            codes: [
                 {
                     "commune": "MWENGA",
                     "quartier": "BASILE",
@@ -9784,7 +10039,12 @@ let codes = {
                     "commune": "MWENGA",
                     "quartier": "WAMUZIMU",
                     "code": 6205060
-                },
+                }
+            ]
+        },
+        {
+            ville:"Shabunda_____territoire______",
+            codes: [
                 {
                     "commune": "SHABUNDA",
                     "quartier": "BAKISI",
@@ -9794,7 +10054,12 @@ let codes = {
                     "commune": "SHABUNDA",
                     "quartier": "WAKABANGO",
                     "code": 6206020
-                },
+                }
+            ]
+        },
+        {
+            ville:"Uvira_____territoire______",
+            codes: [
                 {
                     "commune": "UVIRA",
                     "quartier": "BAFULIRO",
@@ -9824,7 +10089,12 @@ let codes = {
                     "commune": "UVIRA",
                     "quartier": "SANGE",
                     "code": 6207060
-                },
+                }
+            ]
+        },
+        {
+            ville:"Wulungu_____territoire______",
+            codes: [
                 {
                     "commune": "WULUNGU",
                     "quartier": "NGWESHE",
@@ -9891,7 +10161,7 @@ let codes = {
         },
         {
             ville:"Zongo",
-            codes:[
+            codes: [
                 {
                     "commune": "NZULU",
                     "quartier": "BUSA",
@@ -9931,7 +10201,12 @@ let codes = {
                     "commune": "WANGO",
                     "quartier": "BURUNGANGU",
                     "code": 4211204
-                },
+                }
+            ]
+        },
+        {
+            ville:"Budjala_____territoire______",
+            codes: [
                 {
                     "commune": "BUDJALA",
                     "quartier": "BUDJALA",
@@ -9961,7 +10236,12 @@ let codes = {
                     "commune": "BUDJALA",
                     "quartier": "NGOMBE_DOKO_DE_LIKIMI",
                     "code": 4201060
-                },
+                }
+            ]
+        },
+        {
+            ville:"Gemena_____territoire______",
+            codes: [
                 {
                     "commune": "GEMENA",
                     "quartier": "GEMENA",
@@ -9986,7 +10266,12 @@ let codes = {
                     "commune": "GEMENA",
                     "quartier": "NGUYA",
                     "code": 4202050
-                },
+                }
+            ]
+        },
+        {
+            ville:"Kungu_____territoire______",
+            codes: [
                 {
                     "commune": "KUNGU",
                     "quartier": "KUNGU",
@@ -10016,7 +10301,12 @@ let codes = {
                     "commune": "KUNGU",
                     "quartier": "SONGO",
                     "code": 4203060
-                },
+                }
+            ]
+        },
+        {
+            ville:"Libenge_____territoire______",
+            codes: [
                 {
                     "commune": "LIBENGE",
                     "quartier": "LIBENGE",
@@ -10053,7 +10343,7 @@ let codes = {
     tanganyika:[
         {
             ville:"Kalemi",
-            codes:[
+            codes: [
                 {
                     "commune": "LAC",
                     "quartier": "KAPULO",
@@ -10113,7 +10403,12 @@ let codes = {
                     "commune": "KALEMIE",
                     "quartier": "MUTUKA",
                     "code": 7410306
-                },
+                }
+            ]
+        },
+        {
+            ville:"Kabalo_____territoire______",
+            codes: [
                 {
                     "commune": "KABALO",
                     "quartier": "KABALO",
@@ -10128,7 +10423,12 @@ let codes = {
                     "commune": "KABALO",
                     "quartier": "LUKUSWA",
                     "code": 7401030
-                },
+                }
+            ]
+        },
+        {
+            ville:"Kalemie_____territoire______",
+            codes: [
                 {
                     "commune": "KALEMIE",
                     "quartier": "KALEMIE",
@@ -10148,7 +10448,12 @@ let codes = {
                     "commune": "KALEMIE",
                     "quartier": "TUMBWE",
                     "code": 7402040
-                },
+                }
+            ]
+        },
+        {
+            ville:"Kongolo_____territoire______",
+            codes: [
                 {
                     "commune": "KONGOLO",
                     "quartier": "KONGOLO",
@@ -10203,7 +10508,12 @@ let codes = {
                     "commune": "KONGOLO",
                     "quartier": "YAMBULA",
                     "code": 7403120
-                },
+                }
+            ]
+        },
+        {
+            ville:"Manono_____territoire______",
+            codes: [
                 {
                     "commune": "MANONO",
                     "quartier": "MANONO",
@@ -10238,7 +10548,12 @@ let codes = {
                     "commune": "MANONO",
                     "quartier": "NYEMBA",
                     "code": 7404070
-                },
+                }
+            ]
+        },
+        {
+            ville:"Moba_____territoire______",
+            codes: [
                 {
                     "commune": "MOBA",
                     "quartier": "MOBA",
@@ -10273,7 +10588,12 @@ let codes = {
                     "commune": "MOBA",
                     "quartier": "NGANIE",
                     "code": 7405070
-                },
+                }
+            ]
+        },
+        {
+            ville:"Nyunzu_____territoire______",
+            codes: [
                 {
                     "commune": "NYUNZU",
                     "quartier": "NYUNZU",
@@ -10295,7 +10615,7 @@ let codes = {
     tshopo:[
         {
             ville:"Kisangani",
-            codes:[
+            codes: [
                 {
                     "commune": "KABONDO",
                     "quartier": "MANIEMA",
@@ -10630,7 +10950,12 @@ let codes = {
                     "commune": "TSHOPO",
                     "quartier": "ZOO",
                     "code": 5110613
-                },
+                }
+            ]
+        },
+        {
+            ville:"Bafwasende_____territoire______",
+            codes: [
                 {
                     "commune": "BAFWASENDE",
                     "quartier": "BAFWASENDE_COMMUNE",
@@ -10670,7 +10995,12 @@ let codes = {
                     "commune": "BAFWASENDE",
                     "quartier": "BOMILI",
                     "code": 5101080
-                },
+                }
+            ]
+        },
+        {
+            ville:"Banalia_____territoire______",
+            codes: [
                 {
                     "commune": "BANALIA",
                     "quartier": "BANALIA",
@@ -10700,7 +11030,12 @@ let codes = {
                     "commune": "BANALIA",
                     "quartier": "POPOY",
                     "code": 5102060
-                },
+                }
+            ]
+        },
+        {
+            ville:"Basoko_____territoire______",
+            codes: [
                 {
                     "commune": "BASOKO",
                     "quartier": "BASOKO",
@@ -10745,7 +11080,12 @@ let codes = {
                     "commune": "BASOKO",
                     "quartier": "YAMANDUNDU",
                     "code": 5103090
-                },
+                }
+            ]
+        },
+        {
+            ville:"Isangi_____territoire______",
+            codes: [
                 {
                     "commune": "ISANGI",
                     "quartier": "ISANGI",
@@ -10825,7 +11165,12 @@ let codes = {
                     "commune": "ISANGI",
                     "quartier": "YAWEMBE_BASOA",
                     "code": 5104160
-                },
+                }
+            ]
+        },
+        {
+            ville:"Opala_____territoire______",
+            codes: [
                 {
                     "commune": "OPALA",
                     "quartier": "OPALA",
@@ -10885,7 +11230,12 @@ let codes = {
                     "commune": "OPALA",
                     "quartier": "YEYANGO",
                     "code": 5105120
-                },
+                }
+            ]
+        },
+        {
+            ville:"Ubundu______territoire______",
+            codes: [
                 {
                     "commune": "UBUNDU",
                     "quartier": "UBUNDU",
@@ -10945,7 +11295,12 @@ let codes = {
                     "commune": "UBUNDU",
                     "quartier": "WALENGOLA___LOWA",
                     "code": 5106120
-                },
+                }
+            ]
+        },
+        {
+            ville:"Yahuma_____territoire______",
+            codes: [
                 {
                     "commune": "YAHUMA",
                     "quartier": "YAHUMA",
@@ -10977,7 +11332,7 @@ let codes = {
     tshuapa:[
         {
             ville:"Boende",
-            codes:[
+            codes: [
                 {
                     "commune": "BOENDE",
                     "quartier": "BOENDE_II_KIMBANGU",
@@ -11067,7 +11422,12 @@ let codes = {
                     "commune": "TSHUAPA",
                     "quartier": "WATSHI",
                     "code": 4510213
-                },
+                }
+            ]
+        },
+        {
+            ville:"Befale_____territoire______",
+            codes: [
                 {
                     "commune": "BEFALE",
                     "quartier": "BEFALE",
@@ -11087,7 +11447,12 @@ let codes = {
                     "commune": "BEFALE",
                     "quartier": "LOMAKO",
                     "code": 4501040
-                },
+                }
+            ]
+        },
+        {
+            ville:"Boende_____territoire______",
+            codes: [
                 {
                     "commune": "BOENDE",
                     "quartier": "BOENDE",
@@ -11112,7 +11477,12 @@ let codes = {
                     "commune": "BOENDE",
                     "quartier": "WINI",
                     "code": 4502050
-                },
+                }
+            ]
+        },
+        {
+            ville:"Bokungu_____territoire______",
+            codes: [
                 {
                     "commune": "BOKUNGU",
                     "quartier": "BOKUNGU",
@@ -11142,7 +11512,12 @@ let codes = {
                     "commune": "BOKUNGU",
                     "quartier": "LUAY",
                     "code": 4503060
-                },
+                }
+            ]
+        },
+        {
+            ville:"Djolu_____territoire______",
+            codes: [
                 {
                     "commune": "DJOLU",
                     "quartier": "DJOLU____S",
@@ -11167,7 +11542,12 @@ let codes = {
                     "commune": "DJOLU",
                     "quartier": "YALA",
                     "code": 4504050
-                },
+                }
+            ]
+        },
+        {
+            ville:"Ikela______territoire______",
+            codes: [
                 {
                     "commune": "IKELA",
                     "quartier": "IKELA",
@@ -11197,7 +11577,12 @@ let codes = {
                     "commune": "IKELA",
                     "quartier": "TUMBENGA",
                     "code": 4505060
-                },
+                }
+            ]
+        },
+        {
+            ville:"Monkoto_____territoire______",
+            codes: [
                 {
                     "commune": "MONKOTO",
                     "quartier": "MONKOTO",
