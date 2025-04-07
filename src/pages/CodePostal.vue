@@ -2,12 +2,17 @@
   <div>
     <Header page-title="Annuaire des codes postaux congolais" />
 
-
     <div id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <h2 class="">BIENVENUE A LA SCPT - Annuaire des codes postaux congolais</h2>
+        <p>Cet annuaire du code postal vous permet d’identifier les codes des adresses postales(quartiers, communes, secteurs, chefferies et bureaux des Postes) des provinces. villes et territoires.</p>
+      </div>
       <div class="container py-5">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
           <h2 class="mb-0"> Que recherchez-vous <span class="fa fa-question"></span></h2>
+
         </div>
+
         <div class="row mb-5">
 
           <div class="container mt-5">
@@ -31,7 +36,7 @@
                         <div class="col-md-3 mb-1">
                           <label>* Province</label>
                           <select v-model="province" @change="pickProvince(province)" name="" id="" class="form-control" style="height:50px;">
-                            <option v-for="province in Object.keys(codesPostal)" :value="province">
+                            <option v-for="province in Object.keys(codesPostal)" :value="province" style="text-transform: capitalize;">
                               {{ display(province) }}</option>
 
                           </select>
@@ -39,25 +44,28 @@
                         <div class="col-md-3 mb-1">
                           <label>* Ville/Territoire</label>
                           <select v-model="ville" @change="pickVille('')" name="" id="  " class="form-control" style="height:50px;">
-                            <option v-for="data in searchingProvince" :value="data">
+                            <option v-for="data in searchingProvince" :value="data" style="text-transform: capitalize;">
                               {{ display(data.ville) }}</option>
 
                           </select>
                         </div>
-                        <div class="col-md-3 mb-1">
-                          <label>* Commune/Sec/Cheff</label>
+                        <div class="col-md-3 mb-1" v-if="!ville.ville.includes('territoire')">
+                          <label>* Commune/Sec/Cheff.</label>
                           <select v-model="searchingCommune" name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
+                            <option value="">-- Selectionner --</option>
                             <option v-for="data in Object.keys(ville.codes)" :value="data">{{display(data)}}</option>
                           </select>
                         </div>
                         <div class="col-md-3 mb-1">
-                          <label>* Quartier</label>
+                          <label v-if="!ville.ville.includes('territoire')">* Quartier</label>
+                          <label for="" v-else>* Commune/Sec/Cheff.</label>
                           <select v-model="searchingQuartier" name="" id="" class="form-control" style="height:50px;" :disabled="(searchingProvince == null)? true : false">
-                            <option v-for="data in ville.codes[this.searchingCommune]" :value="data">{{data.quartier}}</option>
+                            <option value="">-- Selectionner --</option>
+                            <option v-for="data in ville.codes[this.searchingCommune]" :value="data">{{display(data.quartier)}}</option>
                           </select>
                         </div>
                         <div class="col-auto pt-4">
-                          <button type="submit" class="btn btn-primary" style="height:50px;" @click.prevent="filterData"><span class="fa fa-search"></span> Recherche</button>
+                          <button type="submit" class="btn btn-primary" style="height:50px;" @click.prevent="filterData" :disabled="searchingQuartier === ''"><span class="fa fa-search"></span> Recherche</button>
                         </div>
                       </div>
                     </form>
@@ -105,7 +113,7 @@
             </div>
           </div>
           <div v-else class="col-md-12 d-flex justify-content-center" style="">
-            <img v-if="!loading" :src="$resolvePath('/assets/downloaded/drc-map.png')" class="" style="width:350px; height:350px;" alt="">
+            <img v-if="!loading" :src="$resolvePath('/assets/downloaded/drc-map.png')" class="" style="width:450px; height:450px;" alt="">
             <img v-else :src="$resolvePath('/assets/downloaded/search-loader.gif')" class="" style="width:150px; height:150px;" alt="">
 
           </div>
@@ -113,7 +121,7 @@
       </div>
     </div>
 
-    <Souscrire tel="info@scpt.cd"/>
+    <Souscrire tel="codepostal@scpt.cd"/>
     <Footer/>
   </div>
 </template>
@@ -129,7 +137,7 @@ export default {
       searchingProvince:null,
       province:"* Selectionner province",
       ville: {ville:"* Selectionner ville",codes:[]},
-      searchingCommune:"* Selectionner commune/territoire",
+      searchingCommune:"",
       searchingQuartier:"",
       villes:[],
       communes:[],
@@ -149,28 +157,38 @@ export default {
   methods:{
     display(val)
     {
-      val = val.replace("______",")");
-      val = val.replace("_____","(");
-      val = val.replace("____","/");
-      val = val.replace("___","-");
-      val = val.replace("__","'");
-      val = val.replace("_"," ");
+      val = val.replaceAll("______",")");
+      val = val.replaceAll("_____","(");
+      val = val.replaceAll("____","/");
+      val = val.replaceAll("___","-");
+      val = val.replaceAll("__","'");
+      val = val.replaceAll("_"," ");
       return val;
     },
     pickProvince(province){
       this.searchingProvince = this.codesPostal[province];
       this.ville = this.searchingProvince[0];
       this.searchingCommune = Object.keys(toRaw(this.ville.codes))[0];
-      console.log(this.searchingProvince);
+      ////console.log(this.searchingProvince);
     },
     pickVille()
     {
-      console.log("Pick ville..");
-      console.log(toRaw(Object.keys(this.ville.codes)));
+      this.searchingCommune = "";
+      this.searchingQuartier = "";
+      ////console.log("Pick ville..");
+      ////console.log(toRaw(Object.keys(this.ville.codes)));
+      if(this.ville.ville.includes("territoire"))
+      {
+        /** handle territoire */
+        //console.log("territoire....");
+        this.searchingCommune = Object.keys(toRaw(this.ville.codes))[0];
+        //console.log(this.searchingCommune);
+      }
+      //console.log(toRaw(this.ville.codes))
     },
     filterData()
     {
-      console.log(this.searchingQuartier);
+      //console.log(this.searchingQuartier);
       this.searched = false;
       this.loading = true;
       this.searchData = [];
