@@ -166,6 +166,8 @@ export default {
       return val;
     },
     pickProvince(province){
+
+      this.searchingQuartier = "";
       this.searchingProvince = this.codesPostal[province];
       this.ville = this.searchingProvince[0];
       this.searchingCommune = Object.keys(toRaw(this.ville.codes))[0];
