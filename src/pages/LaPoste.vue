@@ -57,6 +57,30 @@
     </div>
     <!-- Features Start -->
 
+     <!-- offres-->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+          <h3 class="mb-0"> Consulter notre grille tarifaire </h3>
+
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <label for=""><span class="fa fa-info-circle"></span> Selectionner l'offre</label>
+            <select v-model="offre" name="" id="" class="form-control">
+              <option  v-for="off in offres" :value="off">{{ off.titre }}</option>
+            </select>
+          </div>
+        </div>
+        <div class="row" >
+          
+        </div>
+        <div class="d-flex overflow-auto  pb-3"  style=" width:100%">
+          <img :src="$resolvePath(offre.img)" alt="" style="max-width: 800px; border:1px solid lightgray;">
+        </div>
+      </div>
+    </div>   
+
     <!-- Service Start -->
     <div id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
@@ -256,10 +280,47 @@ import Souscrire from "@/sections/Souscrire.vue";
 export default {
   name: "LaPoste",
   components: {Partners,Souscrire},
+  data(){
+    return {
+      offres:[
+        {
+          titre:"Poste au lettre",
+          img:"/assets/downloaded/pp.png"
+        },
+        {
+          titre:"Chrono",
+          img:"/assets/downloaded/chrono.png"
+        },
+        {
+          titre:"Classique",
+          img:"/assets/downloaded/classique.png"
+        },
+        {
+          titre:"Confiance",
+          img:"/assets/downloaded/confiance.png"
+        },
+        {
+          titre:"CPX International",
+          img:"/assets/downloaded/cpx.png"
+        },
+        {
+          titre:"Imprimes",
+          img:"/assets/downloaded/imp.png"
+        },
+        
+      ],
+      offre:{}
+    };
+  },
   computed:{
     laposte(){
       return this.$store.state.laposte
     }
+  },
+  mounted(){
+    this.offre = this.offres[0];
+    console.log("mounted");
+    console.log(this.offre.titre);
   }
 }
 </script>
