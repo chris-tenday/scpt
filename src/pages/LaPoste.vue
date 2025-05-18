@@ -13,35 +13,41 @@
           <div class="col-lg-2">
             <div class="row g-5">
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                <h6>Poste au lettre <button @click.prevent="offre = offres[0]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <h6>Poste au lettre </h6>
+                <button @click.prevent="offre = offres[0]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
               </div>
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                <h6>Chrono <button @click.prevent="offre = offres[1]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <h6>Chrono </h6>
+                <button @click.prevent="offre = offres[1]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                <h6>Classique <button @click.prevent="offre = offres[2]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <h6>Classique </h6>
+                <button @click.prevent="offre = offres[2]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-8  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
-            <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath(offre.img)" style="object-fit: fill; border:1px solid lightgray;">
+          <div class="col-lg-8  wow zoomIn" data-wow-delay="0.9s" style="">
+            <div class="position-relative pb-2" style="overflow-x: auto; overflow-y: auto;  white-space: nowrap; height:440px; ">
+              <img class="position-absolute  rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath(offre.img)" style="border:1px solid lightgray;">
             </div>
           </div>
           <div class="col-lg-2">
             <div class="row g-5">
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                <h6>Confiance <button @click.prevent="offre = offres[3]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <h6>Confiance </h6>
+                <button @click.prevent="offre = offres[3]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                <h6>CPX International <button @click.prevent="offre = offres[4]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <h6>CPX International </h6>
+                <button @click.prevent="offre = offres[4]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                <h6>Imprimés <button @click.prevent="offre = offres[5]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <h6>Imprimés </h6>
+                <button @click.prevent="offre = offres[5]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
             </div>
@@ -51,30 +57,6 @@
       </div>
     </div>
     <!-- Features Start -->
-
-     <!-- offres-->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-          <h3 class="mb-0"> Consulter notre grille tarifaire </h3>
-
-        </div>
-        <div class="row mb-3">
-          <div class="col-md-3">
-            <label for=""><span class="fa fa-info-circle"></span> Selectionner l'offre</label>
-            <select v-model="offre" name="" id="" class="form-control">
-              <option  v-for="off in offres" :value="off">{{ off.titre }}</option>
-            </select>
-          </div>
-        </div>
-        <div class="row" >
-          
-        </div>
-        <div class="d-flex overflow-auto  pb-3"  style=" width:100%">
-          <img :src="$resolvePath(offre.img)" alt="" style="max-width: 800px; border:1px solid lightgray;">
-        </div>
-      </div>
-    </div>   
 
     <!-- Service Start -->
     <div id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
