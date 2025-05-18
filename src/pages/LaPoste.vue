@@ -10,44 +10,39 @@
           <h4 class="mb-0">{{laposte.pourquoi}}</h4>
         </div>
         <div class="row g-5">
-          <div class="col-lg-4">
+          <div class="col-lg-2">
             <div class="row g-5">
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-truck text-white"></i>
-                </div>
-                <h4>La poste aux lettres et colis postaux</h4>
-                <p class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
+                <h6>Poste au lettre <button @click.prevent="offre = offres[0]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
               </div>
-              <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-truck text-white"></i>
-                </div>
-                <h4>Professionalisme</h4>
-                <p class="mb-0">Nos équipes font toujours preuve de professionalisme à chaque action</p>
+              <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                <h6>Chrono <button @click.prevent="offre = offres[1]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
+              </div>
+              <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                <h6>Classique <button @click.prevent="offre = offres[2]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+          <div class="col-lg-8  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
             <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath(laposte.pourquoi_image)" style="object-fit: cover;">
+              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath(offre.img)" style="object-fit: fill; border:1px solid lightgray;">
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-2">
             <div class="row g-5">
-              <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-truck text-white"></i>
-                </div>
-                <h4>La poste financière</h4>
-                <p class="mb-0">Traite des opérations financières, principalement des chèques et mandats postaux, des transferts, des virements, et des payements.</p>
+              <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                <h6>Confiance <button @click.prevent="offre = offres[3]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
-              <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-phone-alt text-white"></i>
-                </div>
-                <h4>24/7 Support</h4>
-                <p class="mb-0">Toujours à votre service , n'importe quand et n'importe où</p>
+              <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                <h6>CPX International <button @click.prevent="offre = offres[4]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
+              </div>
+              <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                <h6>Imprimés <button @click.prevent="offre = offres[5]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button></h6>
+                <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
             </div>
           </div>
