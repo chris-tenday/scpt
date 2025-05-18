@@ -100,7 +100,7 @@ export default {
   },
   mounted() {
     var articles = this.$store.getters.GET_ARTICLES;
-    #console.log("length:"+articles.length);
+    //console.log("length:"+articles.length);
   },
   beforeMount() {
     this.fecthContent();
