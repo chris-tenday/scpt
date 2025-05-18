@@ -91,10 +91,19 @@ export default {
       var i=Math.floor(Math.random() * (max -1))
 
       return i;
+    },
+    async fecthContent()
+    {
+      await this.$store.dispatch("getHomeContent");
+      await this.$store.dispatch("getCoverImage");
     }
   },
   mounted() {
-
+    var articles = this.$store.getters.GET_ARTICLES;
+    #console.log("length:"+articles.length);
+  },
+  beforeMount() {
+    this.fecthContent();
   }
 }
 </script>
