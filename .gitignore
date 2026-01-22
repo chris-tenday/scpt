@@ -30,4 +30,5 @@ coverage
 *.tsbuildinfo
 .idea
 .vscode
+scpt.zip
 
