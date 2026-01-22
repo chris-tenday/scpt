@@ -4,7 +4,7 @@
 
     <div id="services" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container">
-        <h2 class="">BIENVENUE A LA SCPT - Annuaire des codes postaux congolais</h2>
+        <h2 class="">BIENVENUE A LA OCPT - Annuaire des codes postaux congolais</h2>
         <p>Cet annuaire du code postal vous permet d’identifier les codes des adresses postales(quartiers, communes, secteurs, chefferies et bureaux des Postes) des provinces. villes et territoires.</p>
       </div>
       <div class="container py-5">

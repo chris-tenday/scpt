@@ -6,7 +6,7 @@
         <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
           <div class="d-inline-flex align-items-center" style="height: 45px;">
             <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Boulevard du 30 juin , Kinshasa - Gombe</small>
-            <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@scpt.cd</small>
+            <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@ocpt.cd</small>
           </div>
         </div>
         <div class="col-lg-4 text-center text-lg-end">
@@ -26,8 +26,8 @@
     <div class="container-fluid position-relative p-0">
       <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <router-link :to="{name:'home'}" class="navbar-brand p-0">
-          <h1 style="display: none;" class="m-0"><i class="fa fa-user-tie me-2"></i>SCPT</h1>
-          <img :src="$resolvePath('/assets/downloaded/logo.png')" style="width:70px; height:70px;" alt="">
+          <h1 style="display: none;" class="m-0"><i class="fa fa-user-tie me-2"></i>OCPT</h1>
+          <img :src="$resolvePath('/assets/downloaded/logo.png')" style="width:130px; height:90px;" alt="">
         </router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="fa fa-bars"></span>
@@ -42,7 +42,7 @@
                 <router-link :to="{name:'codepostal'}" class="dropdown-item">Code Postal</router-link>
                 <router-link :to="{name:'ems'}" class="dropdown-item">EMS</router-link>
                 <router-link :to="{name:'postemarket'}" class="dropdown-item">Poste Market</router-link>
-                <router-link :to="{name:'on'}" class="dropdown-item">ON<sup>by SCPT</sup></router-link>
+                <router-link :to="{name:'on'}" class="dropdown-item">ON<sup>by OCPT</sup></router-link>
                 <router-link :to="{name:'hosting'}" class="dropdown-item">Hosting<sup>.CD</sup></router-link>
                 <router-link :to="{name:'postefinance'}" class="dropdown-item">Poste Finance</router-link>
                 <router-link :to="{name:'telecom'}" class="dropdown-item">Télécommunication</router-link>
@@ -85,7 +85,7 @@
             <img class="w-100" :src="$resolvePath(banner.image_2)" style="max-height: 650px;" alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
-                <h5 style="display:none;" class="text-white text-uppercase mb-3 animated slideInDown">« ON <sup>BY SCPT</sup> »</h5>
+                <h5 style="display:none;" class="text-white text-uppercase mb-3 animated slideInDown">« ON <sup>BY OCPT</sup> »</h5>
                 <h6 style="display:none;" class="display-1 text-white mb-md-4 animated zoomIn">La Triple Play en RDC</h6>
                 <a style="display: none;" href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"><span class="fa fa-check"></span> Souscrire</a>
               </div>

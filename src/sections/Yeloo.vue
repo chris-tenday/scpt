@@ -9,7 +9,7 @@
           </div>
           <p style="display: none;" class="mb-4">
 
-            Yeloo est un produit de la SCPT axé dans la fourniture de la connexion internet avec et sans fil</p>
+            Yeloo est un produit de la OCPT axé dans la fourniture de la connexion internet avec et sans fil</p>
           <div style="display:none;" class="row g-0 mb-3">
             <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
               <h5 class="mb-3"><i class="fa fa-wifi text-primary me-3"></i>Internet sans fil</h5>

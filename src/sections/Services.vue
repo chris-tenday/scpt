@@ -25,7 +25,7 @@
               <div class="service-icon">
                 <i class="fa fa-wifi text-white"></i>
               </div>
-              <h4 class="mb-3">ON <sup>by SCPT</sup></h4>
+              <h4 class="mb-3">ON <sup>by OCPT</sup></h4>
               <p class="m-0">Triple Play => Télévision numérique, Inernet haut débit, Téléphone fixe illimitée</p>
               <router-link class="btn btn-lg btn-primary rounded" to="#on">
                 <i class="bi bi-arrow-right"></i>

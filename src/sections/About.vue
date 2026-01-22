@@ -7,7 +7,7 @@
           <div class="col-lg-7">
             <div class="section-title position-relative pb-3 mb-5">
               <h5 class="fw-bold text-primary text-uppercase">Qui sommes-nous ?</h5>
-              <h1 class="mb-0">La Société Congolaise des Postes et Télécommunications (SCPT) </h1>
+              <h1 class="mb-0">L'Office Congolais des Postes et Télécommunications (OCPT) </h1>
             </div>
             <p class="mb-4">
               {{sectionMission.texte}}
@@ -16,7 +16,7 @@
             <div class="row g-0 mb-3">
               <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                 <h5 class="mb-3"><i class="fa fa-truck text-primary me-3"></i>La Poste</h5>
-                <h5 class="mb-3"><i class="fa fa-wifi text-primary me-3"></i>ON <sup>by SCPT</sup></h5>
+                <h5 class="mb-3"><i class="fa fa-wifi text-primary me-3"></i>ON <sup>by OCPT</sup></h5>
               </div>
               <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
                 <h5 class="mb-3"><i class="fa fa-server text-primary me-3"></i>Hosting</h5>

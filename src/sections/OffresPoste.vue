@@ -6,7 +6,7 @@
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
           <img :src="$resolvePath('/assets/downloaded/onbox2.png')" style="width:120px;" alt="">
           <h5 style="display:none;" class="fw-bold text-primary text-uppercase">Pricing Plans</h5>
-          <h1 class="mb-0">Nos offres ON <sup>by SCPT</sup></h1>
+          <h1 class="mb-0">Nos offres ON <sup>by OCPT</sup></h1>
           <p>Profitez d’un accès illimité grâce à l’internet haut débit sur Fibre optique. Détendez-vous avec des saisons complètes de programmes originaux exclusifs sur vos chaînes TV préférées. Profitez d’une Téléphonie illimitée pour contacter tous vos proches.</p>
           <ul class="list-unstyled">
             <li><span class="fa fa-check"></span> Frais d’installation :  <span style="font-weight:bold;">{{ on.installation }}</span></li>

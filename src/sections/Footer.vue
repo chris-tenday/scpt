@@ -7,7 +7,7 @@
           <div class="col-lg-4 col-md-6 footer-about">
             <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
               <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 text-white">SCPT - RDC</h1>
+                <h1 class="m-0 text-white">OCPT - RDC</h1>
               </a>
             </div>
           </div>
