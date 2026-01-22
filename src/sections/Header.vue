@@ -26,7 +26,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <router-link :to="{name:'home'}" class="navbar-brand p-0">
           <h1 style="display: none;" class="m-0"><i class="fa fa-user-tie me-2"></i>OCPT</h1>
-          <img :src="$resolvePath('/assets/downloaded/logo1.png')" style="width:130px; height:90px;" alt="">
+          <img :src="$resolvePath('/assets/downloaded/logo.png')" style="width:130px; height:90px;" alt="">
         </router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="fa fa-bars"></span>
