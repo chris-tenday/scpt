@@ -108,6 +108,14 @@
 
     <About/>
 
+    <!-- 360 image !-->
+    <iframe
+        src="https://cloud.chaos.com/collaboration/n/U96e35Vi1oTDMmjjxEUf2M/present?vrt="
+        width="100%"
+        height="500"
+        style="border:0"
+    ></iframe>
+
     <!--<Services/> !-->
 
     <OffresON/>
