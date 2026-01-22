@@ -75,7 +75,7 @@
             <img class="w-100" :src="$resolvePath(banner.image_1)" style="max-height: 650px;"  alt="Image">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
               <div class="p-3" style="max-width: 900px;">
-                <h4 style="" class="text-white text-uppercase mb-3 animated slideInDown">Société Congolaise des Postes et Télécommunication</h4>
+                <h4 style="" class="text-white text-uppercase mb-3 animated slideInDown">Office Congolais des Postes et Télécommunication</h4>
                 <p  style="display:none; font-size: 25px; letter-spacing: 10px;"  class="display-1 text-white mb-md-4 animated zoomIn">Notre Boutique en ligne</p>
                 <a style="display:none; text-transform: uppercase;" href="https://www.postemarket.cd" target="_blank" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"><span class="fa fa-shopping-bag"></span> Visiter notre boutique</a>
               </div>
