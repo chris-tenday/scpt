@@ -15,16 +15,16 @@
             <div class="row g-5">
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
                 <h6>Poste au lettre </h6>
-                <button @click.prevent="offre = offres[0]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
+                <button @click.prevent="offre = offres[0]" class="btn btn-dark w-100 py-3">Voir tarif <span class="fa fa-arrow-right"></span></button>
               </div>
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
                 <h6>Chrono </h6>
-                <button @click.prevent="offre = offres[1]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
+                <button @click.prevent="offre = offres[1]" class="btn btn-dark w-100 py-3">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
                 <h6>Classique </h6>
-                <button @click.prevent="offre = offres[2]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
+                <button @click.prevent="offre = offres[2]" class="btn btn-dark w-100 py-3">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
             </div>
@@ -38,17 +38,17 @@
             <div class="row g-5">
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
                 <h6>Confiance </h6>
-                <button @click.prevent="offre = offres[3]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
+                <button @click.prevent="offre = offres[3]" class="btn btn-dark w-100 py-3">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
                 <h6>CPX International </h6>
-                <button @click.prevent="offre = offres[4]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
+                <button @click.prevent="offre = offres[4]" class="btn btn-dark w-100 py-3">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
               <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
                 <h6>Imprimés </h6>
-                <button @click.prevent="offre = offres[5]" class="btn btn-info">Voir tarif <span class="fa fa-arrow-right"></span></button>
+                <button @click.prevent="offre = offres[5]" class="btn btn-dark w-100 py-3">Voir tarif <span class="fa fa-arrow-right"></span></button>
                 <p style="display:none;" class="mb-0">Traite les objets des correspondances et les colis postaux ;</p>
               </div>
             </div>
@@ -59,100 +59,97 @@
     </div>
     <!-- Features Start -->
 
-    <!-- Service Start -->
-    <section id="department-details" class="department-details section">
-      <div class="container"  >
-        <div class="services-overview"  >
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <div class="overview-header">
+    <section id="about" class="about section" >
+      <div id="about" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container" >
+          <div class="values-section" >
+            <div class="row">
+              <div class="col-lg-12 text-center">
                 <h3>Produits</h3>
-                <p>La Poste RDC offre à la clientèle les produits suivants.</p>
+                <p class="section-description">La Poste RDC offre à la clientèle les produits suivants. </p>
               </div>
             </div>
-          </div>
 
-          <div class="row gy-4 services-grid">
-            <div class="col-lg-3 col-md-6" >
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-truck"></i>
+            <div class="row">
+              <div class="col-lg-3 col-md-6" >
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="bi bi-truck"></i>
+                  </div>
+                  <h4>Lettres ordinaires</h4>
                 </div>
-                <h4>Lettres ordinaires</h4>
               </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6" >
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-truck"></i>
+              <div class="col-lg-3 col-md-6" >
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="bi bi-truck"></i>
+                  </div>
+                  <h4>Lettres recommandées</h4>
                 </div>
-                <h4>Lettres recommandées</h4>
               </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6" >
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-truck"></i>
+              <div class="col-lg-3 col-md-6" >
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="bi bi-truck"></i>
+                  </div>
+                  <h4>Cartes postales</h4>
                 </div>
-                <h4>Cartes postales</h4>
               </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6" >
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-truck"></i>
+              <div class="col-lg-3 col-md-6" >
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="bi bi-truck"></i>
+                  </div>
+                  <h4>Documents exprès</h4>
                 </div>
-                <h4>Documents exprès</h4>
               </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6" >
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-truck"></i>
+              <div class="col-lg-3 col-md-6" >
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="bi bi-truck"></i>
+                  </div>
+                  <h4>Imprimés et écrits périodiques</h4>
                 </div>
-                <h4>Imprimés et écrits périodiques</h4>
               </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6" >
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-truck"></i>
+              <div class="col-lg-3 col-md-6" >
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="bi bi-truck"></i>
+                  </div>
+                  <h4>Petits paquets, colis postaux et marchandises</h4>
                 </div>
-                <h4>Petits paquets, colis postaux et marchandises</h4>
               </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6" >
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-truck"></i>
+              <div class="col-lg-3 col-md-6" >
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="bi bi-truck"></i>
+                  </div>
+                  <h4>Boîtes Postales</h4>
                 </div>
-                <h4>Boîtes Postales</h4>
               </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6" >
-              <div class="service-item">
-                <div class="service-icon">
-                  <i class="bi bi-truck"></i>
+              <div class="col-lg-3 col-md-6" >
+                <div class="value-item">
+                  <div class="value-icon">
+                    <i class="bi bi-truck"></i>
+                  </div>
+                  <h4>Philatélie & Poste relais</h4>
                 </div>
-                <h4> Philatélie & Poste relais</h4>
               </div>
-            </div>
 
+            </div><!-- End Values Row -->
           </div>
         </div>
       </div>
     </section>
-    <!-- Service End -->
-
     <!-- About Start -->
-    <div id="about" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div  id="about" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-7">
