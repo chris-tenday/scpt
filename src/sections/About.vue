@@ -79,7 +79,7 @@
               <div class="image-wrapper">
                 <img :src="$resolvePath(sectionMission.image)" class="img-fluid main-image" alt="Healthcare facility">
                 <div class="floating-image" >
-                  <img :src="$resolvePath('/assets/downloaded/logo.png')" class="img-fluid" alt="Medical team">
+                  <img :src="$resolvePath('/assets/downloaded/logo_2.jpg')" class="img-fluid" alt="Medical team">
                 </div>
               </div>
             </div>

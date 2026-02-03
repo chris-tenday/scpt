@@ -1,65 +1,73 @@
 <template>
-  <div>
+  <div id="team" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <!-- Team Start -->
-    <div id="team" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-5">
+    <section id="doctors" class="doctors section">
+
+      <div class="container">
         <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
           <h5 class="fw-bold text-primary text-uppercase">Equipe dirigeante</h5>
         </div>
-        <div class="row g-5">
-          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-            <div class="team-item bg-light rounded overflow-hidden">
-              <div class="team-img position-relative overflow-hidden">
-                <img class="img-fluid w-100" :src="$resolvePath(team.photo_pca)" alt="">
-                <div style="display:none;" class="team-social">
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" >
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img :src="$resolvePath(team.photo_pca)" alt="PCA" class="img-fluid">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                  </div>
                 </div>
               </div>
-              <div class="text-center py-4">
-                <h4 class="text-primary">{{ team.pca }}</h4>
-                <p class="text-uppercase m-0">Président du Conseil d'Administration</p>
+              <div class="doctor-content">
+                <h4>{{ team.pca }}</h4>
+                <span class="specialty">Président du Conseil d'Administration</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-            <div class="team-item bg-light rounded overflow-hidden">
-              <div class="team-img position-relative overflow-hidden">
-                <img class="img-fluid w-100" :src="$resolvePath(team.photo_dg)" alt="">
-                <div style="display:none;"  class="team-social">
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+
+          <div class="col-lg-4 col-md-6" >
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img :src="$resolvePath(team.photo_dg)" alt="PCA" class="img-fluid">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                  </div>
                 </div>
               </div>
-              <div class="text-center py-4">
-                <h4 class="text-primary">{{ team.dg }}</h4>
-                <p class="text-uppercase m-0">Directeur Général</p>
+              <div class="doctor-content">
+                <h4>{{ team.dg }}</h4>
+                <span class="specialty">Directeur Général</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
-            <div class="team-item bg-light rounded overflow-hidden">
-              <div class="team-img position-relative overflow-hidden">
-                <img class="img-fluid w-100":src="$resolvePath(team.photo_dga)" alt="">
-                <div style="display:none;"  class="team-social">
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                  <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+
+          <div class="col-lg-4 col-md-6" >
+            <div class="doctor-card">
+              <div class="doctor-image">
+                <img :src="$resolvePath(team.photo_dga)" alt="PCA" class="img-fluid">
+                <div class="doctor-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                  </div>
                 </div>
               </div>
-              <div class="text-center py-4">
-                <h4 class="text-primary">{{team.dga}}</h4>
-                <p class="text-uppercase m-0">Directeur Général Adjoint</p>
+              <div class="doctor-content">
+                <h4>{{ team.dga }}</h4>
+                <span class="specialty">Directeur Général Adjoint</span>
               </div>
             </div>
           </div>
+
         </div>
+
       </div>
-    </div>
+
+    </section>
     <!-- Team End -->
   </div>
 </template>
