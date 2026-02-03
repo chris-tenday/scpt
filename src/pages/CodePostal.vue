@@ -65,7 +65,7 @@
                           </select>
                         </div>
                         <div class="col-auto pt-4">
-                          <button type="submit" class="btn btn-primary" style="height:50px;" @click.prevent="filterData" :disabled="searchingQuartier === ''"><span class="fa fa-search"></span> Recherche</button>
+                          <button type="submit" class="btn btn-dark w-100 py-3" style="height:50px;" @click.prevent="filterData" :disabled="searchingQuartier === ''"><span class="fa fa-search"></span> Recherche</button>
                         </div>
                       </div>
                     </form>
@@ -82,7 +82,7 @@
                           <input type="text" v-model="searchingCodePostal" class="form-control" placeholder="Entrez le code postal" style="height:50px;">
                         </div>
                         <div class="col-auto">
-                          <button type="submit" @click.prevent="searchPlace" class="btn btn-primary" style="height:50px;" :disabled="searchingCodePostal.length < 5"><span class="fa fa-search"></span> Recherche</button>
+                          <button type="submit" @click.prevent="searchPlace" class="btn btn-dark w-100 py-3" style="height:50px;" :disabled="searchingCodePostal.length < 5"><span class="fa fa-search"></span> Recherche</button>
                         </div>
                       </div>
                     </form>
