@@ -5,30 +5,59 @@
     <!-- About Start -->
     <div id="about" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-7">
-            <div class="section-title position-relative pb-3 mb-5">
-              <h1 class="mb-0">Pourquoi Poste Market ?</h1>
-            </div>
-            <p class="mb-4">
-              {{postemarket.pourquoi}}
-            </p>
-            <div class="row g-0 mb-3">
-              <div class="section-title position-relative pb-3 mb-5">
-                <h1 class="mb-0">
-                  Poste Market vous offre:</h1>
-                <p>
-                  {{postemarket.offre}}
-                </p>
+        <section id="service-details-2" class="service-details-2 section">
+
+          <div class="container" >
+            <div class="row gy-4 align-items-center">
+
+              <div class="col-lg-7" >
+                <div class="service-details">
+
+                  <div class="detail-item">
+                    <div class="icon-wrapper">
+                      <i class="bi bi-question-circle"></i>
+                    </div>
+                    <div class="content">
+                      <h4>Pourquoi Poste Market ?</h4>
+                      <p>{{postemarket.pourquoi}}</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="icon-wrapper">
+                      <i class="bi bi-info-circle"></i>
+                    </div>
+                    <div class="content">
+                      <h4>Poste Market vous offre</h4>
+                      <p>{{postemarket.offre}}</p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
+
+              <div class="col-lg-5" >
+                <div class="service-visual">
+                  <img :src="$resolvePath(postemarket.image)" alt="" class="img-fluid">
+                  <div class="visual-overlay">
+                    <div class="stats-card">
+                      <div class="stat">
+                        <span class="number">100%</span>
+                        <span class="label"><i class="bi bi-check"></i> Fiable</span>
+                      </div>
+                      <div class="stat">
+                        <span class="number">24h/7</span>
+                        <span class="label"><i class="bi bi-clock"></i> Disponible</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
-          <div class="col-lg-5" style="min-height: 500px;">
-            <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" :src="$resolvePath(postemarket.image)" style="object-fit: cover;">
-            </div>
-          </div>
-        </div>
+        </section>
+
       </div>
     </div>
     <!-- About End -->
