@@ -3,58 +3,77 @@
     <Header page-title="Express Mail Service"/>
 
     <!-- Features Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-      <div class="container py-5">
-        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-          <h2 class="mb-0">Express Mail Service</h2>
-          <p>{{ems.texte}}</p>
-        </div>
-        <div class="row g-5">
-          <div class="col-lg-4">
-            <div class="row g-5">
-              <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-truck text-white"></i>
-                </div>
-                <h4>EMS</h4>
-                <p class="mb-0">Plus grand réseau de livraison au monde et les opérateurs postaux EMS ont la plus grande couverture du dernier kilomètre au monde, soutenue par le réseau de livraison postale pour atteindre toutes les entreprises et tous les citoyens du monde.</p>
-              </div>
-              <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-truck text-white"></i>
-                </div>
-                <h4>Pratique</h4>
-                <p class="mb-0">Le réseau EMS dispose du plus grand nombre d’accès aux clients au monde basé sur les comptoirs postaux. En RDC, EMS se trouve dans tous les bureaux de poste à travers le pays. Nous envoyons et distribuons : les documents et marchandises, le courrier d’entreprise, les objets d’art…..</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
-            <div class="position-relative h-100">
-              <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath(ems.logo)" style=" object-fit: contain;">
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row g-5">
-              <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-truck text-white"></i>
-                </div>
-                <h4>Caractéristiques</h4>
-                <p class="mb-0">Outre sa rapidité, les caractéristiques essentielles de l’EMS sont la fiabilité, la sécurité, la traçabilité (localisation des envois par internet), la visibilité, l’attention portée au client et un bon rapport qualité-prix.</p>
-              </div>
-              <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                  <i class="fa fa-truck text-white"></i>
-                </div>
-                <h4>Professionalisme</h4>
-                <p class="mb-0">Un équipe très expérimentée et professionelle</p>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section id="departments-tabs" class="departments-tabs section">
 
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row department-layout">
+              <div class="col-lg-4 order-lg-2">
+                <div class="department-image">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" :src="$resolvePath(ems.logo)" style=" object-fit: contain;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 order-lg-1">
+                <div class="department-info">
+                  <h2 class="department-title">Express Mail Service</h2>
+                  <p class="department-description">C'est le service express des envois postaux, disponible dans le réseau mondial. Les pays qui exploitent ce service sont membres d’une coopérative à adhésion volontaire réservée uniquement aux opérateurs désignés des pays membres de l’UPU.</p>
+
+                  <div class="row mt-4">
+                    <div class="col-md-6">
+                      <div class="service-item">
+                        <div class="service-icon">
+                          <i class="bi bi-info-circle"></i>
+                        </div>
+                        <div class="service-content">
+                          <h4>EMS</h4>
+                          <p>Plus grand réseau de livraison au monde et les opérateurs postaux EMS ont la plus grande couverture du dernier kilomètre au monde, soutenue par le réseau de livraison postale pour atteindre toutes les entreprises et tous les citoyens du monde.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="service-item">
+                        <div class="service-icon">
+                          <i class="bi bi-info-circle"></i>
+                        </div>
+                        <div class="service-content">
+                          <h4>Caractéristiques</h4>
+                          <p>Outre sa rapidité, les caractéristiques essentielles de l’EMS sont la fiabilité, la sécurité, la traçabilité (localisation des envois par internet), la visibilité, l’attention portée au client et un bon rapport qualité-prix.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="service-item">
+                        <div class="service-icon">
+                          <i class="bi bi-info-circle"></i>
+                        </div>
+                        <div class="service-content">
+                          <h4>Pratique</h4>
+                          <p>Le réseau EMS dispose du plus grand nombre d’accès aux clients au monde basé sur les comptoirs postaux. En RDC, EMS se trouve dans tous les bureaux de poste à travers le pays. Nous envoyons et distribuons : les documents et marchandises, le courrier d’entreprise, les objets d’art…..</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="service-item">
+                        <div class="service-icon">
+                          <i class="bi bi-info-circle"></i>
+                        </div>
+                        <div class="service-content">
+                          <h4>Professionalisme</h4>
+                          <p>Une équipe très expérimentée et professionelle</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
     <!-- Features Start -->
 
     <!-- services !-->
