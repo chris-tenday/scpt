@@ -2,7 +2,7 @@
   <div id="souscrire" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
     <section id="contact" class="contact section">
       <div class="container" >
-        <div class="row">
+        <div v-if="showHead" class="row">
           <div class="section-title position-relative pb-3 mb-5">
             <h5 class="fw-bold text-primary text-uppercase">Bésoin d'un service?</h5>
             <h1 class="mb-0">Entrez en contact avec notre personnel</h1>
@@ -102,6 +102,10 @@ export default {
     tel: {
       type:String,
       default:"info@ocpt.cd"
+    },
+    showHead:{
+      type:Boolean,
+      default:true
     }
   },
   computed:{
